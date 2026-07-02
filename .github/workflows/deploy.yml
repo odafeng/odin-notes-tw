@@ -3,9 +3,14 @@ on:
   push:
     branches: [main]
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -13,8 +18,23 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - run: mkdocs gh-deploy --force
+      - run: mkdocs build --strict
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
 
+# 部署方式：GitHub Actions 原生 Pages（build → upload-pages-artifact → deploy-pages）。
+# 到 repo Settings → Pages 需把 Source 設為「GitHub Actions」（本專案已用 API 設定）。
+#
 # 私有替代方案：GitHub Pages 免費方案強制公開網站。
 # 想只給自己看：repo 設 private，刪掉這個 workflow，
 # 改用 Cloudflare Pages（build command: `pip install -r requirements.txt && mkdocs build`，
