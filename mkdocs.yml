@@ -50,7 +50,16 @@ nav:
   - 首頁: index.md
   - Foundations:
       - 總覽: foundations/index.md
-      - Foundations: foundations/foundations/index.md
+      - Foundations:
+          - 課程清單: foundations/foundations/index.md
+          - foundations/foundations/13-introduction-to-html-and-css.md
+          - foundations/foundations/14-elements-and-tags.md
+          - foundations/foundations/15-html-boilerplate.md
+          - foundations/foundations/16-working-with-text.md
+          - foundations/foundations/17-lists.md
+          - foundations/foundations/18-links-and-images.md
+          - foundations/foundations/19-commit-messages.md
+          - foundations/foundations/20-recipes.md
   - Full Stack JavaScript:
       - 總覽: full-stack-javascript/index.md
       - Intermediate HTML and CSS: full-stack-javascript/intermediate-html-and-css/index.md

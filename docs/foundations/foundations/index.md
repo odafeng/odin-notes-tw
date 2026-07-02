@@ -26,14 +26,14 @@
 
 ## HTML Foundations
 
-- [ ] [Introduction to HTML and CSS](https://www.theodinproject.com/lessons/foundations-introduction-to-html-and-css)
-- [ ] [Elements and Tags](https://www.theodinproject.com/lessons/foundations-elements-and-tags)
-- [ ] [HTML Boilerplate](https://www.theodinproject.com/lessons/foundations-html-boilerplate)
-- [ ] [Working with Text](https://www.theodinproject.com/lessons/foundations-working-with-text)
-- [ ] [Lists](https://www.theodinproject.com/lessons/foundations-lists)
-- [ ] [Links and Images](https://www.theodinproject.com/lessons/foundations-links-and-images)
-- [ ] [Commit Messages](https://www.theodinproject.com/lessons/foundations-commit-messages)
-- [ ] [Project: Recipes](https://www.theodinproject.com/lessons/foundations-recipes)
+- [x] [HTML 與 CSS 簡介](13-introduction-to-html-and-css.md)
+- [x] [元素與標籤](14-elements-and-tags.md)
+- [x] [HTML 樣板（Boilerplate）](15-html-boilerplate.md)
+- [x] [處理文字](16-working-with-text.md)
+- [x] [清單（Lists）](17-lists.md)
+- [x] [連結與圖片](18-links-and-images.md)
+- [x] [Commit 訊息](19-commit-messages.md)
+- [x] [專案：食譜網頁（Recipes）](20-recipes.md)
 
 ## CSS Foundations
 
