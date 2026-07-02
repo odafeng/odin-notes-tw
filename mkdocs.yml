@@ -1,0 +1,63 @@
+site_name: Odin 講義
+site_description: The Odin Project 繁體中文自足講義（Foundations + Full Stack JavaScript）
+site_url: https://odafeng.github.io/odin-notes-tw/ # 部署後改成實際網址
+repo_url: https://github.com/odafeng/odin-notes-tw # 建好 repo 後確認
+
+theme:
+  name: material
+  language: zh-TW
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      toggle:
+        icon: material/weather-night
+        name: 切換深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      toggle:
+        icon: material/weather-sunny
+        name: 切換淺色模式
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search # 已裝 jieba，中文斷詞自動生效
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+# nav 手動維護：odin-lecture skill 每產一課就在對應 course 底下加一行。
+nav:
+  - 首頁: index.md
+  - Foundations:
+      - 總覽: foundations/index.md
+      - Foundations: foundations/foundations/index.md
+  - Full Stack JavaScript:
+      - 總覽: full-stack-javascript/index.md
+      - Intermediate HTML and CSS: full-stack-javascript/intermediate-html-and-css/index.md
+      - JavaScript: full-stack-javascript/javascript/index.md
+      - Advanced HTML and CSS: full-stack-javascript/advanced-html-and-css/index.md
+      - React: full-stack-javascript/react/index.md
+      - Databases: full-stack-javascript/databases/index.md
+      - NodeJS: full-stack-javascript/nodejs/index.md
+      - Getting Hired: full-stack-javascript/getting-hired/index.md
+  - 關於與授權: about/license.md

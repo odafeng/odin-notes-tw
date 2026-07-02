@@ -1,0 +1,21 @@
+name: deploy
+on:
+  push:
+    branches: [main]
+permissions:
+  contents: write
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: mkdocs gh-deploy --force
+
+# 私有替代方案：GitHub Pages 免費方案強制公開網站。
+# 想只給自己看：repo 設 private，刪掉這個 workflow，
+# 改用 Cloudflare Pages（build command: `pip install -r requirements.txt && mkdocs build`，
+# output directory: `site`），前面掛 Cloudflare Access 限本人登入。免費額度足夠。
