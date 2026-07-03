@@ -44,7 +44,7 @@ hide:
 ## 進度
 
 <!-- PROGRESS:START -->
-已產 18 課（讀完 0）｜2026-07-03
+已產 33 課（讀完 0）｜2026-07-03
 
 ### Foundations
 
@@ -66,4 +66,19 @@ hide:
 - 📝 [主軸與交錯軸（Axes）](foundations/foundations/28-axes.md)
 - 📝 [對齊（Alignment）](foundations/foundations/29-alignment.md)
 - 📝 [專案：Landing Page](foundations/foundations/30-landing-page.md)
+- 📝 [變數與運算子](foundations/foundations/31-variables-and-operators.md)
+- 📝 [安裝 Node.js](foundations/foundations/32-installing-node-js.md)
+- 📝 [資料型別與條件判斷](foundations/foundations/33-data-types-and-conditionals.md)
+- 📝 [JavaScript 開發者工具](foundations/foundations/34-javascript-developer-tools.md)
+- 📝 [函式基礎（Functions）](foundations/foundations/35-function-basics.md)
+- 📝 [解決問題的思路（Problem Solving）](foundations/foundations/36-problem-solving.md)
+- 📝 [看懂錯誤訊息（Errors）](foundations/foundations/37-understanding-errors.md)
+- 📝 [專案：剪刀石頭布](foundations/foundations/38-rock-paper-scissors.md)
+- 📝 [乾淨的程式碼（Clean Code）](foundations/foundations/39-clean-code.md)
+- 📝 [迴圈與陣列](foundations/foundations/40-loops-and-arrays.md)
+- 📝 [DOM 操作與事件](foundations/foundations/41-dom-manipulation-and-events.md)
+- 📝 [重訪剪刀石頭布（加上介面）](foundations/foundations/42-revisiting-rock-paper-scissors.md)
+- 📝 [專案：Etch-a-Sketch](foundations/foundations/43-etch-a-sketch.md)
+- 📝 [物件基礎（Objects）](foundations/foundations/44-object-basics.md)
+- 📝 [專案：計算機](foundations/foundations/45-calculator.md)
 <!-- PROGRESS:END -->

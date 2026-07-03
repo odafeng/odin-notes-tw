@@ -107,6 +107,21 @@ nav:
           - foundations/foundations/28-axes.md
           - foundations/foundations/29-alignment.md
           - foundations/foundations/30-landing-page.md
+          - foundations/foundations/31-variables-and-operators.md
+          - foundations/foundations/32-installing-node-js.md
+          - foundations/foundations/33-data-types-and-conditionals.md
+          - foundations/foundations/34-javascript-developer-tools.md
+          - foundations/foundations/35-function-basics.md
+          - foundations/foundations/36-problem-solving.md
+          - foundations/foundations/37-understanding-errors.md
+          - foundations/foundations/38-rock-paper-scissors.md
+          - foundations/foundations/39-clean-code.md
+          - foundations/foundations/40-loops-and-arrays.md
+          - foundations/foundations/41-dom-manipulation-and-events.md
+          - foundations/foundations/42-revisiting-rock-paper-scissors.md
+          - foundations/foundations/43-etch-a-sketch.md
+          - foundations/foundations/44-object-basics.md
+          - foundations/foundations/45-calculator.md
   - Full Stack JavaScript:
       - 總覽: full-stack-javascript/index.md
       - Intermediate HTML and CSS: full-stack-javascript/intermediate-html-and-css/index.md

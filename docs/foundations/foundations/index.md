@@ -53,21 +53,21 @@
 
 ## JavaScript Basics
 
-- [ ] [Variables and Operators](https://www.theodinproject.com/lessons/foundations-variables-and-operators)
-- [ ] [Installing Node.js](https://www.theodinproject.com/lessons/foundations-installing-node-js)
-- [ ] [Data Types and Conditionals](https://www.theodinproject.com/lessons/foundations-data-types-and-conditionals)
-- [ ] [JavaScript Developer Tools](https://www.theodinproject.com/lessons/foundations-javascript-developer-tools)
-- [ ] [Function Basics](https://www.theodinproject.com/lessons/foundations-function-basics)
-- [ ] [Problem Solving](https://www.theodinproject.com/lessons/foundations-problem-solving)
-- [ ] [Understanding Errors](https://www.theodinproject.com/lessons/foundations-understanding-errors)
-- [ ] [Project: Rock Paper Scissors](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors)
-- [ ] [Clean Code](https://www.theodinproject.com/lessons/foundations-clean-code)
-- [ ] [Loops and Arrays](https://www.theodinproject.com/lessons/foundations-loops-and-arrays)
-- [ ] [DOM Manipulation and Events](https://www.theodinproject.com/lessons/foundations-dom-manipulation-and-events)
-- [ ] [Revisiting Rock Paper Scissors](https://www.theodinproject.com/lessons/foundations-revisiting-rock-paper-scissors)
-- [ ] [Project: Etch-a-Sketch](https://www.theodinproject.com/lessons/foundations-etch-a-sketch)
-- [ ] [Object Basics](https://www.theodinproject.com/lessons/foundations-object-basics)
-- [ ] [Project: Calculator](https://www.theodinproject.com/lessons/foundations-calculator)
+- [x] [變數與運算子](31-variables-and-operators.md)
+- [x] [安裝 Node.js](32-installing-node-js.md)
+- [x] [資料型別與條件判斷](33-data-types-and-conditionals.md)
+- [x] [JavaScript 開發者工具](34-javascript-developer-tools.md)
+- [x] [函式基礎（Functions）](35-function-basics.md)
+- [x] [解決問題的思路（Problem Solving）](36-problem-solving.md)
+- [x] [看懂錯誤訊息（Errors）](37-understanding-errors.md)
+- [x] [專案：剪刀石頭布](38-rock-paper-scissors.md)
+- [x] [乾淨的程式碼（Clean Code）](39-clean-code.md)
+- [x] [迴圈與陣列](40-loops-and-arrays.md)
+- [x] [DOM 操作與事件](41-dom-manipulation-and-events.md)
+- [x] [重訪剪刀石頭布（加上介面）](42-revisiting-rock-paper-scissors.md)
+- [x] [專案：Etch-a-Sketch](43-etch-a-sketch.md)
+- [x] [物件基礎（Objects）](44-object-basics.md)
+- [x] [專案：計算機](45-calculator.md)
 
 ## Conclusion
 
