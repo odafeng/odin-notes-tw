@@ -12,6 +12,22 @@ DOCS = Path(__file__).resolve().parent.parent / "docs"
 INDEX = DOCS / "index.md"
 START, END = "<!-- PROGRESS:START -->", "<!-- PROGRESS:END -->"
 
+# 課程依 TOP 學習路線順序排列（首頁目錄用），而非字母序。
+COURSE_ORDER = [
+    "Foundations",
+    "Intermediate HTML and CSS",
+    "JavaScript",
+    "Advanced HTML and CSS",
+    "React",
+    "Databases",
+    "NodeJS",
+    "Getting Hired",
+]
+
+
+def course_rank(course: str) -> int:
+    return COURSE_ORDER.index(course) if course in COURSE_ORDER else len(COURSE_ORDER)
+
 
 @dataclass
 class Lecture:
@@ -52,7 +68,7 @@ def collect() -> list[Lecture]:
                 rel_url=md.relative_to(DOCS).as_posix(),
             )
         )
-    lectures.sort(key=lambda lec: (lec.path, lec.course, lec.order))
+    lectures.sort(key=lambda lec: (course_rank(lec.course), lec.order))
     return lectures
 
 

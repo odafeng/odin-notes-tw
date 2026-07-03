@@ -44,7 +44,7 @@ hide:
 ## 課程目錄
 
 <!-- PROGRESS:START -->
-已讀 0／124 課 · 更新於 2026-07-04
+已讀 0／125 課 · 更新於 2026-07-04
 
 ✅ 已讀　📖 待讀
 
@@ -96,23 +96,6 @@ hide:
 - 📖 [物件基礎（Objects）](foundations/foundations/44-object-basics.md)
 - 📖 [專案：計算機](foundations/foundations/45-calculator.md)
 - 📖 [選擇你的下一步](foundations/foundations/46-choose-your-path-forward.md)
-### Advanced HTML and CSS
-
-- 📖 [CSS Transform 變形](full-stack-javascript/advanced-html-and-css/01-transforms.md)
-- 📖 [CSS Transition 轉場](full-stack-javascript/advanced-html-and-css/02-transitions.md)
-- 📖 [Keyframes 關鍵影格動畫](full-stack-javascript/advanced-html-and-css/03-keyframes.md)
-- 📖 [網頁可及性簡介（Accessibility）](full-stack-javascript/advanced-html-and-css/04-intro-to-accessibility.md)
-- 📖 [WCAG 無障礙準則](full-stack-javascript/advanced-html-and-css/05-wcag.md)
-- 📖 [語意化 HTML](full-stack-javascript/advanced-html-and-css/06-semantic-html.md)
-- 📖 [可及的色彩對比](full-stack-javascript/advanced-html-and-css/07-accessible-colors.md)
-- 📖 [鍵盤導覽](full-stack-javascript/advanced-html-and-css/08-keyboard-navigation.md)
-- 📖 [有意義的文字](full-stack-javascript/advanced-html-and-css/09-meaningful-text.md)
-- 📖 [WAI-ARIA](full-stack-javascript/advanced-html-and-css/10-wai-aria.md)
-- 📖 [可及性稽核](full-stack-javascript/advanced-html-and-css/11-accessibility-auditing.md)
-- 📖 [響應式設計簡介](full-stack-javascript/advanced-html-and-css/12-intro-to-responsive-design.md)
-- 📖 [自然的響應式](full-stack-javascript/advanced-html-and-css/13-natural-responsiveness.md)
-- 📖 [響應式圖片](full-stack-javascript/advanced-html-and-css/14-responsive-images.md)
-- 📖 [Media Queries](full-stack-javascript/advanced-html-and-css/15-media-queries.md)
 ### Intermediate HTML and CSS
 
 - 📖 [導論](full-stack-javascript/intermediate-html-and-css/01-introduction.md)
@@ -180,4 +163,22 @@ hide:
 - 📖 [在真實世界用 Git](full-stack-javascript/javascript/39-using-git-in-the-real-world.md)
 - 📖 [專案：Battleship 海戰棋](full-stack-javascript/javascript/40-battleship.md)
 - 📖 [結語](full-stack-javascript/javascript/41-conclusion.md)
+### Advanced HTML and CSS
+
+- 📖 [CSS Transform 變形](full-stack-javascript/advanced-html-and-css/01-transforms.md)
+- 📖 [CSS Transition 轉場](full-stack-javascript/advanced-html-and-css/02-transitions.md)
+- 📖 [Keyframes 關鍵影格動畫](full-stack-javascript/advanced-html-and-css/03-keyframes.md)
+- 📖 [網頁可及性簡介（Accessibility）](full-stack-javascript/advanced-html-and-css/04-intro-to-accessibility.md)
+- 📖 [WCAG 無障礙準則](full-stack-javascript/advanced-html-and-css/05-wcag.md)
+- 📖 [語意化 HTML](full-stack-javascript/advanced-html-and-css/06-semantic-html.md)
+- 📖 [可及的色彩對比](full-stack-javascript/advanced-html-and-css/07-accessible-colors.md)
+- 📖 [鍵盤導覽](full-stack-javascript/advanced-html-and-css/08-keyboard-navigation.md)
+- 📖 [有意義的文字](full-stack-javascript/advanced-html-and-css/09-meaningful-text.md)
+- 📖 [WAI-ARIA](full-stack-javascript/advanced-html-and-css/10-wai-aria.md)
+- 📖 [可及性稽核](full-stack-javascript/advanced-html-and-css/11-accessibility-auditing.md)
+- 📖 [響應式設計簡介](full-stack-javascript/advanced-html-and-css/12-intro-to-responsive-design.md)
+- 📖 [自然的響應式](full-stack-javascript/advanced-html-and-css/13-natural-responsiveness.md)
+- 📖 [響應式圖片](full-stack-javascript/advanced-html-and-css/14-responsive-images.md)
+- 📖 [Media Queries](full-stack-javascript/advanced-html-and-css/15-media-queries.md)
+- 📖 [專案：Homepage](full-stack-javascript/advanced-html-and-css/16-homepage.md)
 <!-- PROGRESS:END -->
