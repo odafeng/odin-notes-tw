@@ -222,7 +222,34 @@ nav:
           - full-stack-javascript/advanced-html-and-css/14-responsive-images.md
           - full-stack-javascript/advanced-html-and-css/15-media-queries.md
           - full-stack-javascript/advanced-html-and-css/16-homepage.md
-      - React: full-stack-javascript/react/index.md
+      - React:
+          - 課程清單: full-stack-javascript/react/index.md
+          - full-stack-javascript/react/01-how-this-course-will-work.md
+          - full-stack-javascript/react/02-introduction-to-react.md
+          - full-stack-javascript/react/03-setting-up-a-react-environment.md
+          - full-stack-javascript/react/04-react-components.md
+          - full-stack-javascript/react/05-what-is-jsx.md
+          - full-stack-javascript/react/06-passing-data-between-components.md
+          - full-stack-javascript/react/07-rendering-techniques.md
+          - full-stack-javascript/react/08-keys-in-react.md
+          - full-stack-javascript/react/09-introduction-to-state.md
+          - full-stack-javascript/react/10-more-on-state.md
+          - full-stack-javascript/react/11-cv-application.md
+          - full-stack-javascript/react/12-side-effects.md
+          - full-stack-javascript/react/13-memory-card.md
+          - full-stack-javascript/react/14-class-based-components.md
+          - full-stack-javascript/react/15-component-lifecycle-methods.md
+          - full-stack-javascript/react/16-introduction-to-react-testing.md
+          - full-stack-javascript/react/17-mocking-callbacks-and-components.md
+          - full-stack-javascript/react/18-type-checking-with-proptypes.md
+          - full-stack-javascript/react/19-react-router.md
+          - full-stack-javascript/react/20-fetching-data-in-react.md
+          - full-stack-javascript/react/21-styling-react-applications.md
+          - full-stack-javascript/react/22-shopping-cart.md
+          - full-stack-javascript/react/23-context-api.md
+          - full-stack-javascript/react/24-reducing-state.md
+          - full-stack-javascript/react/25-refs-and-memoization.md
+          - full-stack-javascript/react/26-conclusion.md
       - Databases: full-stack-javascript/databases/index.md
       - NodeJS: full-stack-javascript/nodejs/index.md
       - Getting Hired: full-stack-javascript/getting-hired/index.md
