@@ -14,17 +14,6 @@ generated: 2026-07-02
 > 改寫自 The Odin Project：[HTML Boilerplate](https://www.theodinproject.com/lessons/foundations-html-boilerplate)
 > ｜Foundations › HTML Foundations
 
-## 學習目標
-
-讀完這課你應該能：
-
-- 說明什麼是 HTML boilerplate（樣板），以及為什麼每份 HTML 文件都需要它。
-- 從頭寫出一份基本的 HTML 樣板，包含 DOCTYPE、`<html>`、`<head>`、`<body>` 四個部分。
-- 說明 doctype declaration（文件類型宣告）的用途。
-- 說明 `<html>`、`<head>`、`<body>` 三個 element（元素）各自扮演的角色。
-- 解釋 `<meta charset>`、`<title>` 與 `lang` attribute（屬性）的作用。
-- 用瀏覽器把寫好的 HTML 檔案打開來看結果。
-
 ## 核心概念
 
 所有的 HTML 文件都長得有點像：不管網頁最後要放什麼內容，開頭永遠都是同一套固定骨架。這套骨架就叫做 **boilerplate（樣板）**。「boilerplate」原本指印刷業裡可以重複使用的鉛版，在程式領域則泛指「每次都得先擺好、內容幾乎不變」的起手式。先把這副骨架搭好，我們才有地方開始放真正有用的東西。

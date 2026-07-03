@@ -14,16 +14,6 @@ generated: 2026-07-03
 > 改寫自 The Odin Project：[The Cascade](https://www.theodinproject.com/lessons/foundations-the-cascade)
 > ｜Foundations › CSS Foundations
 
-## 學習目標
-
-讀完這課你應該能：
-
-- 說明 the cascade（串接規則）在瀏覽器套用樣式時扮演的角色。
-- 用 specificity（優先權）判斷多條衝突規則的勝負，並依 ID、class、type 三種 selector（選擇器）排出高低。
-- 分辨哪些符號（如 universal selector `*` 與 combinator）不會替 specificity 加分。
-- 說明 inheritance（繼承）如何影響 typography 相關 property（屬性），以及直接指定為何總是勝過繼承。
-- 在其他條件都相同時，用 rule order（規則順序）判斷最後由哪條 declaration（宣告）勝出。
-
 ## 核心概念
 
 ### 為什麼樣式會「不聽話」

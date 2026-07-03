@@ -14,16 +14,6 @@ generated: 2026-07-02
 > 改寫自 The Odin Project：[Lists](https://www.theodinproject.com/lessons/foundations-lists)
 > ｜Foundations › HTML Foundations
 
-## 學習目標
-
-讀完這課你應該能：
-
-- 說明什麼時候該用 unordered list（無序清單），什麼時候該用 ordered list（有序清單）。
-- 用 `<ul>` element（元素）建立一個無序清單。
-- 用 `<ol>` element 建立一個有序清單。
-- 用 `<li>` element（list item，清單項目）在兩種清單裡放入每一筆項目。
-- 理解 `<ul>`、`<ol>`、`<li>` 之間的父子結構，並知道清單可以互相巢狀（nesting）。
-
 ## 核心概念
 
 清單在網頁上無所不在：從電商網站的商品規格、食譜的步驟，到搜尋結果、導覽選單，背後幾乎都是 HTML 清單撐起來的。當你有「一組相關的項目」想呈現時，正確的做法不是用一堆換行硬排，而是用清單 element 把它們包起來。這樣不只畫面整齊，還能讓瀏覽器與螢幕報讀器（screen reader）知道「這幾筆資料是同一組清單」，對可及性（accessibility）很重要。

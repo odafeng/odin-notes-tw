@@ -14,16 +14,6 @@ generated: 2026-07-03
 > 改寫自 The Odin Project：[Block and Inline](https://www.theodinproject.com/lessons/foundations-block-and-inline)
 > ｜Foundations › CSS Foundations
 
-## 學習目標
-
-讀完這課你應該能：
-
-- 說明什麼是 normal flow（正常流），以及元素在沒有任何額外排版設定時是怎麼自動擺放的。
-- 分辨 block（區塊）元素與 inline（行內）元素的排版差異，並知道它們如何回應 width、height、margin、padding。
-- 說明 inline-block 這個「中間地帶」的行為，以及它和 inline、block 的不同。
-- 舉出常見元素預設是 block 還是 inline（例如 `h1`、`p`、`div` 是 block；`a`、`span`、`img` 是 inline）。
-- 說明 `div` 與 `span` 這兩個「通用容器」是什麼、何時該用哪一個。
-
 ## 核心概念
 
 ### Normal flow：一切排版的起點

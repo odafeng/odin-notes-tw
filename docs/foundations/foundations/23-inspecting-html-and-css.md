@@ -14,15 +14,6 @@ generated: 2026-07-03
 > 改寫自 The Odin Project：[Inspecting HTML and CSS](https://www.theodinproject.com/lessons/foundations-inspecting-html-and-css)
 > ｜Foundations › CSS Foundations
 
-## 學習目標
-
-讀完這課你應該能：
-
-- 打開瀏覽器的 developer tools（開發者工具），並找到 Elements 與 Styles 兩個面板。
-- 用兩種方式在頁面上選取（select）並檢視（inspect）特定元素。
-- 看懂 Styles 面板：分辨哪些樣式正在生效、哪些被覆蓋（overwritten）而出現刪除線。
-- 在瀏覽器裡即時修改 HTML 與 CSS，快速測試想法，並理解這些改動不會寫回原始碼。
-
 ## 核心概念
 
 寫 CSS 時，你腦中想的樣子和瀏覽器實際畫出來的樣子，常常對不上。文字顏色沒變、間距怪怪的、某條規則好像「沒作用」——這些時候，與其反覆猜測、改一行存檔重整一次，不如直接打開 developer tools（開發者工具）問瀏覽器：這個元素到底套用了哪些樣式？哪一條贏了？這正是本課要練的核心技能——**檢視（inspect）與除錯（debug）**。

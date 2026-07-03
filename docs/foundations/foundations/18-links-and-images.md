@@ -14,17 +14,6 @@ generated: 2026-07-02
 > 改寫自 The Odin Project：[Links and Images](https://www.theodinproject.com/lessons/foundations-links-and-images)
 > ｜Foundations › HTML Foundations
 
-## 學習目標
-
-讀完這課你應該能：
-
-- 用 anchor（錨點）element 建立指向其他網站頁面的連結。
-- 用相對路徑建立指向自己網站內其他頁面的連結。
-- 清楚說明 absolute link（絕對連結）與 relative link（相對連結）的差別，並在路徑中正確使用 `./` 與 `../`。
-- 用 `<img>` element 在頁面上顯示圖片，並理解 `src` 與 `alt` 這兩個必備 attribute（屬性）的用途。
-- 說明為什麼要在 `<img>` 上加 `width` 與 `height`，以及開新分頁時 `target` 帶來的安全性考量。
-- 認識網頁上四種主要的圖片格式（JPG、GIF、PNG、SVG）分別適合什麼場合。
-
 ## 核心概念
 
 ### 什麼是連結，為什麼重要

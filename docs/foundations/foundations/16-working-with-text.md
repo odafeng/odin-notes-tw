@@ -14,16 +14,6 @@ generated: 2026-07-02
 > 改寫自 The Odin Project：[Working with Text](https://www.theodinproject.com/lessons/foundations-working-with-text)
 > ｜Foundations › HTML Foundations
 
-## 學習目標
-
-讀完這課你應該能：
-
-- 用 paragraph（段落）element 建立正確分段的文字，並理解瀏覽器為什麼會壓縮空白與換行。
-- 用 `<h1>` 到 `<h6>` 六個層級的 heading（標題）element 為頁面內容建立階層結構。
-- 用 `<strong>` 把文字標成「粗體且重要」，用 `<em>` 把文字標成「斜體並加上強調」，並理解它們的語意（semantic）意義。
-- 說明 nesting（巢狀）element 之間的 parent（父）、child（子）、sibling（兄弟）關係，以及縮排的用途。
-- 用 `<!-- -->` 在 HTML 裡寫 comment（註解）。
-
 ## 核心概念
 
 網路上大多數內容都是文字，所以你會非常頻繁地和 HTML 的文字類 element 打交道。這一課把最常用的幾個文字 element 一次講清楚。

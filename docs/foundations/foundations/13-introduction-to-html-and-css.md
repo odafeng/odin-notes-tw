@@ -14,15 +14,6 @@ generated: 2026-07-02
 > 改寫自 The Odin Project：[Introduction to HTML and CSS](https://www.theodinproject.com/lessons/foundations-introduction-to-html-and-css)
 > ｜Foundations › HTML Foundations
 
-## 學習目標
-
-讀完這課你應該能：
-
-- 說出 HTML 與 CSS 的英文全名，並用一句話解釋它們各自負責什麼。
-- 判斷「把一段文字放上網頁」該用 HTML，「改變按鈕的字型與背景色」該用 CSS。
-- 說清楚 HTML、CSS、JavaScript 三者的分工，以及為什麼 HTML 與 CSS 嚴格來說不算 programming language（程式語言）。
-- 認得一份 HTML 文件的骨架，以及一條 CSS ruleset（規則集）的組成。
-
 ## 核心概念
 
 ### 網頁其實是三種語言疊出來的

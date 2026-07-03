@@ -14,17 +14,6 @@ generated: 2026-07-02
 > 改寫自 The Odin Project：[Commit Messages](https://www.theodinproject.com/lessons/foundations-commit-messages)
 > ｜Foundations › HTML Foundations
 
-## 學習目標
-
-讀完這課你應該能：
-
-- 說出「好的 commit（提交）訊息」為什麼重要，並舉出至少兩個實際好處。
-- 寫出一則結構良好的 commit 訊息：由 subject（主旨）與 body（內文）兩部分組成，並用空白行隔開。
-- 說出 subject 的字數建議，並知道 GitHub 與業界慣例對長度的看法。
-- 用 imperative mood（祈使句／命令語氣）撰寫 subject，避免模糊字眼。
-- 判斷「什麼時候該 commit」，建立有意義、可回溯的提交歷史。
-- 使用 `git commit`（不加 `-m`）在編輯器中撰寫多行訊息。
-
 ## 核心概念
 
 ### 為什麼 commit 訊息值得一整課

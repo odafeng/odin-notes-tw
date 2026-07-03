@@ -14,16 +14,6 @@ generated: 2026-07-02
 > 改寫自 The Odin Project：[Elements and Tags](https://www.theodinproject.com/lessons/foundations-elements-and-tags)
 > ｜Foundations › HTML Foundations
 
-## 學習目標
-
-讀完這課你應該能：
-
-- 說明 HTML tag（標籤）是什麼，以及 opening tag（開始標籤）與 closing tag（結束標籤）的差別。
-- 說明 HTML element（元素）是什麼，並指出一個完整元素的三個組成部分。
-- 說明為什麼「選對標籤」會影響搜尋引擎排名與無障礙（accessibility）體驗，並認識 semantic HTML（語意化 HTML）這個名詞。
-- 說明 void element（空元素）是什麼，以及它和一般元素有什麼不同。
-- 認識 self-closing（自我閉合）斜線寫法的來歷，以及現代 HTML 規範對它的態度。
-
 ## 核心概念
 
 ### HTML 負責網頁的「結構與內容」

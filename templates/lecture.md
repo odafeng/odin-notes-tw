@@ -14,12 +14,6 @@ generated: YYYY-MM-DD
 > 改寫自 The Odin Project：[Lesson Title](https://www.theodinproject.com/lessons/slug)
 > ｜Foundations › （Course）
 
-## 學習目標
-
-讀完這課你應該能：
-
--
-
 ## 核心概念
 
 （主體。把課文＋指定閱讀融成連貫、自足的敘述。）

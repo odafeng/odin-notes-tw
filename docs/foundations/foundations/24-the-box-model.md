@@ -14,17 +14,6 @@ generated: 2026-07-03
 > 改寫自 The Odin Project：[The Box Model](https://www.theodinproject.com/lessons/foundations-the-box-model)
 > ｜Foundations › CSS Foundations
 
-## 學習目標
-
-讀完這課你應該能：
-
-- 說明「網頁上每個元素都是一個矩形盒子」這句話的意思，並用 `outline` 把盒子畫出來觀察。
-- 由內而外說出盒模型（box model）的四個組成：content（內容）、padding（內距）、border（邊框）、margin（外距）。
-- 分辨 standard box model（標準盒模型）與 alternative box model（替代盒模型），並算出兩者的實際尺寸差異。
-- 說明 `box-sizing` property（屬性）的作用，並用 universal selector（通用選擇器）一次替全站設定 `border-box`。
-- 判斷什麼情況該用 `margin`、什麼情況該用 `padding`，以及如何用負 margin 讓元素重疊。
-- 用 `margin: 0 auto` 把一個有固定寬度的區塊水平置中，並理解 margin collapsing（外距合併）。
-
 ## 核心概念
 
 ### 一切都是盒子

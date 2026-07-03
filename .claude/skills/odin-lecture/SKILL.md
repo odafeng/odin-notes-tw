@@ -28,9 +28,9 @@ description: 把單一 The Odin Project lesson 消化改寫成繁體中文自足
 
 ### 3. 寫講義
 
-複製 `templates/lecture.md`，填好 frontmatter，依模板章節寫：
+複製 `templates/lecture.md`，填好 frontmatter，依模板章節寫（本專案不寫「學習目標」段，
+正文直接從「核心概念」開始）：
 
-- **學習目標**：改寫 TOP 的 learning outcomes / knowledge check 成 3–6 條繁中目標。
 - **核心概念**：把課文＋指定閱讀融成連貫敘述，這是講義主體。自足為原則，
   正文 1500–3000 字為度（project 類的課可短）。
 - **程式碼範例**：最小可執行範例，註解繁中。改寫、重組原文範例，不整段照抄。

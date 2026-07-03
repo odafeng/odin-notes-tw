@@ -14,16 +14,6 @@ generated: 2026-07-03
 > 改寫自 The Odin Project：[Intro to CSS](https://www.theodinproject.com/lessons/foundations-intro-to-css)
 > ｜Foundations › CSS Foundations
 
-## 學習目標
-
-讀完這課你應該能：
-
-- 說明 CSS 的基本語法：一條 rule（規則）由 selector（選擇器）與 declaration block（宣告區塊）組成，而 declaration（宣告）又是 property（屬性）與 value（值）的配對。
-- 使用最常見的幾種 selector：universal（萬用）、type（型別）、class（類別）、ID，並寫出正確的語法。
-- 用 grouping（分組）、chaining（串接）與 descendant combinator（後代組合子）組合 selector，精準選到你要的 element。
-- 認識幾個入門就會天天用到的 property：`color`、`background-color`、字體排版相關屬性與 `text-align`、以及圖片的 `height` 與 `width`。
-- 說出把 CSS 加進 HTML 的三種方法（external、internal、inline），並比較它們的差異與適用時機。
-
 ## 核心概念
 
 ### CSS 是什麼

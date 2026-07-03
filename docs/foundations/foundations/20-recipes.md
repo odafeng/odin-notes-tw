@@ -14,17 +14,6 @@ generated: 2026-07-02
 > 改寫自 The Odin Project：[Project: Recipes](https://www.theodinproject.com/lessons/foundations-recipes)
 > ｜Foundations › HTML Foundations
 
-## 學習目標
-
-讀完這課你應該能：
-
-- 用純 HTML 從零搭出一個多頁面的小網站，包含一個首頁（index page）與數個食譜子頁面。
-- 為每個 `.html` 檔寫出標準的 HTML boilerplate（樣板），並用正確層級的 heading（標題）組織內容。
-- 使用 anchor（錨點）元素 `<a>` 與 relative path（相對路徑）做頁面之間的互相連結，包括連到子資料夾與用 `../` 回到上層。
-- 用 `<img>` 元素插入圖片，並理解 `src` 與 `alt` attribute（屬性）的用途。
-- 分辨並正確使用 unordered list（無序清單 `<ul>`）與 ordered list（有序清單 `<ol>`）來呈現食材與步驟。
-- 把完成的專案推上 GitHub，並用 GitHub Pages 發佈到網路上。
-
 ## 核心概念
 
 這是 HTML Foundations 的第一個綜合專案。前面幾課學到的 element（元素）、boilerplate、文字、清單、連結與圖片，在這一課全部一起用上。目標是做一個很陽春的「食譜網站」：一個首頁列出幾道菜的連結，每道菜有自己的頁面，頁面裡有圖片、描述、食材清單與製作步驟。
