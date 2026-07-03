@@ -1,7 +1,7 @@
 # Databases
 
 > The Odin Project《Databases》課程清單，依官網順序排列（共 3 課）。
-> 每產出一課講義就在這裡打勾並改連到本站；未打勾者連結指向原文。
+> ✅ 為本站已收錄、可直接點閱的講義；未勾選者暫時連到 The Odin Project 原文。
 
 ## Databases
 

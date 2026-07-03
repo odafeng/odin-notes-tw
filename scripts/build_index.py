@@ -58,15 +58,20 @@ def collect() -> list[Lecture]:
 
 def render(lectures: list[Lecture]) -> str:
     if not lectures:
-        return "（尚無講義。開 Claude Code，丟一個 lesson URL 進來就會開始。）"
+        return "（課程目錄整理中。）"
     done = sum(1 for lec in lectures if lec.status == "done")
-    lines = [f"已產 {len(lectures)} 課（讀完 {done}）｜{date.today().isoformat()}", ""]
+    lines = [
+        f"已讀 {done}／{len(lectures)} 課 · 更新於 {date.today().isoformat()}",
+        "",
+        "✅ 已讀　📖 待讀",
+        "",
+    ]
     current = ""
     for lec in lectures:
         if lec.course != current:
             current = lec.course
             lines += [f"### {current}", ""]
-        mark = "✅" if lec.status == "done" else "📝"
+        mark = "✅" if lec.status == "done" else "📖"
         lines.append(f"- {mark} [{lec.title}]({lec.rel_url})")
     return "\n".join(lines)
 
