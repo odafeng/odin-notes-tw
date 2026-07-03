@@ -44,10 +44,22 @@ hide:
 ## 進度
 
 <!-- PROGRESS:START -->
-已產 33 課（讀完 0）｜2026-07-03
+已產 46 課（讀完 0）｜2026-07-03
 
 ### Foundations
 
+- 📝 [這門課怎麼進行](foundations/foundations/01-how-this-course-will-work.md)
+- 📝 [網頁開發簡介](foundations/foundations/02-introduction-to-web-development.md)
+- 📝 [動機與心態](foundations/foundations/03-motivation-and-mindset.md)
+- 📝 [如何有效求助](foundations/foundations/04-asking-for-help.md)
+- 📝 [加入 Odin 社群](foundations/foundations/05-join-the-odin-community.md)
+- 📝 [網路如何運作](foundations/foundations/06-how-does-the-web-work.md)
+- 📝 [安裝設定](foundations/foundations/07-installations.md)
+- 📝 [文字編輯器](foundations/foundations/08-text-editors.md)
+- 📝 [命令列基礎](foundations/foundations/09-command-line-basics.md)
+- 📝 [設定 Git](foundations/foundations/10-setting-up-git.md)
+- 📝 [Git 簡介](foundations/foundations/11-introduction-to-git.md)
+- 📝 [Git 基礎](foundations/foundations/12-git-basics.md)
 - 📝 [HTML 與 CSS 簡介](foundations/foundations/13-introduction-to-html-and-css.md)
 - 📝 [元素與標籤](foundations/foundations/14-elements-and-tags.md)
 - 📝 [HTML 樣板（Boilerplate）](foundations/foundations/15-html-boilerplate.md)
@@ -81,4 +93,5 @@ hide:
 - 📝 [專案：Etch-a-Sketch](foundations/foundations/43-etch-a-sketch.md)
 - 📝 [物件基礎（Objects）](foundations/foundations/44-object-basics.md)
 - 📝 [專案：計算機](foundations/foundations/45-calculator.md)
+- 📝 [選擇你的下一步](foundations/foundations/46-choose-your-path-forward.md)
 <!-- PROGRESS:END -->

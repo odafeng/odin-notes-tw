@@ -5,17 +5,17 @@ hide:
 
 # Foundations
 
-The Odin Project **Foundations** path 的繁體中文自足講義總覽。Foundations 是整條學習路線的起點，從 web 如何運作、命令列與 Git，一路帶到 HTML、CSS、Flexbox 與 JavaScript 基礎。共一門課、46 課，目前已產出 **HTML Foundations**、**CSS Foundations**、**Flexbox** 與 **JavaScript Basics** 四個 section。
+The Odin Project **Foundations** path 的繁體中文自足講義總覽。Foundations 是整條學習路線的起點，從 web 如何運作、命令列與 Git，一路帶到 HTML、CSS、Flexbox 與 JavaScript 基礎。共一門課、46 課，**已全數產出完成**（Introduction、Prerequisites、Git Basics、HTML Foundations、CSS Foundations、Flexbox、JavaScript Basics、Conclusion）。
 
 <div class="grid cards" markdown>
 
--   :material-tools:{ .lg .middle } __入門與環境__
+-   :material-tools:{ .lg .middle } __入門與環境__ ✅
 
     ---
 
-    web 如何運作、安裝工具、命令列與 Git 基礎。打開學習的第一道門。
+    這門課怎麼進行、網路如何運作、安裝工具與文字編輯器、命令列與 Git 基礎。
 
-    [:octicons-arrow-right-24: 前往](foundations/index.md#introduction)
+    [:octicons-arrow-right-24: 13 課已產](foundations/index.md#introduction)
 
 -   :material-language-html5:{ .lg .middle } __HTML Foundations__ ✅
 

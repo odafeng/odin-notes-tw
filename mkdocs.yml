@@ -89,6 +89,18 @@ nav:
       - 總覽: foundations/index.md
       - Foundations:
           - 課程清單: foundations/foundations/index.md
+          - foundations/foundations/01-how-this-course-will-work.md
+          - foundations/foundations/02-introduction-to-web-development.md
+          - foundations/foundations/03-motivation-and-mindset.md
+          - foundations/foundations/04-asking-for-help.md
+          - foundations/foundations/05-join-the-odin-community.md
+          - foundations/foundations/06-how-does-the-web-work.md
+          - foundations/foundations/07-installations.md
+          - foundations/foundations/08-text-editors.md
+          - foundations/foundations/09-command-line-basics.md
+          - foundations/foundations/10-setting-up-git.md
+          - foundations/foundations/11-introduction-to-git.md
+          - foundations/foundations/12-git-basics.md
           - foundations/foundations/13-introduction-to-html-and-css.md
           - foundations/foundations/14-elements-and-tags.md
           - foundations/foundations/15-html-boilerplate.md
@@ -122,6 +134,7 @@ nav:
           - foundations/foundations/43-etch-a-sketch.md
           - foundations/foundations/44-object-basics.md
           - foundations/foundations/45-calculator.md
+          - foundations/foundations/46-choose-your-path-forward.md
   - Full Stack JavaScript:
       - 總覽: full-stack-javascript/index.md
       - Intermediate HTML and CSS: full-stack-javascript/intermediate-html-and-css/index.md

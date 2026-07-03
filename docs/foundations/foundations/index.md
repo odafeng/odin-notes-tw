@@ -5,24 +5,24 @@
 
 ## Introduction
 
-- [ ] [How This Course Will Work](https://www.theodinproject.com/lessons/foundations-how-this-course-will-work)
-- [ ] [Introduction to Web Development](https://www.theodinproject.com/lessons/foundations-introduction-to-web-development)
-- [ ] [Motivation and Mindset](https://www.theodinproject.com/lessons/foundations-motivation-and-mindset)
-- [ ] [Asking For Help](https://www.theodinproject.com/lessons/foundations-asking-for-help)
-- [ ] [Join the Odin Community](https://www.theodinproject.com/lessons/foundations-join-the-odin-community)
+- [x] [這門課怎麼進行](01-how-this-course-will-work.md)
+- [x] [網頁開發簡介](02-introduction-to-web-development.md)
+- [x] [動機與心態](03-motivation-and-mindset.md)
+- [x] [如何有效求助](04-asking-for-help.md)
+- [x] [加入 Odin 社群](05-join-the-odin-community.md)
 
 ## Prerequisites
 
-- [ ] [How Does the Web Work?](https://www.theodinproject.com/lessons/foundations-how-does-the-web-work)
-- [ ] [Installations](https://www.theodinproject.com/lessons/foundations-installations)
-- [ ] [Text Editors](https://www.theodinproject.com/lessons/foundations-text-editors)
-- [ ] [Command Line Basics](https://www.theodinproject.com/lessons/foundations-command-line-basics)
-- [ ] [Setting up Git](https://www.theodinproject.com/lessons/foundations-setting-up-git)
+- [x] [網路如何運作](06-how-does-the-web-work.md)
+- [x] [安裝設定](07-installations.md)
+- [x] [文字編輯器](08-text-editors.md)
+- [x] [命令列基礎](09-command-line-basics.md)
+- [x] [設定 Git](10-setting-up-git.md)
 
 ## Git Basics
 
-- [ ] [Introduction to Git](https://www.theodinproject.com/lessons/foundations-introduction-to-git)
-- [ ] [Git Basics](https://www.theodinproject.com/lessons/foundations-git-basics)
+- [x] [Git 簡介](11-introduction-to-git.md)
+- [x] [Git 基礎](12-git-basics.md)
 
 ## HTML Foundations
 
@@ -71,4 +71,4 @@
 
 ## Conclusion
 
-- [ ] [Choose Your Path Forward](https://www.theodinproject.com/lessons/foundations-choose-your-path-forward)
+- [x] [選擇你的下一步](46-choose-your-path-forward.md)
