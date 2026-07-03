@@ -102,6 +102,11 @@ nav:
           - foundations/foundations/23-inspecting-html-and-css.md
           - foundations/foundations/24-the-box-model.md
           - foundations/foundations/25-block-and-inline.md
+          - foundations/foundations/26-introduction-to-flexbox.md
+          - foundations/foundations/27-growing-and-shrinking.md
+          - foundations/foundations/28-axes.md
+          - foundations/foundations/29-alignment.md
+          - foundations/foundations/30-landing-page.md
   - Full Stack JavaScript:
       - 總覽: full-stack-javascript/index.md
       - Intermediate HTML and CSS: full-stack-javascript/intermediate-html-and-css/index.md

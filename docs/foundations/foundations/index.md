@@ -45,11 +45,11 @@
 
 ## Flexbox
 
-- [ ] [Introduction to Flexbox](https://www.theodinproject.com/lessons/foundations-introduction-to-flexbox)
-- [ ] [Growing and Shrinking](https://www.theodinproject.com/lessons/foundations-growing-and-shrinking)
-- [ ] [Axes](https://www.theodinproject.com/lessons/foundations-axes)
-- [ ] [Alignment](https://www.theodinproject.com/lessons/foundations-alignment)
-- [ ] [Project: Landing Page](https://www.theodinproject.com/lessons/foundations-landing-page)
+- [x] [Flexbox 簡介](26-introduction-to-flexbox.md)
+- [x] [flex 的放大與縮小（Growing and Shrinking）](27-growing-and-shrinking.md)
+- [x] [主軸與交錯軸（Axes）](28-axes.md)
+- [x] [對齊（Alignment）](29-alignment.md)
+- [x] [專案：Landing Page](30-landing-page.md)
 
 ## JavaScript Basics
 

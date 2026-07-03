@@ -44,7 +44,7 @@ hide:
 ## 進度
 
 <!-- PROGRESS:START -->
-已產 13 課（讀完 0）｜2026-07-03
+已產 18 課（讀完 0）｜2026-07-03
 
 ### Foundations
 
@@ -61,4 +61,9 @@ hide:
 - 📝 [檢視 HTML 與 CSS（開發者工具）](foundations/foundations/23-inspecting-html-and-css.md)
 - 📝 [盒模型（Box Model）](foundations/foundations/24-the-box-model.md)
 - 📝 [Block 與 Inline](foundations/foundations/25-block-and-inline.md)
+- 📝 [Flexbox 簡介](foundations/foundations/26-introduction-to-flexbox.md)
+- 📝 [flex 的放大與縮小（Growing and Shrinking）](foundations/foundations/27-growing-and-shrinking.md)
+- 📝 [主軸與交錯軸（Axes）](foundations/foundations/28-axes.md)
+- 📝 [對齊（Alignment）](foundations/foundations/29-alignment.md)
+- 📝 [專案：Landing Page](foundations/foundations/30-landing-page.md)
 <!-- PROGRESS:END -->

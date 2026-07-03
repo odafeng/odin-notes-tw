@@ -5,7 +5,7 @@ hide:
 
 # Foundations
 
-The Odin Project **Foundations** path 的繁體中文自足講義總覽。Foundations 是整條學習路線的起點，從 web 如何運作、命令列與 Git，一路帶到 HTML、CSS、Flexbox 與 JavaScript 基礎。共一門課、46 課，目前已產出 **HTML Foundations** 與 **CSS Foundations** 兩個 section。
+The Odin Project **Foundations** path 的繁體中文自足講義總覽。Foundations 是整條學習路線的起點，從 web 如何運作、命令列與 Git，一路帶到 HTML、CSS、Flexbox 與 JavaScript 基礎。共一門課、46 課，目前已產出 **HTML Foundations**、**CSS Foundations** 與 **Flexbox** 三個 section。
 
 <div class="grid cards" markdown>
 
@@ -33,13 +33,21 @@ The Odin Project **Foundations** path 的繁體中文自足講義總覽。Founda
 
     [:octicons-arrow-right-24: 5 課已產](foundations/index.md#css-foundations)
 
--   :material-language-javascript:{ .lg .middle } __Flexbox 與 JavaScript 基礎__
+-   :material-arrange-send-backward:{ .lg .middle } __Flexbox__ ✅
 
     ---
 
-    Flexbox 排版，以及變數、資料型別、函式、迴圈、DOM 與物件等 JS 基礎。
+    Flexbox 排版：容器與項目、主軸與交錯軸、放大縮小、對齊，收在 landing page 專案。
 
-    [:octicons-arrow-right-24: 前往](foundations/index.md#flexbox)
+    [:octicons-arrow-right-24: 5 課已產](foundations/index.md#flexbox)
+
+-   :material-language-javascript:{ .lg .middle } __JavaScript 基礎__
+
+    ---
+
+    變數、資料型別、函式、迴圈、陣列、DOM 操作與物件等 JavaScript 基礎。
+
+    [:octicons-arrow-right-24: 前往](foundations/index.md#javascript-basics)
 
 </div>
 
