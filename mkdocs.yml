@@ -161,7 +161,49 @@ nav:
           - full-stack-javascript/intermediate-html-and-css/20-advanced-grid-properties.md
           - full-stack-javascript/intermediate-html-and-css/21-using-flexbox-and-grid.md
           - full-stack-javascript/intermediate-html-and-css/22-admin-dashboard.md
-      - JavaScript: full-stack-javascript/javascript/index.md
+      - JavaScript:
+          - 課程清單: full-stack-javascript/javascript/index.md
+          - full-stack-javascript/javascript/01-how-this-course-will-work.md
+          - full-stack-javascript/javascript/02-organizing-code-with-objects.md
+          - full-stack-javascript/javascript/03-object-constructors.md
+          - full-stack-javascript/javascript/04-library.md
+          - full-stack-javascript/javascript/05-factory-functions-and-the-module-pattern.md
+          - full-stack-javascript/javascript/06-tic-tac-toe.md
+          - full-stack-javascript/javascript/07-classes.md
+          - full-stack-javascript/javascript/08-es6-modules.md
+          - full-stack-javascript/javascript/09-npm.md
+          - full-stack-javascript/javascript/10-webpack.md
+          - full-stack-javascript/javascript/11-restaurant-page.md
+          - full-stack-javascript/javascript/12-revisiting-webpack.md
+          - full-stack-javascript/javascript/13-json.md
+          - full-stack-javascript/javascript/14-oop-principles.md
+          - full-stack-javascript/javascript/15-todo-list.md
+          - full-stack-javascript/javascript/16-linting.md
+          - full-stack-javascript/javascript/17-form-validation-with-javascript.md
+          - full-stack-javascript/javascript/18-ecmascript.md
+          - full-stack-javascript/javascript/19-asynchronous-code.md
+          - full-stack-javascript/javascript/20-working-with-apis.md
+          - full-stack-javascript/javascript/21-async-and-await.md
+          - full-stack-javascript/javascript/22-weather-app.md
+          - full-stack-javascript/javascript/23-testing-basics.md
+          - full-stack-javascript/javascript/24-testing-practice.md
+          - full-stack-javascript/javascript/25-more-testing.md
+          - full-stack-javascript/javascript/26-a-very-brief-intro-to-cs.md
+          - full-stack-javascript/javascript/27-recursive-methods.md
+          - full-stack-javascript/javascript/28-recursion.md
+          - full-stack-javascript/javascript/29-time-complexity.md
+          - full-stack-javascript/javascript/30-space-complexity.md
+          - full-stack-javascript/javascript/31-common-data-structures-and-algorithms.md
+          - full-stack-javascript/javascript/32-linked-lists.md
+          - full-stack-javascript/javascript/33-hashmap-data-structure.md
+          - full-stack-javascript/javascript/34-hashmap.md
+          - full-stack-javascript/javascript/35-binary-search-trees.md
+          - full-stack-javascript/javascript/36-knights-travails.md
+          - full-stack-javascript/javascript/37-a-deeper-look-at-git.md
+          - full-stack-javascript/javascript/38-working-with-remotes.md
+          - full-stack-javascript/javascript/39-using-git-in-the-real-world.md
+          - full-stack-javascript/javascript/40-battleship.md
+          - full-stack-javascript/javascript/41-conclusion.md
       - Advanced HTML and CSS: full-stack-javascript/advanced-html-and-css/index.md
       - React: full-stack-javascript/react/index.md
       - Databases: full-stack-javascript/databases/index.md

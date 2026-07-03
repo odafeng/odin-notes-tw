@@ -44,7 +44,7 @@ hide:
 ## 進度
 
 <!-- PROGRESS:START -->
-已產 68 課（讀完 0）｜2026-07-03
+已產 109 課（讀完 0）｜2026-07-04
 
 ### Foundations
 
@@ -118,4 +118,47 @@ hide:
 - 📝 [進階 Grid 屬性](full-stack-javascript/intermediate-html-and-css/20-advanced-grid-properties.md)
 - 📝 [Flexbox 與 Grid 並用](full-stack-javascript/intermediate-html-and-css/21-using-flexbox-and-grid.md)
 - 📝 [專案：管理後台](full-stack-javascript/intermediate-html-and-css/22-admin-dashboard.md)
+### JavaScript
+
+- 📝 [這門課怎麼進行](full-stack-javascript/javascript/01-how-this-course-will-work.md)
+- 📝 [用物件組織程式碼](full-stack-javascript/javascript/02-organizing-code-with-objects.md)
+- 📝 [物件建構子（Object Constructors）](full-stack-javascript/javascript/03-object-constructors.md)
+- 📝 [專案：Library 藏書](full-stack-javascript/javascript/04-library.md)
+- 📝 [工廠函式與模組模式](full-stack-javascript/javascript/05-factory-functions-and-the-module-pattern.md)
+- 📝 [專案：井字遊戲](full-stack-javascript/javascript/06-tic-tac-toe.md)
+- 📝 [類別（Classes）](full-stack-javascript/javascript/07-classes.md)
+- 📝 [ES6 模組](full-stack-javascript/javascript/08-es6-modules.md)
+- 📝 [npm](full-stack-javascript/javascript/09-npm.md)
+- 📝 [Webpack](full-stack-javascript/javascript/10-webpack.md)
+- 📝 [專案：餐廳頁面](full-stack-javascript/javascript/11-restaurant-page.md)
+- 📝 [再訪 Webpack](full-stack-javascript/javascript/12-revisiting-webpack.md)
+- 📝 [JSON](full-stack-javascript/javascript/13-json.md)
+- 📝 [物件導向原則（OOP）](full-stack-javascript/javascript/14-oop-principles.md)
+- 📝 [專案：待辦清單](full-stack-javascript/javascript/15-todo-list.md)
+- 📝 [Linting](full-stack-javascript/javascript/16-linting.md)
+- 📝 [用 JavaScript 做表單驗證](full-stack-javascript/javascript/17-form-validation-with-javascript.md)
+- 📝 [ECMAScript](full-stack-javascript/javascript/18-ecmascript.md)
+- 📝 [非同步程式碼](full-stack-javascript/javascript/19-asynchronous-code.md)
+- 📝 [使用 API](full-stack-javascript/javascript/20-working-with-apis.md)
+- 📝 [async 與 await](full-stack-javascript/javascript/21-async-and-await.md)
+- 📝 [專案：天氣 App](full-stack-javascript/javascript/22-weather-app.md)
+- 📝 [測試基礎](full-stack-javascript/javascript/23-testing-basics.md)
+- 📝 [專案：測試練習](full-stack-javascript/javascript/24-testing-practice.md)
+- 📝 [更多測試](full-stack-javascript/javascript/25-more-testing.md)
+- 📝 [計算機科學極簡入門](full-stack-javascript/javascript/26-a-very-brief-intro-to-cs.md)
+- 📝 [遞迴方法（Recursion）](full-stack-javascript/javascript/27-recursive-methods.md)
+- 📝 [專案：遞迴](full-stack-javascript/javascript/28-recursion.md)
+- 📝 [時間複雜度](full-stack-javascript/javascript/29-time-complexity.md)
+- 📝 [空間複雜度](full-stack-javascript/javascript/30-space-complexity.md)
+- 📝 [常見資料結構與演算法](full-stack-javascript/javascript/31-common-data-structures-and-algorithms.md)
+- 📝 [專案：Linked List](full-stack-javascript/javascript/32-linked-lists.md)
+- 📝 [HashMap 資料結構](full-stack-javascript/javascript/33-hashmap-data-structure.md)
+- 📝 [專案：HashMap](full-stack-javascript/javascript/34-hashmap.md)
+- 📝 [專案：二元搜尋樹](full-stack-javascript/javascript/35-binary-search-trees.md)
+- 📝 [專案：Knights Travails](full-stack-javascript/javascript/36-knights-travails.md)
+- 📝 [深入認識 Git](full-stack-javascript/javascript/37-a-deeper-look-at-git.md)
+- 📝 [使用遠端（Remotes）](full-stack-javascript/javascript/38-working-with-remotes.md)
+- 📝 [在真實世界用 Git](full-stack-javascript/javascript/39-using-git-in-the-real-world.md)
+- 📝 [專案：Battleship 海戰棋](full-stack-javascript/javascript/40-battleship.md)
+- 📝 [結語](full-stack-javascript/javascript/41-conclusion.md)
 <!-- PROGRESS:END -->
