@@ -37,11 +37,11 @@
 
 ## CSS Foundations
 
-- [ ] [Intro to CSS](https://www.theodinproject.com/lessons/foundations-intro-to-css)
-- [ ] [The Cascade](https://www.theodinproject.com/lessons/foundations-the-cascade)
-- [ ] [Inspecting HTML and CSS](https://www.theodinproject.com/lessons/foundations-inspecting-html-and-css)
-- [ ] [The Box Model](https://www.theodinproject.com/lessons/foundations-the-box-model)
-- [ ] [Block and Inline](https://www.theodinproject.com/lessons/foundations-block-and-inline)
+- [x] [CSS 入門](21-intro-to-css.md)
+- [x] [串接規則（The Cascade）](22-the-cascade.md)
+- [x] [檢視 HTML 與 CSS（開發者工具）](23-inspecting-html-and-css.md)
+- [x] [盒模型（Box Model）](24-the-box-model.md)
+- [x] [Block 與 Inline](25-block-and-inline.md)
 
 ## Flexbox
 
