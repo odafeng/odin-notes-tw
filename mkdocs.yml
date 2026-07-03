@@ -51,6 +51,9 @@ plugins:
 extra_css:
   - assets/extra.css
 
+extra_javascript:
+  - assets/reading-progress.js
+
 extra:
   generator: false
   social:

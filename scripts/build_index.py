@@ -75,11 +75,13 @@ def collect() -> list[Lecture]:
 def render(lectures: list[Lecture]) -> str:
     if not lectures:
         return "（課程目錄整理中。）"
-    done = sum(1 for lec in lectures if lec.status == "done")
+    total = len(lectures)
     lines = [
-        f"已讀 {done}／{len(lectures)} 課 · 更新於 {date.today().isoformat()}",
+        f'你已讀 <span class="od-read-count" data-total="{total}">0</span>／{total} 課'
+        f" · 更新於 {date.today().isoformat()}",
         "",
-        "✅ 已讀　📖 待讀",
+        "在任一課頁面點「標記為已讀」、或在課程清單點核取方塊就會記住"
+        "（存在你的瀏覽器，換裝置各自計算）。",
         "",
     ]
     current = ""
@@ -87,8 +89,7 @@ def render(lectures: list[Lecture]) -> str:
         if lec.course != current:
             current = lec.course
             lines += [f"### {current}", ""]
-        mark = "✅" if lec.status == "done" else "📖"
-        lines.append(f"- {mark} [{lec.title}]({lec.rel_url})")
+        lines.append(f"- [{lec.title}]({lec.rel_url})")
     return "\n".join(lines)
 
 

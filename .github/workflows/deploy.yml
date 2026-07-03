@@ -31,6 +31,11 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          # GitHub Pages 後端偶發 transient 逾時；拉高等待與重試次數讓它自癒，
+          # 不必人工 rerun。（timeout 單位 ms）
+          timeout: 900000
+          error_count: 25
 
 # 部署方式：GitHub Actions 原生 Pages（build → upload-pages-artifact → deploy-pages）。
 # 到 repo Settings → Pages 需把 Source 設為「GitHub Actions」（本專案已用 API 設定）。

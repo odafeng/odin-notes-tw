@@ -172,3 +172,44 @@
     box-shadow: 0 .6rem 1.6rem rgba(27, 42, 74, .12);
   }
 }
+
+/* ---- 閱讀進度：每課「標記為已讀」按鈕 ---- */
+.md-typeset .od-read-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  margin: 0 0 1.6rem;
+  padding: .4rem .9rem;
+  font-size: .72rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--md-accent-fg-color);
+  background: var(--md-accent-fg-color--transparent);
+  border: 1px solid var(--md-accent-fg-color);
+  border-radius: 2rem;
+  transition: background .15s ease, color .15s ease;
+}
+.md-typeset .od-read-toggle:hover {
+  background: var(--md-accent-fg-color);
+  color: #fff;
+}
+.md-typeset .od-read-toggle.is-read {
+  color: #fff;
+  background: var(--md-accent-fg-color);
+}
+
+/* 首頁課程目錄：已讀連結加一個小勾、稍微降低對比 */
+.md-typeset a.od-link-read::before {
+  content: "✓ ";
+  color: var(--md-accent-fg-color);
+  font-weight: 700;
+}
+.md-typeset a.od-link-read {
+  color: var(--md-default-fg-color--light);
+}
+
+/* 課程清單：已讀項目文字稍淡 */
+.md-typeset .task-list-item.od-done { opacity: .72; }
+.md-typeset .task-list-control [type=checkbox]:not([disabled]) { cursor: pointer; }
+
+.od-read-count { font-weight: 700; color: var(--md-accent-fg-color); }
