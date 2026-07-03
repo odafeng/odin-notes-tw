@@ -5,34 +5,34 @@
 
 ## Intermediate HTML Concepts
 
-- [ ] [Introduction](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-introduction)
-- [ ] [SVG](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-svg)
-- [ ] [Tables](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-tables)
+- [x] [導論](01-introduction.md)
+- [x] [SVG 向量圖](02-svg.md)
+- [x] [表格（Tables）](03-tables.md)
 
 ## Intermediate CSS Concepts
 
-- [ ] [Default Styles](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-default-styles)
-- [ ] [CSS Units](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-css-units)
-- [ ] [More Text Styles](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-more-text-styles)
-- [ ] [More CSS Properties](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-more-css-properties)
-- [ ] [Advanced Selectors](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-advanced-selectors)
-- [ ] [Positioning](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-positioning)
-- [ ] [CSS Functions](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-css-functions)
-- [ ] [Custom Properties](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-custom-properties)
-- [ ] [Browser Compatibility](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-browser-compatibility)
-- [ ] [Frameworks and Preprocessors](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-frameworks-and-preprocessors)
+- [x] [預設樣式（Default Styles）](04-default-styles.md)
+- [x] [CSS 單位](05-css-units.md)
+- [x] [更多文字樣式](06-more-text-styles.md)
+- [x] [更多 CSS 屬性](07-more-css-properties.md)
+- [x] [進階選擇器](08-advanced-selectors.md)
+- [x] [定位（Positioning）](09-positioning.md)
+- [x] [CSS 函式](10-css-functions.md)
+- [x] [自訂屬性（CSS 變數）](11-custom-properties.md)
+- [x] [瀏覽器相容性](12-browser-compatibility.md)
+- [x] [框架與預處理器](13-frameworks-and-preprocessors.md)
 
 ## Forms
 
-- [ ] [Form Basics](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-form-basics)
-- [ ] [Form Validation](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-form-validation)
-- [ ] [Project: Sign-up Form](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form)
+- [x] [表單基礎](14-form-basics.md)
+- [x] [表單驗證](15-form-validation.md)
+- [x] [專案：註冊表單](16-sign-up-form.md)
 
 ## Grid
 
-- [ ] [Introduction to Grid](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-introduction-to-grid)
-- [ ] [Creating a Grid](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-creating-a-grid)
-- [ ] [Positioning Grid Elements](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-positioning-grid-elements)
-- [ ] [Advanced Grid Properties](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-advanced-grid-properties)
-- [ ] [Using Flexbox and Grid](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-using-flexbox-and-grid)
-- [ ] [Project: Admin Dashboard](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard)
+- [x] [Grid 簡介](17-introduction-to-grid.md)
+- [x] [建立 Grid](18-creating-a-grid.md)
+- [x] [定位 Grid 元素](19-positioning-grid-elements.md)
+- [x] [進階 Grid 屬性](20-advanced-grid-properties.md)
+- [x] [Flexbox 與 Grid 並用](21-using-flexbox-and-grid.md)
+- [x] [專案：管理後台](22-admin-dashboard.md)

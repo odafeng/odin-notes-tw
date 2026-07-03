@@ -44,7 +44,7 @@ hide:
 ## 進度
 
 <!-- PROGRESS:START -->
-已產 46 課（讀完 0）｜2026-07-03
+已產 68 課（讀完 0）｜2026-07-03
 
 ### Foundations
 
@@ -94,4 +94,28 @@ hide:
 - 📝 [物件基礎（Objects）](foundations/foundations/44-object-basics.md)
 - 📝 [專案：計算機](foundations/foundations/45-calculator.md)
 - 📝 [選擇你的下一步](foundations/foundations/46-choose-your-path-forward.md)
+### Intermediate HTML and CSS
+
+- 📝 [導論](full-stack-javascript/intermediate-html-and-css/01-introduction.md)
+- 📝 [SVG 向量圖](full-stack-javascript/intermediate-html-and-css/02-svg.md)
+- 📝 [表格（Tables）](full-stack-javascript/intermediate-html-and-css/03-tables.md)
+- 📝 [預設樣式（Default Styles）](full-stack-javascript/intermediate-html-and-css/04-default-styles.md)
+- 📝 [CSS 單位](full-stack-javascript/intermediate-html-and-css/05-css-units.md)
+- 📝 [更多文字樣式](full-stack-javascript/intermediate-html-and-css/06-more-text-styles.md)
+- 📝 [更多 CSS 屬性](full-stack-javascript/intermediate-html-and-css/07-more-css-properties.md)
+- 📝 [進階選擇器](full-stack-javascript/intermediate-html-and-css/08-advanced-selectors.md)
+- 📝 [定位（Positioning）](full-stack-javascript/intermediate-html-and-css/09-positioning.md)
+- 📝 [CSS 函式](full-stack-javascript/intermediate-html-and-css/10-css-functions.md)
+- 📝 [自訂屬性（CSS 變數）](full-stack-javascript/intermediate-html-and-css/11-custom-properties.md)
+- 📝 [瀏覽器相容性](full-stack-javascript/intermediate-html-and-css/12-browser-compatibility.md)
+- 📝 [框架與預處理器](full-stack-javascript/intermediate-html-and-css/13-frameworks-and-preprocessors.md)
+- 📝 [表單基礎](full-stack-javascript/intermediate-html-and-css/14-form-basics.md)
+- 📝 [表單驗證](full-stack-javascript/intermediate-html-and-css/15-form-validation.md)
+- 📝 [專案：註冊表單](full-stack-javascript/intermediate-html-and-css/16-sign-up-form.md)
+- 📝 [Grid 簡介](full-stack-javascript/intermediate-html-and-css/17-introduction-to-grid.md)
+- 📝 [建立 Grid](full-stack-javascript/intermediate-html-and-css/18-creating-a-grid.md)
+- 📝 [定位 Grid 元素](full-stack-javascript/intermediate-html-and-css/19-positioning-grid-elements.md)
+- 📝 [進階 Grid 屬性](full-stack-javascript/intermediate-html-and-css/20-advanced-grid-properties.md)
+- 📝 [Flexbox 與 Grid 並用](full-stack-javascript/intermediate-html-and-css/21-using-flexbox-and-grid.md)
+- 📝 [專案：管理後台](full-stack-javascript/intermediate-html-and-css/22-admin-dashboard.md)
 <!-- PROGRESS:END -->

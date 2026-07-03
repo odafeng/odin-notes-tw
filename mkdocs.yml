@@ -137,7 +137,30 @@ nav:
           - foundations/foundations/46-choose-your-path-forward.md
   - Full Stack JavaScript:
       - 總覽: full-stack-javascript/index.md
-      - Intermediate HTML and CSS: full-stack-javascript/intermediate-html-and-css/index.md
+      - Intermediate HTML and CSS:
+          - 課程清單: full-stack-javascript/intermediate-html-and-css/index.md
+          - full-stack-javascript/intermediate-html-and-css/01-introduction.md
+          - full-stack-javascript/intermediate-html-and-css/02-svg.md
+          - full-stack-javascript/intermediate-html-and-css/03-tables.md
+          - full-stack-javascript/intermediate-html-and-css/04-default-styles.md
+          - full-stack-javascript/intermediate-html-and-css/05-css-units.md
+          - full-stack-javascript/intermediate-html-and-css/06-more-text-styles.md
+          - full-stack-javascript/intermediate-html-and-css/07-more-css-properties.md
+          - full-stack-javascript/intermediate-html-and-css/08-advanced-selectors.md
+          - full-stack-javascript/intermediate-html-and-css/09-positioning.md
+          - full-stack-javascript/intermediate-html-and-css/10-css-functions.md
+          - full-stack-javascript/intermediate-html-and-css/11-custom-properties.md
+          - full-stack-javascript/intermediate-html-and-css/12-browser-compatibility.md
+          - full-stack-javascript/intermediate-html-and-css/13-frameworks-and-preprocessors.md
+          - full-stack-javascript/intermediate-html-and-css/14-form-basics.md
+          - full-stack-javascript/intermediate-html-and-css/15-form-validation.md
+          - full-stack-javascript/intermediate-html-and-css/16-sign-up-form.md
+          - full-stack-javascript/intermediate-html-and-css/17-introduction-to-grid.md
+          - full-stack-javascript/intermediate-html-and-css/18-creating-a-grid.md
+          - full-stack-javascript/intermediate-html-and-css/19-positioning-grid-elements.md
+          - full-stack-javascript/intermediate-html-and-css/20-advanced-grid-properties.md
+          - full-stack-javascript/intermediate-html-and-css/21-using-flexbox-and-grid.md
+          - full-stack-javascript/intermediate-html-and-css/22-admin-dashboard.md
       - JavaScript: full-stack-javascript/javascript/index.md
       - Advanced HTML and CSS: full-stack-javascript/advanced-html-and-css/index.md
       - React: full-stack-javascript/react/index.md
