@@ -5,54 +5,54 @@
 
 ## Introduction to NodeJS
 
-- [ ] [Introduction to the Back End](https://www.theodinproject.com/lessons/nodejs-introduction-to-the-back-end)
-- [ ] [Introduction: What is NodeJS?](https://www.theodinproject.com/lessons/nodejs-introduction-what-is-nodejs)
-- [ ] [Getting Started](https://www.theodinproject.com/lessons/nodejs-getting-started)
-- [ ] [Debugging Node](https://www.theodinproject.com/lessons/nodejs-debugging-node)
-- [ ] [Project: Basic Informational Site](https://www.theodinproject.com/lessons/nodejs-basic-informational-site)
-- [ ] [Environment Variables](https://www.theodinproject.com/lessons/nodejs-environment-variables)
+- [x] [後端簡介](01-introduction-to-the-back-end.md)
+- [x] [Node.js 是什麼](02-what-is-nodejs.md)
+- [x] [開始使用 Node.js](03-getting-started.md)
+- [x] [為 Node 除錯](04-debugging-node.md)
+- [x] [專案：基礎資訊網站](05-basic-informational-site.md)
+- [x] [環境變數](06-environment-variables.md)
 
 ## Express
 
-- [ ] [Introduction to Frameworks](https://www.theodinproject.com/lessons/nodejs-introduction-to-frameworks)
-- [ ] [Introduction to Express](https://www.theodinproject.com/lessons/node-path-nodejs-introduction-to-express)
-- [ ] [Routes](https://www.theodinproject.com/lessons/nodejs-routes)
-- [ ] [Controllers](https://www.theodinproject.com/lessons/nodejs-controllers)
-- [ ] [Views](https://www.theodinproject.com/lessons/nodejs-views)
-- [ ] [Project: Mini Message Board](https://www.theodinproject.com/lessons/node-path-nodejs-mini-message-board)
-- [ ] [Deployment](https://www.theodinproject.com/lessons/node-path-nodejs-deployment)
-- [ ] [Forms and Data Handling](https://www.theodinproject.com/lessons/nodejs-forms-and-data-handling)
-- [ ] [Installing PostgreSQL](https://www.theodinproject.com/lessons/nodejs-installing-postgresql)
-- [ ] [Using PostgreSQL](https://www.theodinproject.com/lessons/nodejs-using-postgresql)
-- [ ] [Project: Inventory Application](https://www.theodinproject.com/lessons/node-path-nodejs-inventory-application)
+- [x] [框架簡介](07-introduction-to-frameworks.md)
+- [x] [Express 簡介](08-introduction-to-express.md)
+- [x] [路由（Routes）](09-routes.md)
+- [x] [控制器（Controllers）](10-controllers.md)
+- [x] [視圖（Views）](11-views.md)
+- [x] [專案：留言板](12-mini-message-board.md)
+- [x] [部署（Deployment）](13-deployment.md)
+- [x] [表單與資料處理](14-forms-and-data-handling.md)
+- [x] [安裝 PostgreSQL](15-installing-postgresql.md)
+- [x] [使用 PostgreSQL](16-using-postgresql.md)
+- [x] [專案：庫存管理](17-inventory-application.md)
 
 ## Authentication
 
-- [ ] [Authentication Basics](https://www.theodinproject.com/lessons/node-path-nodejs-authentication-basics)
-- [ ] [Project: Members Only](https://www.theodinproject.com/lessons/node-path-nodejs-members-only)
+- [x] [認證基礎](18-authentication-basics.md)
+- [x] [專案：Members Only](19-members-only.md)
 
 ## ORMs
 
-- [ ] [Prisma ORM](https://www.theodinproject.com/lessons/nodejs-prisma-orm)
-- [ ] [Project: File Uploader](https://www.theodinproject.com/lessons/nodejs-file-uploader)
+- [x] [Prisma ORM](20-prisma-orm.md)
+- [x] [專案：檔案上傳器](21-file-uploader.md)
 
 ## APIs
 
-- [ ] [API Basics](https://www.theodinproject.com/lessons/nodejs-api-basics)
-- [ ] [API Security](https://www.theodinproject.com/lessons/nodejs-api-security)
-- [ ] [Project: Blog API](https://www.theodinproject.com/lessons/node-path-nodejs-blog-api)
+- [x] [API 基礎](22-api-basics.md)
+- [x] [API 安全](23-api-security.md)
+- [x] [專案：Blog API](24-blog-api.md)
 
 ## Testing Express
 
-- [ ] [Testing Routes and Controllers](https://www.theodinproject.com/lessons/nodejs-testing-routes-and-controllers)
-- [ ] [Testing Database Operations](https://www.theodinproject.com/lessons/node-path-nodejs-testing-database-operations)
+- [x] [測試路由與控制器](25-testing-routes-and-controllers.md)
+- [x] [測試資料庫操作](26-testing-database-operations.md)
 
 ## Full Stack Projects
 
-- [ ] [Project: Where's Waldo (A Photo Tagging App)](https://www.theodinproject.com/lessons/nodejs-where-s-waldo-a-photo-tagging-app)
-- [ ] [Project: Messaging App](https://www.theodinproject.com/lessons/nodejs-messaging-app)
+- [x] [專案：Where's Waldo 找找看](27-wheres-waldo.md)
+- [x] [專案：訊息 App](28-messaging-app.md)
 
 ## Final Project
 
-- [ ] [Project: Odin-Book](https://www.theodinproject.com/lessons/node-path-nodejs-odin-book)
-- [ ] [Conclusion](https://www.theodinproject.com/lessons/nodejs-conclusion)
+- [x] [專案：Odin-Book](29-odin-book.md)
+- [x] [結語](30-conclusion.md)

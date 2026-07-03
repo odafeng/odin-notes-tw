@@ -44,7 +44,7 @@ hide:
 ## 課程目錄
 
 <!-- PROGRESS:START -->
-已讀 0／151 課 · 更新於 2026-07-04
+已讀 0／198 課 · 更新於 2026-07-04
 
 ✅ 已讀　📖 待讀
 
@@ -209,4 +209,57 @@ hide:
 - 📖 [用 Reducer 管理狀態](full-stack-javascript/react/24-reducing-state.md)
 - 📖 [Refs 與 Memoization](full-stack-javascript/react/25-refs-and-memoization.md)
 - 📖 [結語](full-stack-javascript/react/26-conclusion.md)
+### Databases
+
+- 📖 [資料庫（Databases）](full-stack-javascript/databases/01-databases.md)
+- 📖 [資料庫與 SQL](full-stack-javascript/databases/02-databases-and-sql.md)
+- 📖 [專案：SQL Zoo](full-stack-javascript/databases/03-sql-zoo.md)
+### NodeJS
+
+- 📖 [後端簡介](full-stack-javascript/nodejs/01-introduction-to-the-back-end.md)
+- 📖 [Node.js 是什麼](full-stack-javascript/nodejs/02-what-is-nodejs.md)
+- 📖 [開始使用 Node.js](full-stack-javascript/nodejs/03-getting-started.md)
+- 📖 [為 Node 除錯](full-stack-javascript/nodejs/04-debugging-node.md)
+- 📖 [專案：基礎資訊網站](full-stack-javascript/nodejs/05-basic-informational-site.md)
+- 📖 [環境變數](full-stack-javascript/nodejs/06-environment-variables.md)
+- 📖 [框架簡介](full-stack-javascript/nodejs/07-introduction-to-frameworks.md)
+- 📖 [Express 簡介](full-stack-javascript/nodejs/08-introduction-to-express.md)
+- 📖 [路由（Routes）](full-stack-javascript/nodejs/09-routes.md)
+- 📖 [控制器（Controllers）](full-stack-javascript/nodejs/10-controllers.md)
+- 📖 [視圖（Views）](full-stack-javascript/nodejs/11-views.md)
+- 📖 [專案：留言板](full-stack-javascript/nodejs/12-mini-message-board.md)
+- 📖 [部署（Deployment）](full-stack-javascript/nodejs/13-deployment.md)
+- 📖 [表單與資料處理](full-stack-javascript/nodejs/14-forms-and-data-handling.md)
+- 📖 [安裝 PostgreSQL](full-stack-javascript/nodejs/15-installing-postgresql.md)
+- 📖 [使用 PostgreSQL](full-stack-javascript/nodejs/16-using-postgresql.md)
+- 📖 [專案：庫存管理](full-stack-javascript/nodejs/17-inventory-application.md)
+- 📖 [認證基礎](full-stack-javascript/nodejs/18-authentication-basics.md)
+- 📖 [專案：Members Only](full-stack-javascript/nodejs/19-members-only.md)
+- 📖 [Prisma ORM](full-stack-javascript/nodejs/20-prisma-orm.md)
+- 📖 [專案：檔案上傳器](full-stack-javascript/nodejs/21-file-uploader.md)
+- 📖 [API 基礎](full-stack-javascript/nodejs/22-api-basics.md)
+- 📖 [API 安全](full-stack-javascript/nodejs/23-api-security.md)
+- 📖 [專案：Blog API](full-stack-javascript/nodejs/24-blog-api.md)
+- 📖 [測試路由與控制器](full-stack-javascript/nodejs/25-testing-routes-and-controllers.md)
+- 📖 [測試資料庫操作](full-stack-javascript/nodejs/26-testing-database-operations.md)
+- 📖 [專案：Where's Waldo 找找看](full-stack-javascript/nodejs/27-wheres-waldo.md)
+- 📖 [專案：訊息 App](full-stack-javascript/nodejs/28-messaging-app.md)
+- 📖 [專案：Odin-Book](full-stack-javascript/nodejs/29-odin-book.md)
+- 📖 [結語](full-stack-javascript/nodejs/30-conclusion.md)
+### Getting Hired
+
+- 📖 [這門課怎麼進行](full-stack-javascript/getting-hired/01-how-this-course-will-work.md)
+- 📖 [建立專業人脈](full-stack-javascript/getting-hired/02-professional-networking.md)
+- 📖 [求職策略](full-stack-javascript/getting-hired/03-strategy.md)
+- 📖 [從你自己開始](full-stack-javascript/getting-hired/04-it-starts-with-you.md)
+- 📖 [公司要什麼](full-stack-javascript/getting-hired/05-what-companies-want.md)
+- 📖 [你可以做的準備](full-stack-javascript/getting-hired/06-what-you-can-do-to-prepare.md)
+- 📖 [建立個人網站](full-stack-javascript/getting-hired/07-building-your-personal-website.md)
+- 📖 [蒐集職缺線索](full-stack-javascript/getting-hired/08-collecting-job-leads.md)
+- 📖 [篩選職缺](full-stack-javascript/getting-hired/09-qualifying-job-leads.md)
+- 📖 [打造履歷](full-stack-javascript/getting-hired/10-building-your-resume.md)
+- 📖 [應徵網頁開發工作](full-stack-javascript/getting-hired/11-applying-for-web-development-jobs.md)
+- 📖 [面試準備與應對](full-stack-javascript/getting-hired/12-preparing-to-interview-and-interviewing.md)
+- 📖 [處理錄取通知](full-stack-javascript/getting-hired/13-handling-a-job-offer.md)
+- 📖 [結語](full-stack-javascript/getting-hired/14-conclusion.md)
 <!-- PROGRESS:END -->

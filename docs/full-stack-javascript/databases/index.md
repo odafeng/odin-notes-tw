@@ -5,6 +5,6 @@
 
 ## Databases
 
-- [ ] [Databases](https://www.theodinproject.com/lessons/node-path-databases)
-- [ ] [Databases and SQL](https://www.theodinproject.com/lessons/node-path-databases-databases-and-sql)
-- [ ] [Project: SQL Zoo](https://www.theodinproject.com/lessons/node-path-databases-sql-zoo)
+- [x] [資料庫（Databases）](01-databases.md)
+- [x] [資料庫與 SQL](02-databases-and-sql.md)
+- [x] [專案：SQL Zoo](03-sql-zoo.md)

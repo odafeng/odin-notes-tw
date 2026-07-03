@@ -250,7 +250,57 @@ nav:
           - full-stack-javascript/react/24-reducing-state.md
           - full-stack-javascript/react/25-refs-and-memoization.md
           - full-stack-javascript/react/26-conclusion.md
-      - Databases: full-stack-javascript/databases/index.md
-      - NodeJS: full-stack-javascript/nodejs/index.md
-      - Getting Hired: full-stack-javascript/getting-hired/index.md
+      - Databases:
+          - 課程清單: full-stack-javascript/databases/index.md
+          - full-stack-javascript/databases/01-databases.md
+          - full-stack-javascript/databases/02-databases-and-sql.md
+          - full-stack-javascript/databases/03-sql-zoo.md
+      - NodeJS:
+          - 課程清單: full-stack-javascript/nodejs/index.md
+          - full-stack-javascript/nodejs/01-introduction-to-the-back-end.md
+          - full-stack-javascript/nodejs/02-what-is-nodejs.md
+          - full-stack-javascript/nodejs/03-getting-started.md
+          - full-stack-javascript/nodejs/04-debugging-node.md
+          - full-stack-javascript/nodejs/05-basic-informational-site.md
+          - full-stack-javascript/nodejs/06-environment-variables.md
+          - full-stack-javascript/nodejs/07-introduction-to-frameworks.md
+          - full-stack-javascript/nodejs/08-introduction-to-express.md
+          - full-stack-javascript/nodejs/09-routes.md
+          - full-stack-javascript/nodejs/10-controllers.md
+          - full-stack-javascript/nodejs/11-views.md
+          - full-stack-javascript/nodejs/12-mini-message-board.md
+          - full-stack-javascript/nodejs/13-deployment.md
+          - full-stack-javascript/nodejs/14-forms-and-data-handling.md
+          - full-stack-javascript/nodejs/15-installing-postgresql.md
+          - full-stack-javascript/nodejs/16-using-postgresql.md
+          - full-stack-javascript/nodejs/17-inventory-application.md
+          - full-stack-javascript/nodejs/18-authentication-basics.md
+          - full-stack-javascript/nodejs/19-members-only.md
+          - full-stack-javascript/nodejs/20-prisma-orm.md
+          - full-stack-javascript/nodejs/21-file-uploader.md
+          - full-stack-javascript/nodejs/22-api-basics.md
+          - full-stack-javascript/nodejs/23-api-security.md
+          - full-stack-javascript/nodejs/24-blog-api.md
+          - full-stack-javascript/nodejs/25-testing-routes-and-controllers.md
+          - full-stack-javascript/nodejs/26-testing-database-operations.md
+          - full-stack-javascript/nodejs/27-wheres-waldo.md
+          - full-stack-javascript/nodejs/28-messaging-app.md
+          - full-stack-javascript/nodejs/29-odin-book.md
+          - full-stack-javascript/nodejs/30-conclusion.md
+      - Getting Hired:
+          - 課程清單: full-stack-javascript/getting-hired/index.md
+          - full-stack-javascript/getting-hired/01-how-this-course-will-work.md
+          - full-stack-javascript/getting-hired/02-professional-networking.md
+          - full-stack-javascript/getting-hired/03-strategy.md
+          - full-stack-javascript/getting-hired/04-it-starts-with-you.md
+          - full-stack-javascript/getting-hired/05-what-companies-want.md
+          - full-stack-javascript/getting-hired/06-what-you-can-do-to-prepare.md
+          - full-stack-javascript/getting-hired/07-building-your-personal-website.md
+          - full-stack-javascript/getting-hired/08-collecting-job-leads.md
+          - full-stack-javascript/getting-hired/09-qualifying-job-leads.md
+          - full-stack-javascript/getting-hired/10-building-your-resume.md
+          - full-stack-javascript/getting-hired/11-applying-for-web-development-jobs.md
+          - full-stack-javascript/getting-hired/12-preparing-to-interview-and-interviewing.md
+          - full-stack-javascript/getting-hired/13-handling-a-job-offer.md
+          - full-stack-javascript/getting-hired/14-conclusion.md
   - 關於與授權: about/license.md
