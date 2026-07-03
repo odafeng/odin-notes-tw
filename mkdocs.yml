@@ -2,48 +2,85 @@ site_name: Odin 講義
 site_description: The Odin Project 繁體中文自足講義（Foundations + Full Stack JavaScript）
 site_url: https://odafeng.github.io/odin-notes-tw/ # 部署後改成實際網址
 repo_url: https://github.com/odafeng/odin-notes-tw # 建好 repo 後確認
+repo_name: odafeng/odin-notes-tw
+copyright: 改寫自 The Odin Project，以 CC BY-NC-SA 4.0 授權釋出
 
 theme:
   name: material
   language: zh-TW
+  font: false # 用系統 CJK 字族（見 assets/extra.css），繁中原生渲染、免載大字檔
+  logo: assets/logo.svg
+  favicon: assets/favicon.svg
+  icon:
+    repo: fontawesome/brands/github
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: teal
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-night
         name: 切換深色模式
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: teal
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-sunny
         name: 切換淺色模式
   features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
     - navigation.top
+    - navigation.indexes
     - navigation.footer
     - toc.follow
+    - search.suggest
     - search.highlight
+    - search.share
     - content.code.copy
+    - content.tooltips
 
 plugins:
   - search # 已裝 jieba，中文斷詞自動生效
+
+extra_css:
+  - assets/extra.css
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/odafeng/odin-notes-tw
+      name: GitHub 原始碼
 
 markdown_extensions:
   - admonition
   - attr_list
   - md_in_html
+  - def_list
+  - footnotes
   - pymdownx.details
-  - pymdownx.highlight
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
   - pymdownx.inlinehilite
   - pymdownx.superfences
+  - pymdownx.keys
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - toc:
       permalink: true
+      permalink_title: 連到這個段落
 
 # nav 手動維護：odin-lecture skill 每產一課就在對應 course 底下加一行。
 nav:
@@ -60,6 +97,11 @@ nav:
           - foundations/foundations/18-links-and-images.md
           - foundations/foundations/19-commit-messages.md
           - foundations/foundations/20-recipes.md
+          - foundations/foundations/21-intro-to-css.md
+          - foundations/foundations/22-the-cascade.md
+          - foundations/foundations/23-inspecting-html-and-css.md
+          - foundations/foundations/24-the-box-model.md
+          - foundations/foundations/25-block-and-inline.md
   - Full Stack JavaScript:
       - 總覽: full-stack-javascript/index.md
       - Intermediate HTML and CSS: full-stack-javascript/intermediate-html-and-css/index.md

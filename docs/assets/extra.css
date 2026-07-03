@@ -1,0 +1,174 @@
+/* ============================================================
+   Odin 講義 — 視覺識別
+   Ink navy #1b2a4a + Rune amber #d98a0b；系統 CJK 字族；
+   signature：H2 左側螢光筆標記 + 讀書清單 checkbox。
+   ============================================================ */
+
+/* ---- 字體：系統 CJK + 等寬（免載大字檔，繁中原生渲染）---- */
+:root {
+  --md-text-font: "PingFang TC", "Microsoft JhengHei", "Noto Sans TC",
+    "Noto Sans CJK TC", "Source Han Sans TC", system-ui;
+  --md-code-font: "JetBrains Mono", "Fira Code", ui-monospace, "SF Mono",
+    SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+/* ---- 主色（淺／深配色共用）---- */
+[data-md-color-primary=custom] {
+  --md-primary-fg-color: #1b2a4a;
+  --md-primary-fg-color--light: #33456e;
+  --md-primary-fg-color--dark: #121d34;
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: #ffffffcc;
+}
+[data-md-color-accent=custom] {
+  --md-accent-fg-color: #d98a0b;
+  --md-accent-fg-color--transparent: #d98a0b1a;
+}
+
+/* ---- 淺色 ---- */
+[data-md-color-scheme=default] {
+  --md-typeset-color: #26303f;
+  --md-typeset-a-color: #22467f;
+  --md-footer-bg-color: #16233d;
+  --od-surface: #faf8f3;
+  --od-surface-border: #ece6d8;
+  --od-hero-tint: #f0ead9;
+}
+
+/* ---- 深色 ---- */
+[data-md-color-scheme=slate] {
+  --md-default-bg-color: #12151c;
+  --md-typeset-color: #d6dbe4;
+  --md-typeset-a-color: #8fb0e6;
+  --od-surface: #1a2130;
+  --od-surface-border: #2a3446;
+  --od-hero-tint: #1d2740;
+}
+[data-md-color-scheme=slate][data-md-color-primary=custom] {
+  --md-primary-fg-color: #22314f;
+  --md-primary-fg-color--light: #3a4d74;
+  --md-primary-fg-color--dark: #161f33;
+}
+[data-md-color-scheme=slate][data-md-color-accent=custom] {
+  --md-accent-fg-color: #e6a52c;
+  --md-accent-fg-color--transparent: #e6a52c1f;
+}
+
+/* ---- 長文閱讀節奏（顧及中文）---- */
+.md-typeset {
+  line-height: 1.85;
+  letter-spacing: .01em;
+}
+.md-typeset p { margin: .9em 0; text-wrap: pretty; }
+
+/* ---- 標題層級 ---- */
+.md-typeset h1 {
+  font-weight: 700;
+  letter-spacing: .01em;
+  color: var(--md-primary-fg-color);
+}
+[data-md-color-scheme=slate] .md-typeset h1 { color: #e7ecf5; }
+
+/* signature：H2 左側螢光筆標記 */
+.md-typeset h2 {
+  position: relative;
+  margin-top: 2.4em;
+  padding-left: .8rem;
+  font-weight: 700;
+  letter-spacing: .01em;
+}
+.md-typeset h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .18em;
+  bottom: .18em;
+  width: .3rem;
+  border-radius: .3rem;
+  background: var(--md-accent-fg-color);
+}
+.md-typeset h3 { font-weight: 700; margin-top: 1.8em; }
+
+/* ---- 讀書清單 checkbox：amber 勾選 ---- */
+.md-typeset .task-list-item { margin-bottom: .4em; line-height: 1.7; }
+.md-typeset .task-list-control [type=checkbox]:checked + .task-list-indicator::before {
+  background-color: var(--md-accent-fg-color);
+}
+
+/* ---- 連結 hover ---- */
+.md-typeset a { text-underline-offset: .18em; }
+.md-typeset a:hover { color: var(--md-accent-fg-color); }
+
+/* ---- 程式碼圓角（行內碼維持中性，避免長文干擾）---- */
+.md-typeset :not(pre) > code { border-radius: .3rem; }
+.md-typeset pre > code { border-radius: .55rem; }
+
+/* ---- admonition／details 圓角 ---- */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: .55rem;
+  border-left-width: .28rem;
+}
+
+/* ---- Grid cards（首頁與總覽頁）---- */
+.md-typeset .grid.cards > ul > li {
+  border: 1px solid var(--od-surface-border);
+  border-radius: .8rem;
+  padding: 1.1rem 1.2rem;
+  background: var(--od-surface);
+}
+.md-typeset .grid.cards > ul > li > hr {
+  margin: .7rem 0;
+  border-color: var(--od-surface-border);
+}
+.md-typeset .grid.cards .lg { color: var(--md-accent-fg-color); }
+
+/* ---- 首頁 hero ---- */
+.md-typeset .od-hero {
+  margin: 0 0 2rem;
+  padding: 2.6rem 2rem 2.2rem;
+  border-radius: 1rem;
+  border: 1px solid var(--od-surface-border);
+  background:
+    radial-gradient(130% 150% at 100% 0%, var(--od-hero-tint) 0%, transparent 62%),
+    var(--od-surface);
+}
+.md-typeset .od-hero h1 { margin: 0 0 .6rem; font-size: 2rem; line-height: 1.25; }
+.md-typeset .od-hero p { margin: .5rem 0 0; font-size: .92rem; max-width: 42em; }
+
+/* hero chips */
+.md-typeset .od-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: 1.3rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.md-typeset .od-chips span {
+  padding: .28rem .75rem;
+  font-size: .72rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  color: var(--md-primary-fg-color);
+  background: #fff;
+  border: 1px solid var(--od-surface-border);
+}
+[data-md-color-scheme=slate] .md-typeset .od-chips span {
+  color: #cdd6e6;
+  background: #0e1220;
+}
+
+.md-footer-meta { font-size: .75rem; }
+
+/* ---- 動效（尊重 reduced-motion）---- */
+@media (prefers-reduced-motion: no-preference) {
+  .md-typeset .grid.cards > ul > li {
+    transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  }
+  .md-typeset .grid.cards > ul > li:hover {
+    transform: translateY(-3px);
+    border-color: var(--md-accent-fg-color);
+    box-shadow: 0 .6rem 1.6rem rgba(27, 42, 74, .12);
+  }
+}
