@@ -75,6 +75,7 @@ def collect() -> list[Lecture]:
 def render(lectures: list[Lecture]) -> str:
     if not lectures:
         return "（課程目錄整理中。）"
+    lectures = sorted(lectures, key=lambda lec: (course_rank(lec.course), lec.order))
     total = len(lectures)
     lines = [
         f'你已讀 <span class="od-read-count" data-total="{total}">0</span>／{total} 課'
@@ -97,9 +98,7 @@ def main() -> None:
     text = INDEX.read_text(encoding="utf-8")
     head, rest = text.split(START, 1)
     _, tail = rest.split(END, 1)
-    INDEX.write_text(
-        f"{head}{START}\n{render(collect())}\n{END}{tail}", encoding="utf-8"
-    )
+    INDEX.write_text(f"{head}{START}\n{render(collect())}\n{END}{tail}", encoding="utf-8")
     print(f"更新 {INDEX.relative_to(DOCS.parent)}")
 
 

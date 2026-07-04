@@ -1,0 +1,22 @@
+[project]
+name = "odin-notes-tw"
+version = "0.1.0"
+description = "The Odin Project 繁體中文自足講義（MkDocs Material）"
+requires-python = ">=3.12"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+src = ["scripts", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.pyright]
+include = ["scripts", "tests"]
+extraPaths = ["scripts"]
+pythonVersion = "3.12"
+typeCheckingMode = "basic"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
