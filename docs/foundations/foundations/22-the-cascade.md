@@ -15,6 +15,8 @@ generated: 2026-07-03
 
 ## 核心概念
 
+![specificity 優先權階梯：行內樣式 > #id > .class/屬性/偽類 > 元素/偽元素](../../assets/diagrams/specificity.svg){ .od-diagram }
+
 ### 為什麼樣式會「不聽話」
 
 寫 CSS 時偶爾會遇到明明想讓某些段落變藍，結果卻跟其他段落一樣是紅色的狀況。這種時候先別急著責怪 CSS，因為 CSS 只會照你寫的規則執行，它不會擅自做決定。真正的原因通常只有三種：瀏覽器的 default styles（預設樣式）、你誤解了某個 property 的行為，或是沒搞懂這一課要講的 the cascade。

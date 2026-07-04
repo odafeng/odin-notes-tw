@@ -15,6 +15,8 @@ generated: 2026-07-03
 
 ## 核心概念
 
+![CSS 定位示意圖：relative 以自身原位偏移；absolute 貼齊最近的已定位祖先](../../assets/diagrams/positioning.svg){ .od-diagram }
+
 到目前為止，你已經用 `margin`、`padding`、Flexbox 練習過把元素在畫面上搬來搬去。這些技巧全都建立在 CSS 的預設「定位模式（positioning mode）」之上。這個預設模式直覺好用，日後絕大多數的版面配置你仍然會靠它。但除此之外，CSS 還提供了其他定位方法，在某些特定情境會非常好用。
 
 控制定位模式的屬性就是 `position`。它有五個值：`static`、`relative`、`absolute`、`fixed`、`sticky`。搭配 `position` 一起使用的是四個「偏移屬性（offset property）」：`top`、`right`、`bottom`、`left`。理解定位的關鍵，其實就是搞懂兩件事：**這個元素還在不在正常文件流（normal document flow）裡**、以及**這四個偏移屬性是相對於「誰」在計算**。這個「誰」在 CSS 規範裡有個正式名稱，叫做**包含區塊（containing block）**。

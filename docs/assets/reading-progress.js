@@ -105,6 +105,7 @@
       if (!isLessonId(id)) return;
       input.disabled = false;
       input.checked = isRead(id);
+      input.setAttribute("aria-label", "標記已讀：" + (link.textContent || "").trim());
       li.classList.toggle("od-done", input.checked);
       if (!input.dataset.odBound) {
         input.dataset.odBound = "1";
@@ -153,18 +154,60 @@
   function injectReset(counterEl) {
     var host = counterEl.closest("p") || counterEl.parentNode;
     if (!host || host.querySelector(".od-reset")) return;
-    var btn = document.createElement("button");
-    btn.type = "button";
-    btn.className = "od-reset";
-    btn.textContent = "清除閱讀進度";
-    btn.addEventListener("click", function () {
+
+    function mkBtn(label, onClick) {
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "od-reset";
+      b.textContent = label;
+      b.addEventListener("click", onClick);
+      host.appendChild(document.createTextNode(" "));
+      host.appendChild(b);
+      return b;
+    }
+    // 匯出：下載 JSON 檔（拿到別台裝置匯入即可同步）
+    mkBtn("匯出進度", function () {
+      var blob = new Blob([JSON.stringify(Array.from(readSet), null, 2)], {
+        type: "application/json",
+      });
+      var a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "odin-reading-progress.json";
+      a.click();
+      URL.revokeObjectURL(a.href);
+    });
+    // 匯入：選擇先前匯出的 JSON 檔（與現有進度合併）
+    var picker = document.createElement("input");
+    picker.type = "file";
+    picker.accept = "application/json,.json";
+    picker.hidden = true;
+    picker.addEventListener("change", function () {
+      var f = picker.files && picker.files[0];
+      if (!f) return;
+      f.text().then(function (txt) {
+        try {
+          var arr = JSON.parse(txt);
+          if (!Array.isArray(arr)) throw new Error("format");
+          arr.forEach(function (id) {
+            if (typeof id === "string" && isLessonId(id)) readSet.add(id);
+          });
+          save();
+          run();
+        } catch (e) {
+          window.alert("匯入失敗：請選擇由「匯出進度」產生的 JSON 檔。");
+        }
+        picker.value = "";
+      });
+    });
+    host.appendChild(picker);
+    mkBtn("匯入進度", function () { picker.click(); });
+    // 清除
+    mkBtn("清除進度", function () {
       if (!window.confirm("確定清除所有閱讀進度嗎？此動作無法復原。")) return;
       readSet.clear();
       save();
       run();
     });
-    host.appendChild(document.createTextNode(" "));
-    host.appendChild(btn);
   }
 
   // 4) 左側導覽：已讀的課標一個勾

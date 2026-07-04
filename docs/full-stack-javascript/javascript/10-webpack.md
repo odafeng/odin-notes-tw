@@ -1,6 +1,6 @@
 ---
 title: Webpack
-source_url: https://www.theodinproject.com/lessons/node-path-javascript-webpack
+source_url: https://www.theodinproject.com/lessons/javascript-webpack
 source_file: vendor/curriculum/javascript/organizing_your_javascript_code/webpack.md
 path: full-stack-javascript
 course: JavaScript
@@ -10,7 +10,7 @@ generated: 2026-07-03
 
 # Webpack
 
-> 改寫自 The Odin Project：[Webpack](https://www.theodinproject.com/lessons/node-path-javascript-webpack)
+> 改寫自 The Odin Project：[Webpack](https://www.theodinproject.com/lessons/javascript-webpack)
 > ｜Full Stack JavaScript › JavaScript › Organizing Your JavaScript Code
 
 ## 核心概念
@@ -262,13 +262,13 @@ npx webpack serve  # 啟動開發伺服器，開 http://localhost:8080/ 即時�
 
 ## 原文與延伸資源
 
-- 原文：[Webpack](https://www.theodinproject.com/lessons/node-path-javascript-webpack)
+- 原文：[Webpack](https://www.theodinproject.com/lessons/javascript-webpack)
 - 本課引用：
   - [Webpack Concepts（官方文件）](https://webpack.js.org/concepts/)：entry / output / loaders / plugins / mode 的權威說明。
   - [Webpack Asset Management guide（官方文件）](https://webpack.js.org/guides/asset-management/)：處理 CSS、圖片、字型的實例。
   - [Webpack devtool 選項（官方文件）](https://webpack.js.org/configuration/devtool/)：source map 的各種設定。
   - [Tree shaking（MDN）](https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking)：bundler 如何靠 ESM 的 import / export 移除死程式碼。
-  - [Minification（Wikipedia）](https://en.wikipedia.org/wiki/Minification_(programming))：程式碼壓縮的概念。
+  - [Minification（Wikipedia）](https://en.wikipedia.org/wiki/Minification_%28programming%29)：程式碼壓縮的概念。
   - [side effect import（MDN）](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import#import_a_module_for_its_side_effects_only)：只為副作用而 import 的語法。
 
 ---

@@ -193,7 +193,7 @@ p {
 
 ## 練習
 
-1. 打開 MDN 的[完整 CSS 函式清單](https://developer.mozilla.org/zh-TW/docs/Web/CSS/CSS_Functions)，快速瀏覽一遍，對「CSS 到底有哪些函式、大概能做什麼」建立整體印象。不需要背，只要知道有這些工具存在即可。
+1. 打開 MDN 的[完整 CSS 函式清單](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions)，快速瀏覽一遍，對「CSS 到底有哪些函式、大概能做什麼」建立整體印象。不需要背，只要知道有這些工具存在即可。
 2. 到 web.dev 的[《min(), max(), clamp() 實戰》](https://web.dev/articles/min-max-clamp)，更深入看這三個函式的實際運用範例，特別留意它如何用在流動排版與行寬控制上。
 3. 動手把上面「程式碼範例」貼進一個 `.html` 檔，用瀏覽器打開，拉動視窗寬度觀察變化。接著自己改改看：把 `clamp()` 的三個值換掉、把 `min()` 的 `400px` 改成別的數字、在 `calc()` 裡混用不同單位，看看結果如何。實際玩過一輪，這四個函式的手感會清楚很多。
 
@@ -201,9 +201,9 @@ p {
 
 - 原文：[CSS Functions](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-css-functions)
 - 本課引用：
-  - MDN，[CSS 函式總覽（CSS Functions）](https://developer.mozilla.org/zh-TW/docs/Web/CSS/CSS_Functions)
+  - MDN，[CSS 函式總覽（CSS Functions）](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions)
   - web.dev，[CSS min(), max(), and clamp()](https://web.dev/articles/min-max-clamp)
-  - MDN，[`calc()`](https://developer.mozilla.org/zh-TW/docs/Web/CSS/calc)、[`min()`](https://developer.mozilla.org/zh-TW/docs/Web/CSS/min)、[`max()`](https://developer.mozilla.org/zh-TW/docs/Web/CSS/max)、[`clamp()`](https://developer.mozilla.org/zh-TW/docs/Web/CSS/clamp)
+  - MDN，[`calc()`](https://developer.mozilla.org/en-US/docs/Web/CSS/calc)、[`min()`](https://developer.mozilla.org/en-US/docs/Web/CSS/min)、[`max()`](https://developer.mozilla.org/en-US/docs/Web/CSS/max)、[`clamp()`](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp)
 
 ---
 

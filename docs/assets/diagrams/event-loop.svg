@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 240" width="440" height="240" role="img" aria-label="事件迴圈：call stack 清空後，先清空 microtask 佇列（Promise 回呼），再從 task 佇列取一個 callback 執行">
+  <rect x="1" y="1" width="438" height="238" rx="10" fill="#faf8f3" stroke="#ece6d8"/>
+  <text x="20" y="26" font-family="system-ui,sans-serif" font-size="13" fill="#1b2a4a" font-weight="700">事件迴圈（event loop）</text>
+  <rect x="28" y="52" width="110" height="150" rx="6" fill="#1b2a4a" fill-opacity="0.06" stroke="#1b2a4a"/>
+  <text x="83" y="72" font-family="system-ui,sans-serif" font-size="12" fill="#1b2a4a" text-anchor="middle" font-weight="700">call stack</text>
+  <rect x="42" y="150" width="82" height="20" fill="#4a6fa5"/><rect x="42" y="126" width="82" height="20" fill="#8fa7c7"/>
+  <text x="83" y="190" font-family="system-ui,sans-serif" font-size="10.5" fill="#5b6a80" text-anchor="middle">同步程式碼在這執行</text>
+  <rect x="180" y="52" width="230" height="60" rx="6" fill="#3a8a5a" fill-opacity="0.12" stroke="#3a8a5a"/>
+  <text x="196" y="72" font-family="system-ui,sans-serif" font-size="12" fill="#2c6a45" font-weight="700">microtask 佇列（Promise .then）</text>
+  <rect x="196" y="80" width="46" height="18" fill="#3a8a5a"/><rect x="248" y="80" width="46" height="18" fill="#6fae8c"/>
+  <rect x="180" y="132" width="230" height="60" rx="6" fill="#d98a0b" fill-opacity="0.14" stroke="#d98a0b"/>
+  <text x="196" y="152" font-family="system-ui,sans-serif" font-size="12" fill="#a8690a" font-weight="700">task 佇列（setTimeout、事件）</text>
+  <rect x="196" y="160" width="46" height="18" fill="#d98a0b"/><rect x="248" y="160" width="46" height="18" fill="#e6b268"/>
+  <path d="M180 82 L142 110" stroke="#3a8a5a" stroke-width="2" marker-end="url(#e1)"/>
+  <path d="M180 162 L142 138" stroke="#d98a0b" stroke-width="2" marker-end="url(#e2)"/>
+  <text x="220" y="222" font-family="system-ui,sans-serif" font-size="11" fill="#5b6a80" text-anchor="middle">stack 空了 → 先清空整個 microtask 佇列 → 才取「一個」task，如此往復</text>
+  <defs>
+    <marker id="e1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#3a8a5a"/></marker>
+    <marker id="e2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#d98a0b"/></marker>
+  </defs>
+</svg>

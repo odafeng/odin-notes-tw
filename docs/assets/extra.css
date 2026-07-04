@@ -33,6 +33,8 @@
   --od-surface: #faf8f3;
   --od-surface-border: #ece6d8;
   --od-hero-tint: #f0ead9;
+  /* 文字級 amber：比 accent 深，白底對比 ≥ 4.5:1（AA） */
+  --od-accent-text: #8a5b06;
 }
 
 /* ---- 深色 ---- */
@@ -43,6 +45,7 @@
   --od-surface: #1a2130;
   --od-surface-border: #2a3446;
   --od-hero-tint: #1d2740;
+  --od-accent-text: #e6a52c; /* 深底上亮 amber 對比足夠 */
 }
 [data-md-color-scheme=slate][data-md-color-primary=custom] {
   --md-primary-fg-color: #22314f;
@@ -183,7 +186,7 @@
   font-size: .72rem;
   font-weight: 700;
   cursor: pointer;
-  color: var(--md-accent-fg-color);
+  color: var(--od-accent-text);
   background: var(--md-accent-fg-color--transparent);
   border: 1px solid var(--md-accent-fg-color);
   border-radius: 2rem;
@@ -201,7 +204,7 @@
 /* 首頁課程目錄：已讀連結加一個小勾、稍微降低對比 */
 .md-typeset a.od-link-read::before {
   content: "✓ ";
-  color: var(--md-accent-fg-color);
+  color: var(--od-accent-text);
   font-weight: 700;
 }
 .md-typeset a.od-link-read {
@@ -212,7 +215,7 @@
 .md-typeset .task-list-item.od-done { opacity: .72; }
 .md-typeset .task-list-control [type=checkbox]:not([disabled]) { cursor: pointer; }
 
-.od-read-count { font-weight: 700; color: var(--md-accent-fg-color); }
+.od-read-count { font-weight: 700; color: var(--od-accent-text); }
 
 /* 每課工具列：已讀按鈕 + 預估閱讀時間 */
 .md-typeset .od-lecture-tools {
@@ -233,7 +236,7 @@
   margin: .2rem 0 1rem;
   font-size: .8rem;
   font-weight: 700;
-  color: var(--md-accent-fg-color);
+  color: var(--od-accent-text);
 }
 
 /* 首頁：可摺疊的課程 */
@@ -259,7 +262,7 @@
 .md-typeset .od-course-progress {
   font-weight: 400;
   font-size: .78rem;
-  color: var(--md-accent-fg-color);
+  color: var(--od-accent-text);
 }
 
 /* 清除進度按鈕 */
@@ -284,6 +287,10 @@
   margin: 1.2rem auto;
   max-width: 100%;
   height: auto;
+}
+[data-md-color-scheme=slate] .md-typeset img.od-diagram {
+  filter: brightness(.88); /* 深色底降眩光，仍維持可讀 */
+  border-radius: .6rem;
 }
 
 /* 左側導覽：已讀的課前面一個勾 */

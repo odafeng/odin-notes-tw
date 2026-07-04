@@ -148,7 +148,7 @@ app.listen(PORT, (error) => {
     - [Express 官方網站與文件](https://expressjs.com/)、[Express API 文件](https://expressjs.com/en/api.html)
     - [Express request object 文件](https://expressjs.com/en/5x/api/request)、[response object 文件](https://expressjs.com/en/5x/api/response)、[`res.sendFile`](https://expressjs.com/en/5x/api/response/#ressendfilepath--options--fn)
     - [Node.js watch mode（`--watch`）文件](https://nodejs.org/docs/latest-v20.x/api/cli.html#--watch)
-    - [Nodemon 套件](https://www.npmjs.com/package//nodemon)
+    - [Nodemon 套件](https://www.npmjs.com/package/nodemon)
 
 ---
 

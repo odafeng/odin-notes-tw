@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 220" width="440" height="220" role="img" aria-label="CSS specificity 由高到低：行內樣式、ID、class/屬性/偽類、元素/偽元素">
+  <rect x="1" y="1" width="438" height="218" rx="10" fill="#faf8f3" stroke="#ece6d8"/>
+  <text x="20" y="26" font-family="system-ui,sans-serif" font-size="13" fill="#1b2a4a" font-weight="700">specificity（優先權）：由上往下遞減</text>
+  <g font-family="system-ui,sans-serif" font-size="12.5">
+    <rect x="30" y="42" width="380" height="34" rx="6" fill="#1b2a4a"/>
+    <text x="46" y="64" fill="#fff" font-weight="700">行內 style=""</text><text x="404" y="64" fill="#ffd9a0" text-anchor="end" font-family="ui-monospace,monospace">1-0-0-0</text>
+    <rect x="30" y="82" width="380" height="34" rx="6" fill="#4a6fa5"/>
+    <text x="46" y="104" fill="#fff" font-weight="700">#id</text><text x="404" y="104" fill="#eaf1fa" text-anchor="end" font-family="ui-monospace,monospace">0-1-0-0</text>
+    <rect x="30" y="122" width="380" height="34" rx="6" fill="#d98a0b"/>
+    <text x="46" y="144" fill="#fff" font-weight="700">.class、[attr]、:hover</text><text x="404" y="144" fill="#fff6e6" text-anchor="end" font-family="ui-monospace,monospace">0-0-1-0</text>
+    <rect x="30" y="162" width="380" height="34" rx="6" fill="#8fa7c7"/>
+    <text x="46" y="184" fill="#fff" font-weight="700">div、p、::before</text><text x="404" y="184" fill="#f2f6fb" text-anchor="end" font-family="ui-monospace,monospace">0-0-0-1</text>
+  </g>
+  <text x="220" y="210" font-family="system-ui,sans-serif" font-size="10.5" fill="#5b6a80" text-anchor="middle">同分才比出現順序；!important 另計，盡量少用</text>
+</svg>

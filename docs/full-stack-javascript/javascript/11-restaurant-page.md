@@ -170,7 +170,7 @@ switchTab(loadHome);
 1. 用和 webpack 教學專案相同的方式起手：建立 `package.json`、設定 webpack。只安裝、設定你這個專案真正需要的東西（例如沒有本機圖片就不必裝 `html-loader`）。
 2. 在專案根目錄建立 `.gitignore`，內容為 `node_modules` 和 `dist`（各一行）。
 3. 在 `src/template.html` 建立 HTML 骨架：`<body>` 裡放一個 `<header>`，內含 `<nav>` 與數個分頁**按鈕（button，不是連結）**，例如「首頁」「菜單」「關於」。header 底下放一個空的 `<div id="content">`。
-4. 在 `src/index.js` 寫一個 `console.log` 或 `alert`，執行 `npx webpack serve`，開 [http://localhost:8080](http://localhost:8080) 確認 JS 有正常執行。
+4. 在 `src/index.js` 寫一個 `console.log` 或 `alert`，執行 `npx webpack serve`，開 `http://localhost:8080` 確認 JS 有正常執行。
 5. 先在 `div#content` 裡**硬編**一個餐廳首頁（圖片、標題、幾段介紹文字），不用做得太精緻，目的是先看看排版效果。
 6. 把 `div#content` 內硬編的東西全部拿掉（保留 `<header>`、`<nav>` 和空的 `<div id="content">`），改用**純 JavaScript** 建立這些元素，並在頁面首次載入時 `append` 到 `div#content`。把這段初始載入的函式寫進獨立模組，再於 `index.js` `import` 並呼叫它。
 7. 設定 tabbed browsing 來切換「菜單」「聯絡」等分頁：

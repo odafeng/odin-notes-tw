@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 200" width="440" height="200" role="img" aria-label="transition 時間軸：觸發後先等 delay，再於 duration 期間依 timing-function 從舊值變到新值">
+  <rect x="1" y="1" width="438" height="198" rx="10" fill="#faf8f3" stroke="#ece6d8"/>
+  <text x="20" y="26" font-family="system-ui,sans-serif" font-size="13" fill="#1b2a4a" font-weight="700">transition: property duration timing-function delay</text>
+  <line x1="36" y1="120" x2="410" y2="120" stroke="#1b2a4a" stroke-width="2"/>
+  <circle cx="60" cy="120" r="5" fill="#1b2a4a"/>
+  <text x="60" y="145" font-family="system-ui,sans-serif" font-size="11" fill="#5b6a80" text-anchor="middle">觸發（如 :hover）</text>
+  <rect x="60" y="108" width="70" height="24" fill="#cbd5e4"/>
+  <text x="95" y="100" font-family="system-ui,sans-serif" font-size="11" fill="#6b7c96" text-anchor="middle">delay（等待）</text>
+  <rect x="130" y="108" width="220" height="24" fill="#d98a0b" fill-opacity="0.85"/>
+  <text x="240" y="100" font-family="system-ui,sans-serif" font-size="11" fill="#a8690a" text-anchor="middle" font-weight="700">duration（漸變進行中，速度曲線＝timing-function）</text>
+  <circle cx="350" cy="120" r="5" fill="#3a8a5a"/>
+  <text x="350" y="145" font-family="system-ui,sans-serif" font-size="11" fill="#2c6a45" text-anchor="middle">到達新值</text>
+  <path d="M136 168 C 200 168, 260 150, 344 150" stroke="#3a8a5a" stroke-width="2" fill="none"/>
+  <text x="240" y="186" font-family="system-ui,sans-serif" font-size="10.5" fill="#5b6a80" text-anchor="middle">ease：先快後慢（曲線斜率＝變化速度）</text>
+</svg>

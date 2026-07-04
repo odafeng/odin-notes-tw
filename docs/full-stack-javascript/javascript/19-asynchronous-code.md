@@ -15,6 +15,8 @@ generated: 2026-07-03
 
 ## 核心概念
 
+![事件迴圈示意圖：call stack 清空後，先清空 microtask 佇列（Promise 回呼），再從 task 佇列取一個 callback](../../assets/diagrams/event-loop.svg){ .od-diagram }
+
 ### 為什麼需要非同步（asynchronous）？
 
 JavaScript 是網頁的語言，而網頁上有許多工作「天生就慢」：向伺服器抓取資料、讀取一個大檔案、等待使用者點擊、等一個計時器倒數結束。這些工作花掉的時間，不是幾奈秒（nanosecond）的 CPU 運算，而是幾百毫秒甚至好幾秒的「等待」。

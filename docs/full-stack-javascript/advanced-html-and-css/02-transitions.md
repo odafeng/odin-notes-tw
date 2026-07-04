@@ -15,6 +15,8 @@ generated: 2026-07-03
 
 ## 核心概念
 
+![transition 時間軸：觸發後先等 delay，再於 duration 期間依 timing-function 從舊值漸變到新值](../../assets/diagrams/transition-timeline.svg){ .od-diagram }
+
 ### 什麼是 transition（轉場）
 
 CSS transition（轉場）讓元素從「初始狀態」平滑地變化到「結束狀態」，而不是瞬間跳過去。想像一顆背景是白色的按鈕：滑鼠沒碰到時它就靜靜待著，很無聊；當你把游標移上去（hover），背景色在一段時間內從白色平滑地過渡到灰色再到黑色。這個「慢慢變」的過程，就是 CSS transition。

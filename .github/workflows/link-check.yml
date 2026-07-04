@@ -1,0 +1,23 @@
+name: link-check
+on:
+  schedule:
+    - cron: "0 3 * * 1" # 每週一 03:00 UTC
+  workflow_dispatch:
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Check external links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --no-progress --max-concurrency 8 --timeout 20
+            --accept 200..=299,403,429
+            "docs/**/*.md"
+          fail: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+# --accept 含 403/429：unsplash/medium/npmjs 等站對機器人回 403、
+# 部分站限流回 429，實際瀏覽器皆可開；只對真 404/5xx/連線失敗告警。

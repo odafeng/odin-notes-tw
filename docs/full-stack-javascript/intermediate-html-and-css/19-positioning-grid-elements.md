@@ -15,6 +15,8 @@ generated: 2026-07-03
 
 ## 核心概念
 
+![Grid 線編號示意圖：欄線與列線從 1 起算，grid-column: 2 / 4 表示從第 2 條欄線跨到第 4 條](../../assets/diagrams/grid-lines-area.svg){ .od-diagram }
+
 上一課我們用 `grid-template-columns` 與 `grid-template-rows` 把一個容器切成格子。這一課要處理的問題是：**如何叫某個子元素「去坐到第幾格」，甚至「橫跨好幾格」**。要做到這件事，得先把 grid 的三個基本零件講清楚：track（軌道）、line（線）、cell（儲存格）。
 
 ### Track、Line、Cell 三個零件

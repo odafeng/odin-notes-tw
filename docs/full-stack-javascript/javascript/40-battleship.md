@@ -248,7 +248,7 @@ test("所有艦艇被擊沉時 allSunk 回傳 true", () => {
 
 - 原文：[Project: Battleship](https://www.theodinproject.com/lessons/node-path-javascript-battleship)
 - 本課引用：
-  - [Battleship 遊戲規則（Wikipedia）](https://en.wikipedia.org/wiki/Battleship_(game))
+  - [Battleship 遊戲規則（Wikipedia）](https://en.wikipedia.org/wiki/Battleship_%28game%29)
   - [Jest — 用 Babel 設定讓測試支援 ES6 import/export](https://jestjs.io/docs/getting-started#using-babel)
   - [MDN — Classes（類別）](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 

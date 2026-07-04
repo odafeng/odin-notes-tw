@@ -15,6 +15,8 @@ generated: 2026-07-03
 
 ## 核心概念
 
+![DOM 樹示意圖：document → html → head 與 body，body 之下是 h1、p、ul 等元素節點](../../assets/diagrams/dom-tree.svg){ .od-diagram }
+
 ### 什麼是 DOM？
 
 DOM（Document Object Model，文件物件模型）是瀏覽器把一份網頁內容解析後，在記憶體裡建立的一棵「樹狀結構」。這棵樹由許多 node（節點）組成，節點之間依照它們在 HTML 裡的排列方式，形成親子與兄弟的關係。
