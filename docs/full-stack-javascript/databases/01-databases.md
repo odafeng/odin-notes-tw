@@ -125,7 +125,7 @@ VALUES ('Alice', 'alice@example.com');
 
 ## 練習
 
-1. 閱讀一篇 SQL 入門說明，理解 SQL 如何用來組織與管理龐大的資料量。原文推薦 LaunchSchool 的 [Introduction to SQL](https://launchschool.com/books/sql/read/introduction)，讀第一頁的介紹即可，不必往後翻。
+1. 閱讀一篇 SQL 入門說明，理解 SQL 如何用來組織與管理龐大的資料量。原文推薦 LaunchSchool 的 [Introduction to SQL](https://web.archive.org/web/20241204043101/https://launchschool.com/books/sql/read/introduction)，讀第一頁的介紹即可，不必往後翻。
 2. 看一段**關聯式資料庫**的簡短影片介紹（原文為 [YouTube: Relational Databases](https://www.youtube.com/watch?v=z2kbsG8zsLM)），感受一下它為何實用，並熟悉本課用到的術語（table、row、column、primary key）。
 3. 動手做 [Khan Academy 的 SQL 教學](https://www.khanacademy.org/computing/hour-of-code/hour-of-sql/v/welcome-to-sql)，實際建立與操作資料庫，親手寫幾條 `SELECT` 與 `INSERT`。
 4. 讀一篇比較 [SQL 與 NoSQL 差異](https://circleci.com/blog/SQL-vs-NoSQL-databases/)的文章，理解關聯式與非關聯式資料庫各自的取捨。
@@ -136,7 +136,7 @@ VALUES ('Alice', 'alice@example.com');
 
 - 原文：[Databases](https://www.theodinproject.com/lessons/node-path-databases)
 - 本課引用：
-  - [LaunchSchool — Introduction to SQL](https://launchschool.com/books/sql/read/introduction)
+  - [LaunchSchool — Introduction to SQL](https://web.archive.org/web/20241204043101/https://launchschool.com/books/sql/read/introduction)
   - [YouTube — Relational Databases 影片介紹](https://www.youtube.com/watch?v=z2kbsG8zsLM)
   - [Khan Academy — Intro to SQL](https://www.khanacademy.org/computing/hour-of-code/hour-of-sql/v/welcome-to-sql)
   - [CircleCI Blog — SQL vs NoSQL databases](https://circleci.com/blog/SQL-vs-NoSQL-databases/)
