@@ -22,7 +22,7 @@ generated: 2026-07-03
 
 要區分這兩個工具，最根本、也最實用的一條線是「維度」。
 
-- **Flexbox 是一維佈局工具**：一次只處理**一個方向**，不是一列（row）就是一欄（column）。就算你加上 `flex-wrap: wrap` 讓項目換行，它依然是一維的，因為每一行的空間分配是**各自獨立**計算的——第二行不會去對齊第一行的欄位。CSS Grid 的共同設計者 Rachel Andrew 有一句常被引用的話：「Flex 換行並不會讓它變成二維（Flex wrapping doesn't make it two-dimensional）。」
+- **Flexbox 是一維佈局工具**：一次只處理**一個方向**，不是一列（row）就是一欄（column）。就算你加上 `flex-wrap: wrap` 讓項目換行，它依然是一維的，因為每一行的空間分配是**各自獨立**計算的——第二行不會去對齊第一行的欄位。CSS Grid 專家 Rachel Andrew 有一句常被引用的話：「Flex 換行並不會讓它變成二維（Flex wrapping doesn't make it two-dimensional）。」
 - **Grid 是二維佈局工具**：同時處理**列與欄**。你先定義好行軌道（row track）與欄軌道（column track），項目落進這些軌道裡，天生就會在兩個方向上互相對齊。就算內容換到下一列，欄位對齊依然嚴格維持。
 
 一個很好記的判斷法：**如果你發現自己在 Flexbox 的項目上手動設定寬度，只為了讓它們跟上一行的項目對齊**，那多半代表你真正需要的是 Grid。這種「跟上下鄰居對齊」的需求，正是二維佈局的本質。
@@ -39,7 +39,7 @@ generated: 2026-07-03
 
 ### 共用的對齊系統
 
-有一個常被忽略但很實用的事實：Flexbox 與 Grid **共用同一套 CSS Box Alignment（盒子對齊）屬性**。`justify-content`、`align-items`、`align-self`、`gap` 這些屬性最早是為 Flexbox 定義的，後來被抽出成獨立規範，Grid 也直接沿用。這代表你在 Flexbox 學到的對齊直覺，幾乎可以無痛搬到 Grid，只是主軸/交叉軸的概念換成了列軸/欄軸。這也是為什麼兩者搭配起來心智負擔不大。
+有一個常被忽略但很實用的事實：Flexbox 與 Grid **共用同一套 CSS Box Alignment（盒子對齊）屬性**。`justify-content`、`align-items`、`align-self`、`gap` 這些屬性大多最早是為 Flexbox 定義的（`gap` 則源自 Grid），後來被抽出成獨立規範，Grid 也直接沿用。這代表你在 Flexbox 學到的對齊直覺，幾乎可以無痛搬到 Grid，只是主軸/交叉軸的概念換成了列軸/欄軸。這也是為什麼兩者搭配起來心智負擔不大。
 
 此外，`fr` 單位的精神其實跟 `flex-grow` 很像——都是「按比例分配剩餘空間」，只是 `fr` 用在 Grid 軌道上時，會**同時維持嚴格的列/欄對齊**，這是 Flexbox 做不到的。
 

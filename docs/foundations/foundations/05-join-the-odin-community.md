@@ -76,7 +76,7 @@ generated: 2026-07-03
 
 本課以觀念為主，實際會用到的是 Discord 聊天室的格式化技巧與指令：
 
-```text
+````text
 單行程式碼：用一個反引號前後包住
 `const name = "Odin";`
 
@@ -91,7 +91,7 @@ function greet() {
 /gif hi        送出一張打招呼的 giphy
 /              查看所有可用指令
 @username ++   對幫助你的人表達感謝
-```
+````
 
 ## 常見陷阱
 

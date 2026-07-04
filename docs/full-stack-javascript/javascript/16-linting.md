@@ -97,6 +97,10 @@ export default defineConfig([
     files: ["**/*.js"],          // 套用到所有 .js 檔
     plugins: { js },
     extends: ["js/recommended"], // 使用官方推薦規則集
+    languageOptions: {
+      // 宣告執行環境已提供的全域變數，否則 console 會被 no-undef 誤判為未定義
+      globals: { console: "readonly" },
+    },
     rules: {
       "no-unused-vars": "warn",  // 宣告未使用的變數：警告
       "no-undef": "warn",        // 使用未定義的變數：警告

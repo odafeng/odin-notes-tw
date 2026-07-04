@@ -160,8 +160,6 @@ function GamePage() {
 1. 閱讀 React 官方文件中關於 key 的段落：Rendering Lists 一章的〈Keeping list items in order with key〉（保持清單項目順序）。重點理解「為什麼 key 要在資料層級提供」以及「index 當 key 的風險」。
 2. 觀看一支短片，示範「把 index 當 key」為什麼是 anti-pattern：搜尋 YouTube 影片 `xlPxnc5uUPQ`（React key using index as an anti-pattern）。看完後試著自己說出：當清單被重新排序時，用 index 當 key 會發生什麼事。
 
-（原文的 project 練習，請回到原文對照操作。）
-
 ## 原文與延伸資源
 
 - 原文：[Keys In React](https://www.theodinproject.com/lessons/node-path-react-new-keys-in-react)

@@ -187,6 +187,7 @@ let firstNumber = null;   // 第一個數字
 let operator = null;      // 選定的運算子
 let current = "0";        // 目前正在輸入的字串
 let justEvaluated = false; // 剛按過 =，下次按數字要重來
+let waitingForSecond = false; // 剛選完運算子，第二個數字還沒開始輸入
 
 const display = document.getElementById("display");
 
@@ -208,6 +209,10 @@ function inputDigit(digit) {
     firstNumber = null;
     operator = null;
     justEvaluated = false;
+  } else if (waitingForSecond) {
+    // 選完運算子後的第一個數字：蓋掉暫存的 "0"，開始輸入第二個數字
+    current = digit;
+    waitingForSecond = false;
   } else {
     // 否則接在後面（避免出現 007 這種前導 0）
     current = current === "0" ? digit : current + digit;
@@ -217,14 +222,20 @@ function inputDigit(digit) {
 
 // ---- 按運算子 ----
 function chooseOperator(nextOp) {
+  if (waitingForSecond) {
+    // 連按運算子：只換成最後按的那一個，不做任何計算
+    operator = nextOp;
+    return;
+  }
   if (operator !== null && !justEvaluated) {
     // 已經有一對數字了，先把前一對算出來
     evaluate();
   }
   firstNumber = Number(current);
-  operator = nextOp;          // 連按運算子時，這行只是換成最後一個
+  operator = nextOp;
   justEvaluated = false;
-  current = "0";              // 準備輸入第二個數字（下次按數字會蓋掉這個 0）
+  waitingForSecond = true;   // 準備輸入第二個數字（下次按數字會蓋掉暫存的 0）
+  current = "0";
 }
 
 // ---- 按等號 ----
@@ -237,6 +248,7 @@ function evaluate() {
   firstNumber = null;
   operator = null;
   justEvaluated = true;
+  waitingForSecond = false;
   updateDisplay();
 }
 
@@ -246,6 +258,7 @@ function clearAll() {
   operator = null;
   current = "0";
   justEvaluated = false;
+  waitingForSecond = false;
   updateDisplay();
 }
 
@@ -264,7 +277,7 @@ document.querySelectorAll(".op").forEach((btn) => {
 });
 ```
 
-留意 `chooseOperator` 裡的幾個關鍵設計：只有在「已有運算子且不是剛算完」時才先 `evaluate()`，這同時處理了「一次算一對」（`12 + 7 - 1`）與「連按運算子只取最後一個」兩種情況——連按時 `current` 還是那個 `"0"`，不會湊成新的一對去計算，只會把 `operator` 換掉。
+留意 `chooseOperator` 裡的幾個關鍵設計：`waitingForSecond` 旗標記錄「剛選完運算子、第二個數字還沒開始輸入」。連按運算子時這個旗標為真，就只把 `operator` 換成最後按的那一個、不做任何計算（避免 `2 * *` 被誤算成 `0`）；只有在使用者已經輸入了第二個數字、又按下新運算子時，才先 `evaluate()` 把前一對算出來——這正是「一次算一對」（`12 + 7 - 1`）的處理方式。
 
 ## 常見陷阱
 
@@ -275,7 +288,7 @@ document.querySelectorAll(".op").forEach((btn) => {
     這台計算機**不做**先乘除後加減的完整運算式解析，一次只處理一對數字。使用者已有一對數字又按新運算子時，要先把前一對算出、把結果當成新的第一個數字。別想著一次解析 `12 + 7 - 1` 整串。
 
 !!! warning "連按運算子被當成一次運算"
-    按 `2`、`+`、`+`，不該算成 `2 + 2 = 4`。連續按運算子時不做任何計算，只把選定的運算子更新成最後按的那一個。範例程式靠「第二個數字尚未輸入（`current` 仍是預設值）」來避免誤算。
+    按 `2`、`+`、`+`，不該算成 `2 + 2 = 4`。連續按運算子時不做任何計算，只把選定的運算子更新成最後按的那一個。範例程式靠 `waitingForSecond` 旗標判斷第二個數字是否已開始輸入，若尚未輸入就只換運算子、不做計算。
 
 !!! warning "結果出來後按數字卻接在後面"
     顯示結果後再按數字，應該開始全新計算、清掉舊結果，而不是把數字接在結果字串後面。用一個像 `justEvaluated` 的旗標記住「剛按過 =」，下次按數字時重置狀態。

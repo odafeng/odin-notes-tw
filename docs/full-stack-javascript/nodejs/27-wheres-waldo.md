@@ -88,7 +88,7 @@ async function checkGuess(req, res) {
 }
 ```
 
-計時同理：開局時 `startedAt = new Date()` 寫進該局紀錄，全部找到後用 `Date.now() - startedAt` 算出秒數，這個結果永遠由後端計算，前端只負責顯示。
+計時同理：開局時 `startedAt = new Date()` 寫進該局紀錄，全部找到後用 `Date.now() - startedAt` 算出經過時間（毫秒），這個結果永遠由後端計算，前端只負責顯示。
 
 ## 常見陷阱
 

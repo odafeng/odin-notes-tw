@@ -194,7 +194,7 @@ describe('playRound（用 mock 隔離外部依賴）', () => {
 });
 ```
 
-執行 `npx jest game.test.js`，四個測試都會通過。注意 `playRound` 的測試完全沒碰瀏覽器——mock 把外部依賴換成了你完全掌控的假貨。
+執行 `npx jest game.test.js`，三個測試都會通過。注意 `playRound` 的測試完全沒碰瀏覽器——mock 把外部依賴換成了你完全掌控的假貨。
 
 ## 常見陷阱
 

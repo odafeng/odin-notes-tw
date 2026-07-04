@@ -22,7 +22,7 @@ generated: 2026-07-04
 
 換句話說，framework 就是一組「已經幫你寫好基礎工程」的程式碼集合。它預先把常見任務的骨架搭好，你只要在這個骨架上填入屬於自己應用程式的商業邏輯（business logic）即可，不必再為了「如何接收一個請求並回傳一段 HTML」這種每個專案都需要的底層瑣事重新造輪子。
 
-要特別分清楚：programming language（程式語言，例如 JavaScript、Ruby、Python）是你用來表達邏輯的「語言本身」，而 framework 則是「用某個語言寫成、疊在語言之上的一層工具」。語言決定你能寫出什麼樣的句子，框架則提供一整套現成的段落與章節模板。Express 是一個 framework，它用 JavaScript 寫成、跑在 Node.js 上；你學會 JavaScript 之後，才有辦法使用 Express。語言是地基，框架是蓋在地基上、已經隔好房間的毛胚屋。
+要特別分清楚：programming language（程式語言，例如 JavaScript、Ruby、Python）是你用來表達邏輯的「語言本身」，而 framework 則是「用某個語言寫成、疊在語言之上的一層工具」。語言決定你能寫出什麼樣的句子，框架則提供一整套現成的段落與章節樣板。Express 是一個 framework，它用 JavaScript 寫成、跑在 Node.js 上；你學會 JavaScript 之後，才有辦法使用 Express。語言是地基，框架是蓋在地基上、已經隔好房間的毛胚屋。
 
 ### 框架幫你解決的兩大問題
 

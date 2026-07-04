@@ -20,7 +20,7 @@ generated: 2026-07-03
 
 ### transform 怎麼運作
 
-`transform` 的值是一個或多個 **transform function（變形函式）**，每個函式再各自吃一個值，通常是角度（如 `45deg`）或數字（如 `2`、`50%`）。例如：
+`transform` 的值是一個或多個 **transform function（變形函式）**，每個函式再各自吃一個值，通常是角度（如 `45deg`）、數字（如 `2`）或百分比（如 `50%`）。例如：
 
 ```css
 .element {

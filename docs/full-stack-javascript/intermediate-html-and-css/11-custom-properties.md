@@ -72,7 +72,7 @@ generated: 2026-07-03
 - `background-color`：因為 `--undeclared-property` 從沒被宣告，所以採用 fallback `black`。
 - `color`：`--undeclared-again` 也沒被宣告，於是進到第二個參數 `var(--color-text, yellow)`；`--color-text` 有被宣告且值為 `white`，所以最終是 `white`。如果 `--color-text` 剛好無效或不存在，才會再退到最內層的 `yellow`。
 
-要注意 `var()` 最多就是「變數名 + 一個 fallback」兩個參數。像 `var(--a, --b, pink)` 這種寫三段的形式是無效的；要多層 fallback，必須用巢狀的 `var()`，像上面那樣把 `var(--color-text, yellow)` 整個塞進第二個參數。
+要注意 `var()` 就是「變數名 + 一個 fallback」的結構。像 `var(--a, --b, pink)` 這種寫法，並不會依序嘗試 `--a`、`--b`、`pink`：因為 fallback 值本身允許包含逗號，所以第一個逗號之後的 `--b, pink` 會整段被當成「單一個 fallback 值」（`--b` 不會被解析成第二個變數）。要做多層 fallback，必須用巢狀的 `var()`，像上面那樣把 `var(--color-text, yellow)` 整個塞進第二個參數。
 
 還有一個常被誤會的點：fallback **不是**用來處理「舊瀏覽器不支援 CSS 變數」的相容性機制。它處理的是「這個變數在目前情境下沒被定義，或值無效」的情況。
 

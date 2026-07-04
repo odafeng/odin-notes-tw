@@ -234,7 +234,7 @@ export default function ProductDetail() {
 
 Context API 很強大，但不是免費午餐，用之前要知道它的兩個代價：
 
-1. **可能造成效能問題**：當 context 裡的值更新時，**所有消費這個 context 的元件都會重新 render**，就算某個元件用到的那部分資料根本沒變也一樣。如果有很多元件都消費同一個大 context，這種「連坐式重新渲染」可能拖慢效能。
+1. **可能造成效能問題**：當 context 裡的值更新時，**所有消費這個 context 的元件都會重新渲染**，就算某個元件用到的那部分資料根本沒變也一樣。如果有很多元件都消費同一個大 context，這種「連坐式重新渲染」可能拖慢效能。
 2. **可能讓程式更難追蹤**：因為任何元件都能輕易地從 context 拿到 state，資料「從哪來、被誰改」變得不那麼一目瞭然。一旦有很多巢狀元件都在消費同一個 context，程式的可讀性反而會下降。保持結構清楚、組織良好很重要。
 
 ### 可能的解法
@@ -310,7 +310,7 @@ export default function App() {
 !!! warning "在 Provider 外面使用 context，卻拿到「意料之外」的值"
     如果某個呼叫 `useContext` 的元件不小心被渲染在 Provider 之外，它不會報錯，而是「安靜地」退回讀那個靜態預設值。要是你當初把預設值設成 `null`，接著又對它做 `null.cartItems`，就會踩到 runtime error。所以：預設值最好設成和真實資料「形狀相符」的物件當安全網，或在讀取時做防呆判斷。
 
-!!! warning "所有消費者都會一起重新 render"
+!!! warning "所有消費者都會一起重新渲染"
     更新 context 的 `value` 會讓**每一個**消費該 context 的元件重新渲染，即使它用到的那部分資料沒變。把不相關的狀態塞進同一個大 context，容易造成大範圍的多餘渲染。解法是依關聯性拆成多個小 context，讓每個 context 的變動只影響真正相關的元件。
 
 !!! warning "誤把「值」而不是「context 物件」傳給 useContext"

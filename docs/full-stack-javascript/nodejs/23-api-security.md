@@ -69,7 +69,7 @@ token 究竟放在請求的哪裡？業界慣例是放進 HTTP 的 `Authorizatio
 Authorization: Bearer xxxxx.yyyyy.zzzzz
 ```
 
-`Bearer`（持有者）這個詞的意思是「持有這個 token 的人就是被授權的人」——就像持票入場，票在誰手上，誰就能進。這也再次提醒我們：token 必須妥善保管、且一律走 HTTPS 傳輸，避免在傳送途中被攔截。後端的驗證 middleware 會從這個 header 取出 `Bearer` 後面那段字串，再拿去 verify。
+`Bearer`（持有者）這個詞的意思是「持有這個 token 的人就是被授權的人」——就像持票入場，票在誰手上，誰就能進。這也再次提醒我們：token 必須妥善保管、且一律走 HTTPS 傳輸，避免在傳送途中被攔截。後端的驗證 middleware（中介軟體）會從這個 header 取出 `Bearer` 後面那段字串，再拿去 verify。
 
 ### token 過期（expiration）
 
@@ -172,7 +172,7 @@ curl http://localhost:3000/protected \
 # 回傳 {"message":"歡迎，odin", ...}
 ```
 
-若你想把驗證整合進 Passport，可改用 `passport-jwt` strategy，讓它自動從 `Authorization` header 抽出 Bearer token 並 verify，你只需在 callback 中依 payload 查出使用者即可：
+若你想把驗證整合進 Passport，可改用 `passport-jwt` strategy，讓它自動從 `Authorization` header 抽出 Bearer token 並 verify，你只需在回呼（callback）中依 payload 查出使用者即可：
 
 ```javascript
 // passport 設定片段（示意）

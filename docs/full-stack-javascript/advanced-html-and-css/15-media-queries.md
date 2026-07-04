@@ -109,7 +109,7 @@ body {
 }
 ```
 
-`not` 會反轉整個查詢的結果，`only` 是給非常老舊瀏覽器用的舊語法，現代瀏覽器可忽略。除了尺寸，media feature（媒體特徵）還有很多實用的選項，例如 `orientation`（direction 直向 portrait／橫向 landscape）、`prefers-color-scheme`（使用者偏好的深淺色模式）、`prefers-reduced-motion`（使用者是否偏好減少動畫）、`hover` 與 `pointer`（裝置是否支援懸停、指標是否精準）。這些讓你不只回應「螢幕多大」，還能回應「使用者是什麼樣的使用者」。
+`not` 會反轉整個查詢的結果，`only` 是給非常老舊瀏覽器用的舊語法，現代瀏覽器可忽略。除了尺寸，media feature（媒體特徵）還有很多實用的選項，例如 `orientation`（直向 portrait／橫向 landscape）、`prefers-color-scheme`（使用者偏好的深淺色模式）、`prefers-reduced-motion`（使用者是否偏好減少動畫）、`hover` 與 `pointer`（裝置是否支援懸停、指標是否精準）。這些讓你不只回應「螢幕多大」，還能回應「使用者是什麼樣的使用者」。
 
 ### 現代的 range 語法
 

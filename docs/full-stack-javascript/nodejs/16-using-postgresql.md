@@ -53,7 +53,7 @@ PostgreSQL 附帶一個互動式命令列工具 `psql`。在終端機輸入 `psq
 await pool.query("INSERT INTO usernames (username) VALUES ('" + username + "')");
 ```
 
-因為惡意使用者可以輸入 `sike'); DROP TABLE usernames; --` 這種內容，讓你的 SQL 語意整個被改寫、甚至刪掉整張 table。這種攻擊叫 SQL injection（SQL 注入）。正確做法是用 `$1`、`$2` 這種佔位符，把真正的值放進第二個參數（一個陣列），交給 `pg` 去做安全的轉義：
+因為惡意使用者可以輸入 `sike'); DROP TABLE usernames; --` 這種內容，讓你的 SQL 語意整個被改寫、甚至刪掉整張 table。這種攻擊叫 SQL injection（SQL 注入）。正確做法是用 `$1`、`$2` 這種佔位符，把真正的值放進第二個參數（一個陣列），由 `pg` 將值與 SQL 分開傳送、交由資料庫安全處理：
 
 ```javascript
 await pool.query("INSERT INTO usernames (username) VALUES ($1)", [username]);

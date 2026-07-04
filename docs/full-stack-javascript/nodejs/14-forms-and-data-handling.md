@@ -65,7 +65,7 @@ npm install express-validator
 const { body, validationResult } = require("express-validator");
 ```
 
-`body()` 用來指定「request body 裡哪個欄位要驗證與清洗，以及怎麼處理」。它回傳的其實是一段 middleware，可以串接（chain）多個檢查，每一步都能用 `.withMessage()` 附上專屬錯誤訊息：
+`body()` 用來指定「request body 裡哪個欄位要驗證與清洗，以及怎麼處理」。它回傳的其實是一段 middleware（中介軟體），可以串接（chain）多個檢查，每一步都能用 `.withMessage()` 附上專屬錯誤訊息：
 
 ```javascript
 [

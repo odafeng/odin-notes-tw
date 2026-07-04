@@ -164,7 +164,7 @@ git push --force-with-lease origin my-feature-branch
 1. 閱讀 GitHub 官方文件〈[About merge conflicts](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/about-merge-conflicts)〉。重點放在文件提到的**兩種解決衝突方式**：在 GitHub 網頁上解、以及在命令列上解。你現在或許還用不到，但把「該去哪裡找解法」記在腦中一角，等你真的撞上 merge conflict 時會非常有價值。
 2. 完整讀完〈[Think Like (a) Git](https://think-like-a-git.net/sections/about-this-site.html)〉的所有章節。這份資源寫得很好，能幫你把 Git 底層的心智模型（commit、branch、reachability）建立起來。
 
-延伸（原文 project 步驟指回原文）：關於協作情境下 reset 與 revert 的差異，原文推薦觀看影片〈Git Revert vs Git Reset〉，可從原課程頁面連結前往。
+延伸：關於協作情境下 reset 與 revert 的差異，原文推薦觀看影片〈[Git Revert vs Git Reset](https://www.youtube.com/watch?v=iIaM7j3tMuk)〉。
 
 ### Knowledge check
 

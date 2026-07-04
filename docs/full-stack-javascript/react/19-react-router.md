@@ -161,7 +161,7 @@ const Profile = () => {
 
 ### Protected routes 與程式化導向
 
-很多時候你得判斷「某條路由該不該顯示」。最典型的是驗證（authentication）：使用者登入了就顯示 dashboard，沒登入就導向登入頁。實作 protected routes（受保護路由）方式很多，最簡單的一種就是**依條件產生不同的路由設定**——例如根據登入狀態，決定 `children` 裡放的是真正的頁面還是導向元件。
+很多時候你得判斷「某條路由該不該顯示」。最典型的是認證（authentication）：使用者登入了就顯示 dashboard，沒登入就導向登入頁。實作 protected routes（受保護路由）方式很多，最簡單的一種就是**依條件產生不同的路由設定**——例如根據登入狀態，決定 `children` 裡放的是真正的頁面還是導向元件。
 
 有時你需要在程式碼裡「主動」把使用者送到別的網址（例如登入成功後跳轉），這用 `useNavigate` hook：它回傳一個 `navigate` 函式，呼叫 `navigate("/dashboard")` 就能導向，也能用 `navigate(-1)` 回到上一頁。
 
@@ -262,7 +262,7 @@ export default Profile;
 ## 常見陷阱
 
 !!! warning "還在用 <a> 標籤導覽"
-    在 SPA 內部導覽請一律用 `Link`（或 `NavLink`）。原生 `<a href>` 會讓瀏覽器整頁重新載入，State 全部歸零，client-side routing 的好處也就消失了。只有連到**外部網站**時才用 `<a>`。
+    在 SPA 內部導覽請一律用 `Link`（或 `NavLink`）。原生 `<a href>` 會讓瀏覽器整頁重新載入，狀態全部歸零，client-side routing 的好處也就消失了。只有連到**外部網站**時才用 `<a>`。
 
 !!! warning "在 RouterProvider 之外呼叫路由 hook"
     `useParams`、`useNavigate`、`useOutletContext` 這些 hook，以及 `Link`，都必須在 router 的 context 內才能運作。單獨 render 一個含這些東西的 component（尤其在測試裡）會直接報錯——測試時記得用 `MemoryRouter` 或 `createMemoryRouter` 包起來。

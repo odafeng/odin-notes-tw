@@ -54,7 +54,7 @@ The Odin Project 給的核心建議只有一句話：**簡單勝過臃腫**。
 
 本課以觀念與專案實作為主，沒有特定的程式語言範例。這裡提供一份「專案 README 骨架」，你可以直接套用到每個作品的 `README.md`：
 
-```markdown
+````markdown
 # 專案名稱
 
 一句話說明這個專案是做什麼的。
@@ -85,7 +85,7 @@ npm start
 
 ## Live Demo
 （部署後的網址，若有）
-```
+````
 
 !!! note "小提醒"
     截圖檔（screenshot）記得一起提交（commit）到 repository，並在 README 用相對路徑引用，這樣別人在 GitHub 上就能直接看到成果，不必自己跑起來。

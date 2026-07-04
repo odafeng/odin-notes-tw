@@ -22,7 +22,7 @@ generated: 2026-07-03
 
 ### 一、用 constructor（建構式）與陣列儲存書本
 
-每一本書都是一個 object（物件），有 title（書名）、author（作者）、pages（頁數）、read（是否已讀）等屬性。與其手動一個一個寫 object literal，我們用一個 constructor function（建構式函式）當作「模板」，再用 `new` 產生實例（instance）。
+每一本書都是一個 object（物件），有 title（書名）、author（作者）、pages（頁數）、read（是否已讀）等屬性。與其手動一個一個寫 object literal，我們用一個 constructor function（建構式函式）當作「樣板」，再用 `new` 產生實例（instance）。
 
 所有書本 object 都存進一個陣列（例如 `myLibrary`）。這個陣列就是你的**單一資料來源（single source of truth）**：畫面上看到的一切，都是根據這個陣列渲染出來的。
 
@@ -172,7 +172,7 @@ form.addEventListener("submit", (event) => {
     <label>頁數 <input name="pages" type="number" /></label>
     <label>已讀 <input name="read" type="checkbox" /></label>
     <button type="submit">新增</button>
-    <!-- 用 formmethod="dialog" 讓這顆按鈕直接關閉對話框 -->
+    <!-- type="button" 不會送出表單；用 onclick 找到最近的 <dialog> 並關閉它 -->
     <button type="button" onclick="this.closest('dialog').close()">取消</button>
   </form>
 </dialog>

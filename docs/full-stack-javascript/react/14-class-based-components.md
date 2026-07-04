@@ -137,7 +137,7 @@ constructor(props) {
 
 最後補上互動功能。這一步的邏輯和 function component 幾乎一樣，只有一個關鍵差異——**`this` 的綁定問題**，這也是 class component 最容易踩雷、最需要理解的地方。
 
-問題的根源在 JavaScript 本身：**類別裡用一般語法宣告的方法，預設並不會綁定到類別實體**。也就是說，當你把 `this.handleSubmit` 當作 `onSubmit` 的 callback 傳給 `<form>`，等到使用者真的送出、React 呼叫這個函式時，函式內部的 `this` 已經不再指向你的 component 了（往往會變成 `undefined`），於是 `this.setState` 就會爆錯。
+問題的根源在 JavaScript 本身：**類別裡用一般語法宣告的方法，預設並不會綁定到類別實體**。也就是說，當你把 `this.handleSubmit` 當作 `onSubmit` 的回呼（callback）傳給 `<form>`，等到使用者真的送出、React 呼叫這個函式時，函式內部的 `this` 已經不再指向你的 component 了（往往會變成 `undefined`），於是 `this.setState` 就會爆錯。
 
 解法有兩種：
 
@@ -261,7 +261,7 @@ increment = () => {
 ## 常見陷阱
 
 !!! warning "方法忘了 bind，this 會變成 undefined"
-    在 class component 裡，用一般語法宣告的方法**預設不會綁定** `this`。如果你把 `this.handleClick` 直接當 callback 傳給 `onClick`，被呼叫時它內部的 `this` 就不再指向 component，`this.setState` 會直接報錯。解法二選一：在 constructor 裡寫 `this.handleClick = this.handleClick.bind(this)`，或改用 arrow function 語法定義方法讓 `this` 自動綁定。
+    在 class component 裡，用一般語法宣告的方法**預設不會綁定** `this`。如果你把 `this.handleClick` 直接當回呼（callback）傳給 `onClick`，被呼叫時它內部的 `this` 就不再指向 component，`this.setState` 會直接報錯。解法二選一：在 constructor 裡寫 `this.handleClick = this.handleClick.bind(this)`，或改用 arrow function 語法定義方法讓 `this` 自動綁定。
 
 !!! warning "直接修改 this.state 不會觸發重新渲染"
     像 `this.state.count = 5` 或 `this.state.todos.push(x)` 這種直接 mutate 的寫法，既違反「state 不可變」的原則，也**不會**讓 React 重新渲染畫面。一律要透過 `this.setState` 提供一份新的 state，React 才會排程更新。

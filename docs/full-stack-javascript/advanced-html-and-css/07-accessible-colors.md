@@ -105,13 +105,13 @@ generated: 2026-07-03
 }
 
 /* 一般文字建議至少達到 AA（4.5:1）
-   下面這組深灰字配白底約為 12.6:1，通過 AAA */
+   下面這組深灰字配白底約為 16:1，通過 AAA */
 body {
   color: #212121;            /* 深灰文字 */
   background-color: #ffffff; /* 白底 */
 }
 
-/* 反例：淺灰配白，對比僅約 1.6:1，AA/AAA 全部不通過 */
+/* 反例：淺灰配白，對比僅約 1.9:1，AA/AAA 全部不通過 */
 .low-contrast {
   color: #bbbbbb;
   background-color: #ffffff;

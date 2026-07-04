@@ -63,7 +63,7 @@ without this information.
 Assignment 指定的那篇文章《How to Write a Git Commit Message》，把重點濃縮成「七條規則」。這七條是業界公認的準則，值得記下來：
 
 1. **用空白行分隔 subject 與 body**。這條對 Git 的運作至關重要：Git 靠第一行後面的空白行來區分「主旨」與「內文」，少了它，`log`、`shortlog`、`rebase` 等工具可能會誤判。
-2. **subject 限制在 50 個字元以內**。這是引導性建議，不是硬性上限，目的是逼你把改動濃縮成一句精煉的話。（注意：TOP 課文提到 GitHub 的介面在 50 字元處會提醒你，並在超過 72 字元時把主旨截斷顯示，所以無論如何請把 subject 控制在 72 字元內。）
+2. **subject 限制在 50 個字元以內**。這是引導性建議，不是硬性上限，目的是逼你把改動濃縮成一句精煉的話。（注意：cbea.ms 文章提到 GitHub 的介面在 50 字元處會提醒你，並在超過 72 字元時把主旨截斷顯示；TOP 課文本身也建議把 subject 控制在 72 字元內。）
 3. **subject 首字母大寫**。簡單但一致：每則 subject 都以大寫字母開頭。
 4. **subject 結尾不加句號**。在字數本就吃緊的一行裡，句號既浪費空間又沒必要。
 5. **subject 使用 imperative mood（祈使句／命令語氣）**。像下指令一樣寫，例如「Fix card generator」而非「Fixed card generator」或「Fixes card generator」。一個好用的檢驗法：你的 subject 應該能填進這句話——「If applied, this commit will ___（套用後，這次提交將會______）」。Git 自己產生的 merge、revert 訊息也是用這種語氣。

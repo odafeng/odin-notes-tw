@@ -77,7 +77,7 @@ nvm 本身是一個 POSIX 相容的 bash script（腳本）。安裝它時，官
 
 ```bash
 # 用 curl 下載並執行 nvm 官方安裝腳本（版本號請以官方最新為準）
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.5/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash
 
 # 安裝完成後，關閉再重新開啟終端機，或手動載入 nvm：
 export NVM_DIR="$HOME/.nvm"
@@ -96,7 +96,7 @@ nvm install --lts
 # 告訴 nvm 這個終端機要「使用」剛裝好的 LTS 版
 nvm use --lts
 
-# 確認 Node 版本，會看到類似 v22.xx.x 的字樣
+# 確認 Node 版本，會看到類似 v24.xx.x 的字樣
 node -v
 
 # 確認 npm 版本（安裝 Node 時會一併裝好 npm）

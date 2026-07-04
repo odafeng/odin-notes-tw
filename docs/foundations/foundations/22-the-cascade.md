@@ -124,7 +124,7 @@ inheritance 指的是某些 property 一旦套在某元素上，它的後代（d
   color: red; /* 打敗 A 的 blue，文字最終為紅色 */
 }
 
-/* 規則 C：type selector  →  0-0-1，示範繼承與直接指定 */
+/* 規則 C：一個 class  →  0-1-0，示範繼承與直接指定 */
 .note {
   color: green; /* 直接指向 <p>，勝過從父層繼承來的紅色 */
 }

@@ -143,8 +143,8 @@ mkdir webpack-practice &&
 cd webpack-practice &&
 npm init -y --init-type=module
 
-# 安裝 Webpack 本體與 CLI（--save-dev 記錄為開發相依套件，簡寫 -D）
-npm install --save-dev webpack webpack-cli
+# 安裝 Webpack 本體、CLI 與開發伺服器（--save-dev 記錄為開發相依套件，簡寫 -D）
+npm install --save-dev webpack webpack-cli webpack-dev-server
 
 # 安裝處理 HTML 與 CSS 所需的 plugin 與 loader
 npm install --save-dev html-webpack-plugin style-loader css-loader
@@ -210,7 +210,7 @@ export default {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/template.html", // 用這份 HTML 當模板，自動注入 script 標籤
+      template: "./src/template.html", // 用這份 HTML 當樣板，自動注入 script 標籤
     }),
   ],
   module: {

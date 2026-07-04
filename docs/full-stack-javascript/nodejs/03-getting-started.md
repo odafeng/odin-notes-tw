@@ -141,13 +141,13 @@ console.log(myURL.hash);          // #top
 
 **NPM（Node Package Manager）** 隨 Node 一起安裝，用來安裝、管理專案所依賴的第三方 package。核心觀念：
 
-- `npm init`（或 `npm init -y` 一鍵用預設值）會建立 `package.json`，這個檔案記錄你的專案資訊與依賴清單。
+- `npm init`（或 `npm init -y` 一鍵用預設值）會建立 `package.json`，這個檔案記錄你的專案資訊與相依套件清單。
 - `npm install 套件名` 會下載套件到 `node_modules/` 資料夾，並把它寫進 `package.json` 的 dependencies。
-- `node_modules/` 通常很大，一般不會加入版本控制（放進 `.gitignore`），因為別人只要有 `package.json`，跑一次 `npm install` 就能還原所有依賴。
+- `node_modules/` 通常很大，一般不會加入版本控制（放進 `.gitignore`），因為別人只要有 `package.json`，跑一次 `npm install` 就能還原所有相依套件。
 
 ```bash
 npm init -y            # 建立 package.json
-npm install express    # 安裝 express 套件並記錄成依賴
+npm install express    # 安裝 express 套件並記錄成相依套件
 ```
 
 裝好後，在程式裡就能像內建 module 一樣 `require('express')` 來使用。

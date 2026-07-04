@@ -22,7 +22,7 @@ generated: 2026-07-03
 
 ### 你接下來可以往哪裡走
 
-當你對 React 本身夠熟悉之後，下一個自然的方向是 **React metaframework（元框架）**。所謂 metaframework，指的是建構在 React 之上、再補上一整套「開箱即用」能力的框架，最具代表性的例子是 Next.js 與 React Router（Remix）。它們讓你能真正用上 React 較新的特性，例如 **Server Component（伺服器元件）**——一種在伺服器端執行、不會把元件邏輯與相依套件送到瀏覽器的元件寫法；同時它們對 **routing（路由）** 與 **data fetching（資料取得）** 提供了第一方（first-class）的支援，讓你不用再自己拼湊一堆套件。
+當你對 React 本身夠熟悉之後，下一個自然的方向是 **React metaframework（元框架）**。所謂 metaframework，指的是建構在 React 之上、再補上一整套「開箱即用」能力的框架，最具代表性的例子是 Next.js 與 React Router（Remix）。它們讓你能真正用上 React 較新的特性，例如 **Server Component（伺服器元件）**——一種在伺服器端執行、不會把元件邏輯與相依套件送到瀏覽器的元件寫法；同時它們對 **routing（路由）** 與 **data fetching（資料取得）** 提供了一流（first-class）的支援，讓你不用再自己拼湊一堆套件。
 
 不過要駕馭 metaframework，你需要先理解「伺服器端到底在做什麼」。這正是為什麼建議你先完成 [Databases 課程](https://www.theodinproject.com/paths/full-stack-javascript/courses/databases) 與 [Node.js 課程](https://www.theodinproject.com/paths/full-stack-javascript/courses/nodejs)——它們會替你打好資料庫與伺服器端 JavaScript 的地基，之後再回頭看 Server Component 這類概念就會順很多。
 

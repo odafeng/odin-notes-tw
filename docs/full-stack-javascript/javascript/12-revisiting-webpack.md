@@ -168,7 +168,7 @@ import common from './webpack.common.js';
 
 export default merge(common, {
   mode: 'development',
-  devtool: 'inline-source-map', // 較快、方便在 DevTools 對照原始碼
+  devtool: 'inline-source-map', // 內嵌 source map，方便在 DevTools 對照原始碼
   devServer: {
     static: './dist', // dev server 從 dist 提供靜態檔
   },
@@ -199,7 +199,7 @@ export default merge(common, {
 }
 ```
 
-執行方式：`npm start` 會用 development 設定啟動 dev server 並自動開瀏覽器；`npm run build` 會用 production 設定產出最佳化後的 bundle 到 `dist/`。注意 `common` 兩份檔各自只寫一次差異，共用部分完全不重複。
+執行方式：`npm start` 會用 development 設定啟動 dev server 並自動開瀏覽器；`npm run build` 會用 production 設定產出最佳化後的 bundle 到 `dist/`。注意 dev、prod 兩份檔各自只寫一次差異，共用部分完全不重複。
 
 ## 常見陷阱
 

@@ -90,7 +90,7 @@ grid-row: 1 / 3;     /* 等同 start:1; end:3 */
 }
 ```
 
-規則有幾條要記：（1）同一個名字重複出現，該元素就會**跨越**那些格；（2）用一個句點 `.` 代表**空格子**（連續多個句點只要中間有空白，算一個空格）；（3）**每一列的格子數必須相同**，否則整個 `grid-template-areas` 會失效被忽略；（4）**一個命名區域必須是矩形**，規範不允許 L 形或不連續的區域。
+規則有幾條要記：（1）同一個名字重複出現，該元素就會**跨越**那些格；（2）用一個句點 `.` 代表**空格子**（多個相鄰、中間不留空白的句點算一個空格；要表示多個空格，句點之間須以空白分隔）；（3）**每一列的格子數必須相同**，否則整個 `grid-template-areas` 會失效被忽略；（4）**一個命名區域必須是矩形**，規範不允許 L 形或不連續的區域。
 
 所以 `grid-area` 有兩種完全不同的用法：當數字時是格線定位，當名稱時是命名區域。而「grid area（格區）」這個詞本身，也可以泛指「一群 cell 組成的區塊」——例如客廳佔的那一整塊四方形空間就是一個 grid area，就像公寓裡一個有四面牆的房間。
 
@@ -124,7 +124,7 @@ grid-row: 1 / 3;     /* 等同 start:1; end:3 */
     color: #fff;
   }
 
-  /* 客廳：橫向第 1 到 6 線（跨 5 欄）、橫向第 1 到 2 線（跨 1 列） */
+  /* 客廳：直向第 1 到 6 線（跨 5 欄）、橫向第 1 到 2 線（跨 1 列） */
   #living { grid-column: 1 / 6; grid-row: 1 / 2; }
 
   /* 廚房：用 grid-area 四合一 → 橫起2 / 直起1 / 橫終4 / 直終2（跨 2 列 1 欄） */
@@ -162,7 +162,7 @@ grid-row: 1 / 3;     /* 等同 start:1; end:3 */
   grid-template-rows: repeat(4, 80px);
   grid-template-areas:
     "living  living  living  living  living"
-    "kitchen bedroom bedroom bedroom bedroom"
+    "kitchen bedroom bedroom bedroom ."
     "kitchen hall    hall    hall    hall"
     "balcony balcony balcony balcony balcony";
 }

@@ -57,7 +57,7 @@ async function foo() {
 foo().then((value) => console.log(value)); // 印出 1
 ```
 
-因為 `async` 只是語法糖，所以「任何能用一般函式的地方，都能用 `async` 函式」。它可以是箭頭函式（arrow function）、可以當作 `.forEach`／`.map` 的 callback、也可以放進 `.then()` 裡：
+因為 `async` 只是語法糖，所以「任何能用一般函式的地方，都能用 `async` 函式」。它可以是箭頭函式（arrow function）、可以當作 `.forEach`／`.map` 的回呼（callback）、也可以放進 `.then()` 裡：
 
 ```javascript
 const yourAsyncFunction = async () => {
@@ -78,7 +78,7 @@ server.getPeople().then((people) => {
 });
 ```
 
-有了 `await`，你就不必進到 `.then()` 的 callback，而是直接把結果指派給變數：
+有了 `await`，你就不必進到 `.then()` 的回呼，而是直接把結果指派給變數：
 
 ```javascript
 const people = await server.getPeople();
@@ -89,7 +89,7 @@ const people = await server.getPeople();
 
 ### 執行的分段模型
 
-理解 `await` 的一個好方式是：async 函式的函式體，被一個個 `await` 切成好幾段。第一段（直到第一個 `await` 為止）是同步執行的；每一個 `await` 之後的程式碼，相當於被塞進一個 `.then()` callback 裡，等前一個 promise 敲定才會執行。
+理解 `await` 的一個好方式是：async 函式的函式體，被一個個 `await` 切成好幾段。第一段（直到第一個 `await` 為止）是同步執行的；每一個 `await` 之後的程式碼，相當於被塞進一個 `.then()` 回呼裡，等前一個 promise 敲定才會執行。
 
 ```javascript
 async function foo() {
@@ -217,8 +217,8 @@ async function getPersonsInfo(name) {
 !!! warning "該並行的工作別排成序列"
     對彼此獨立的多個非同步工作逐一 `await`，會讓它們變成一件做完才做下一件，總時間被不必要地拉長。彼此無相依時，改用 `await Promise.all([...])` 讓它們同時進行。
 
-!!! warning "async callback 不會讓 forEach 等它"
-    像 `array.forEach(async (item) => { await ... })` 這種寫法，`forEach` 並不會等每個 async callback 完成才進行下一個，也無法在外層 `await` 整批完成。若需要「全部等完」，請改用 `.map()` 產生一組 promise，再交給 `Promise.all()`。
+!!! warning "async 回呼不會讓 forEach 等它"
+    像 `array.forEach(async (item) => { await ... })` 這種寫法，`forEach` 並不會等每個 async 回呼完成才進行下一個，也無法在外層 `await` 整批完成。若需要「全部等完」，請改用 `.map()` 產生一組 promise，再交給 `Promise.all()`。
 
 ## 練習
 

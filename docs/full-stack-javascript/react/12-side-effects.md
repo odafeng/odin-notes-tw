@@ -203,7 +203,7 @@ export default function AdditionDisplay() {
 ## 常見陷阱
 
 !!! warning "把副作用寫在 component 主體，導致無限迴圈"
-    直接在 component 函式裡呼叫 `setInterval`、`fetch` 或任何會 `setState` 的東西，會在每次渲染時重跑。若這個副作用又觸發了 state 更新，就會「更新 → 重新渲染 → 再次執行副作用 → 再更新」無限循環。務必把副作用放進 `useEffect`，並用相依陣列限制它的執行時機。
+    直接在 component 函式裡呼叫 `setInterval`、`fetch` 或任何會 `setState` 的東西，會在每次渲染時重跑。若這個副作用又觸發了 state 更新，就會「更新 → 重新渲染 → 再次執行副作用 → 再更新」無限迴圈。務必把副作用放進 `useEffect`，並用相依陣列限制它的執行時機。
 
 !!! warning "忘了寫清理函式，計時器與訂閱不斷堆積"
     `setInterval`、`addEventListener`、WebSocket 連線這類副作用，如果沒有在 clean-up function 裡對應地 `clearInterval`、`removeEventListener`、關閉連線，舊的實例會在 component 卸載或 effect 重跑後繼續存在，造成重複執行、記憶體洩漏與難以追查的 bug。**建立了什麼，就在回傳的清理函式裡收掉什麼。**

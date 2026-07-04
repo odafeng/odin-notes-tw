@@ -37,7 +37,7 @@ generated: 2026-07-03
 
 `useRef` 能做的遠不只 focus：捲動到特定位置、量測元素尺寸、觸發動畫……任何你以前用 vanilla JavaScript 做過的 DOM 操作都行。但有個重要原則：**只用它做「非破壞性」的 DOM 操作**。像是直接改寫元素文字內容這種「破壞性」動作，會與 React 對 DOM 的掌控產生衝突，應該避免。
 
-那為什麼不乾脆用 `querySelector`？因為自己動手抓 DOM 就違背了使用 React 的初衷。只要情況允許，就該讓 React 自己去 commit DOM，我們只在真的需要跳脱宣告式模型時，才透過 ref 這道官方後門介入。
+那為什麼不乾脆用 `querySelector`？因為自己動手抓 DOM 就違背了使用 React 的初衷。只要情況允許，就該讓 React 自己去 commit DOM，我們只在真的需要跳脫宣告式模型時，才透過 ref 這道官方後門介入。
 
 ### memoization：把昂貴計算的結果快取起來
 

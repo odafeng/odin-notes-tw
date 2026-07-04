@@ -146,7 +146,7 @@ sticky 最經典的用途是**分區標題（section heading）**。想像你在
   <h2 class="section-heading">分區標題（sticky）</h2>
 
   <div class="card">
-    <img src="https://via.placeholder.com/300x180" alt="示意圖" />
+    <img src="https://placehold.co/300x180" alt="示意圖" />
     <span class="caption">疊在圖片上的說明（absolute）</span>
   </div>
 

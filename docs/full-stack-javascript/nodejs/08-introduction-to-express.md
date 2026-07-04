@@ -60,7 +60,7 @@ const PORT = process.env.PORT || 3000;
 
 1. Express 把這次請求包裝成一個 **request object（請求物件）**，裡面裝了這次請求的所有資訊（方法、路徑、header、參數等）。
 2. 這個請求會被送進一連串的 **middleware function（中介函式）** 依序處理，直到其中某個函式告訴 Express「可以回應了」。
-3. 你寫的 route callback 就是這條鏈上的一環。Express 會把 request object 傳進第一個參數（慣例叫 `req`），把 **response object（回應物件）** 傳進第二個參數（慣例叫 `res`）。
+3. 你寫的 route callback（回呼）就是這條鏈上的一環。Express 會把 request object 傳進第一個參數（慣例叫 `req`），把 **response object（回應物件）** 傳進第二個參數（慣例叫 `res`）。
 4. 你在 callback 裡呼叫 `res.send("Hello, world!")`，等於命令 response object 用這個字串回覆這次請求。
 5. callback 沒有其他程式要跑就結束了。因為 Express 已被告知要回應，它便結束這整個 **request-response cycle（請求─回應循環）**。瀏覽器收到回應後把內容畫到畫面上。
 

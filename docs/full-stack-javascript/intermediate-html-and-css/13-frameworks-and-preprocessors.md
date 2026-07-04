@@ -121,14 +121,14 @@ $radius: 4px;
     color: white;
 
     &:hover {
-      /* 原生 CSS 沒有 darken() 這類色彩函式，需另尋做法 */
+      /* 這裡直接寫死調暗後的顏色；原生 CSS 也可用 color-mix() 動態調暗 */
       background-color: #2f6fd6;
     }
   }
 }
 ```
 
-差別在於：原生 CSS 版本**不需要 build step**，瀏覽器直接看得懂；但 preprocessor 仍保有原生 CSS 尚未具備的能力，例如 `darken()` 這類色彩運算函式、`@mixin`、迴圈等。
+差別在於：原生 CSS 版本**不需要 build step**，瀏覽器直接看得懂；但 preprocessor 仍保有 `@mixin`、迴圈等原生 CSS 至今沒有的功能（至於 `darken()` 這類色彩運算，原生 CSS 現在可用 `color-mix()` 達成）。
 
 ## 常見陷阱
 

@@ -50,13 +50,13 @@ generated: 2026-07-03
 
 到目前為止我們還沒學過把資料存起來的技術，所以使用者一重新整理，todo 全部消失。解法是 [Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API) 裡的 `localStorage`，它能把資料存在使用者的電腦上，缺點是資料只綁在「這台電腦的這個瀏覽器」，換裝置就讀不到，但對這個專案已經很夠用。
 
-`localStorage` 提供四個方法：`setItem(key, value)` 寫入、`getItem(key)` 讀取、`removeItem(key)` 刪除單筆、`clear()` 清空。你要做的是：每當建立新的 project 或 todo，就存一份到 localStorage；App 首次載入時，就去 localStorage 找看看有沒有存過的資料，有就還原。
+`localStorage` 常用的方法有四個：`setItem(key, value)` 寫入、`getItem(key)` 讀取、`removeItem(key)` 刪除單筆、`clear()` 清空。你要做的是：每當建立新的 project 或 todo，就存一份到 localStorage；App 首次載入時，就去 localStorage 找看看有沒有存過的資料，有就還原。
 
 這裡有三個一定要注意的坑：
 
 1. **只能存字串**：`localStorage` 只接受字串。要存物件或陣列，必須先用 `JSON.stringify` 轉成 JSON 字串，讀回來再用 `JSON.parse` 轉回物件。
 2. **資料可能不存在**：第一次開 App 時 localStorage 是空的，`getItem` 會回傳 `null`。程式碼要能優雅地處理「沒有資料」的情況，不能直接崩潰。
-3. **JSON 存不了函式**：這是最容易被絆倒的地方。`JSON.stringify` 只會保留純資料（物件、陣列、數字、字串、布林、`null`），函式和 method 會被丟掉；`JSON.parse` 回來的是一個「只有資料、沒有方法」的 plain object（普通物件），原本的 prototype（原型）也不見了。所以若你的 todo 物件身上掛了 method，讀回來之後得想辦法把方法「重新裝回去」——例如把讀回來的純資料再丟進 factory function 重建成完整物件。
+3. **JSON 存不了函式**：這是最容易被絆倒的地方。`JSON.stringify` 只會保留純資料（物件、陣列、數字、字串、布林、`null`），函式和方法會被丟掉；`JSON.parse` 回來的是一個「只有資料、沒有方法」的 plain object（普通物件），原本的 prototype（原型）也不見了。所以若你的 todo 物件身上掛了方法，讀回來之後得想辦法把方法「重新裝回去」——例如把讀回來的純資料再丟進 factory function 重建成完整物件。
 
 你也可以用 DevTools 檢查存了什麼：打開 `Application` 分頁，在 `Storage` 底下點 `Local Storage`，每次程式增刪改 localStorage，這裡都會即時反映。
 
@@ -159,7 +159,7 @@ export function loadProjects() {
     `localStorage.setItem("data", someObject)` 不會報錯，但它會把物件強制轉成字串 `"[object Object]"`，你的資料就這樣沒了。任何物件或陣列都要先 `JSON.stringify` 再存，讀回來要 `JSON.parse`。
 
 !!! warning "讀回來的物件方法全部消失"
-    `JSON.parse` 只還原資料，不還原 method 與 prototype。如果 todo 身上有 `toggleComplete()` 之類的方法，讀回來直接呼叫會得到 `undefined is not a function`。解法是把讀回的純資料再送進 factory function（或 class constructor）重建成完整物件。
+    `JSON.parse` 只還原資料，不還原方法與 prototype。如果 todo 身上有 `toggleComplete()` 之類的方法，讀回來直接呼叫會得到 `undefined is not a function`。解法是把讀回的純資料再送進 factory function（或 class constructor）重建成完整物件。
 
 !!! warning "沒處理 localStorage 為空的情況"
     App 第一次載入時 `getItem` 回傳 `null`，若不檢查就直接 `JSON.parse(null)` 會得到 `null`，接著對它做 `.map` 或 `.forEach` 就會整個崩潰。務必先判斷資料是否存在，沒有就給一個合理的預設值（例如空陣列或一個預設 project）。
@@ -178,7 +178,7 @@ export function loadProjects() {
 5. **打造 UI**：外觀自由發揮，但至少要能：檢視所有 project；檢視每個 project 裡的所有 todo（大概顯示標題與到期日，可用顏色區分優先級）；展開單一 todo 檢視或編輯細節；刪除 todo。
 6. **找靈感**：可以參考 [Todoist](https://en.todoist.com/)、[Things](https://culturedcode.com/things/)、[any.do](https://www.any.do/) 這些成熟的 todo App（看截圖、看介紹影片）。
 7. **引入 date-fns**：既然在用 webpack，從 npm 裝套件很輕鬆。可以考慮用 [date-fns](https://github.com/date-fns/date-fns) 來格式化與操作日期時間。
-8. **加上持久化**：用 Web Storage API（`localStorage`）在每次建立 project 或 todo 時存檔，並在 App 載入時讀回。注意三件事：資料不存在時不能崩潰；可用 DevTools 的 `Application › Local Storage` 檢查；localStorage 用 JSON 傳輸與儲存，而 JSON 存不了函式，所以讀回資料後要想辦法把 method 裝回物件上。
+8. **加上持久化**：用 Web Storage API（`localStorage`）在每次建立 project 或 todo 時存檔，並在 App 載入時讀回。注意三件事：資料不存在時不能崩潰；可用 DevTools 的 `Application › Local Storage` 檢查；localStorage 用 JSON 傳輸與儲存，而 JSON 存不了函式，所以讀回資料後要想辦法把方法裝回物件上。
 
 完整的專案需求、UI 細項與提示，請對照原文的 Assignment 章節。
 

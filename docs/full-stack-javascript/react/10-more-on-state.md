@@ -163,7 +163,7 @@ function CustomInput() {
 ## 常見陷阱
 
 !!! warning "在 render 過程中直接呼叫 setter 會造成無限迴圈"
-    下面這段程式碼會造成無限重新 render。因為 `setCount` 直接寫在 component 主體（render 過程）裡：component 一 render 就呼叫 `setCount`，`setCount` 觸發重新 render，重新 render 又呼叫 `setCount`⋯⋯如此循環不止。React 在某些情況下能偵測到過多的重新 render 並直接丟出錯誤（Too many re-renders）。setter 應該只在**事件處理函式**或 effect 裡呼叫，絕不要直接寫在 render 主體中。
+    下面這段程式碼會造成無限重新 render。因為 `setCount` 直接寫在 component 主體（render 過程）裡：component 一 render 就呼叫 `setCount`，`setCount` 觸發重新 render，重新 render 又呼叫 `setCount`⋯⋯如此重複不止。React 在某些情況下能偵測到過多的重新 render 並直接丟出錯誤（Too many re-renders）。setter 應該只在**事件處理函式**或 effect 裡呼叫，絕不要直接寫在 render 主體中。
 
     ```jsx
     function Component() {

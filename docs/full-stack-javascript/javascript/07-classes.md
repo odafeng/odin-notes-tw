@@ -211,7 +211,7 @@ console.log(acc.balance);          // 100
 // console.log(acc.#balance);      // SyntaxError：私有欄位不能從外部存取
 ```
 
-`#` 提供的封裝（encapsulation）比工廠函式（factory function）用閉包藏變數更直接：外部完全無法讀寫、無法列舉、也沒有底線那種「其實碰得到」的漏洞。用它把物件的內部狀態保護起來，只透過你設計好的方法與 getter/setter 對外互動。
+`#` 提供的封裝（encapsulation）比工廠函式（factory function）用 closure（閉包）藏變數更直接：外部完全無法讀寫、無法列舉、也沒有底線那種「其實碰得到」的漏洞。用它把物件的內部狀態保護起來，只透過你設計好的方法與 getter/setter 對外互動。
 
 ### static：屬於 class 本身的成員
 

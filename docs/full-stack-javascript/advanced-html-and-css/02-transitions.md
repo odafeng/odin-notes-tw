@@ -57,7 +57,7 @@ button:hover {
 }
 ```
 
-要特別注意：**transition 應該寫在「初始狀態」上**（這裡是 `button`，而不是 `button:hover`），這樣進場和離場都會套用同一組轉場設定。shorthand 裡只有 `transition-property` 和 `transition-duration` 是必填，其餘可省略。有一個容易踩到的細節：簡寫中出現的**第一個**時間值會被當成 `duration`，**第二個**時間值才是 `delay`，所以 `transition: opacity 0.25s 1s` 代表「時長 0.25 秒、延遲 1 秒」，順序不能顛倒。
+要特別注意：**transition 應該寫在「初始狀態」上**（這裡是 `button`，而不是 `button:hover`），這樣進場和離場都會套用同一組轉場設定。shorthand 裡只有 `transition-duration` 是必填（省略 `transition-property` 時預設為 `all`），其餘可省略。有一個容易踩到的細節：簡寫中出現的**第一個**時間值會被當成 `duration`，**第二個**時間值才是 `delay`，所以 `transition: opacity 0.25s 1s` 代表「時長 0.25 秒、延遲 1 秒」，順序不能顛倒。
 
 ### timing-function 速度曲線
 

@@ -20,7 +20,7 @@ generated: 2026-07-03
 
 ### 開始之前：先把 JavaScript 練紮實
 
-最重要、也最容易被忽略的一件事：**在開始 React 之前，請先完成 JavaScript 課程**。原文用了很強的語氣強調這一點，這不是客套話。原因很單純——**React 本質上就是 vanilla JavaScript（原生 JavaScript）**。它不是一門新的程式語言，而是一個用 JavaScript 寫成的 library（函式庫）。你在 React 裡寫的每一段邏輯，骨子裡都是 JavaScript：陣列的 `map`、`filter`、解構賦值（destructuring）、箭頭函式（arrow function）、`callback`、模組的 `import` / `export`、以及 `this` 與作用域的行為，全都會不斷出現。
+最重要、也最容易被忽略的一件事：**在開始 React 之前，請先完成 JavaScript 課程**。原文用了很強的語氣強調這一點，這不是客套話。原因很單純——**React 本質上就是 vanilla JavaScript（原生 JavaScript）**。它不是一門新的程式語言，而是一個用 JavaScript 寫成的 library（函式庫）。你在 React 裡寫的每一段邏輯，骨子裡都是 JavaScript：陣列的 `map`、`filter`、解構賦值（destructuring）、箭頭函式（arrow function）、回呼（callback）、模組的 `import` / `export`、以及 `this` 與作用域的行為，全都會不斷出現。
 
 換句話說，如果 JavaScript 的基礎不穩，你在 React 遇到的困難十有八九其實是 JavaScript 的困難，只是包了一層 React 的外衣，反而更難辨認問題出在哪。你會分不清「這是 React 的規則，還是 JavaScript 本來就這樣」。先把 JavaScript 練到能自在地讀寫，再進來學 React，你的注意力才能集中在 React 真正新增的東西上，而不是一邊查語言基礎一邊查框架語法，兩頭燒。
 
