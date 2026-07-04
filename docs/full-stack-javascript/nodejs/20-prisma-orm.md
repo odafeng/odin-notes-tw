@@ -68,7 +68,7 @@ model Message {
 }
 ```
 
-這裡不只有欄位定義，還在 `Message` model 裡定義了它與另一張 `User` 表的 relation。這份 schema 檔案住在你的程式碼裡、受版本控制（version control）追蹤，因此團隊任何人都能一眼看懂資料庫結構，這正好回應了前面第二個痛點。
+這裡不只有欄位定義，還在 `Message` model 裡定義了它與另一張 `User` 表的 relation：作法是宣告一個型別為對方 model 的欄位（`author User`），再用 `@relation` 屬性指明本表的外鍵（foreign key）欄位（`fields: [authorId]`）對應到對方表的哪個欄位（`references: [id]`）；在關聯的另一側，`User` model 則用列表欄位（如 `messages Message[]`）表示「一個 User 有多筆 Message」的一對多關係。這份 schema 檔案住在你的程式碼裡、受版本控制（version control）追蹤，因此團隊任何人都能一眼看懂資料庫結構，這正好回應了前面第二個痛點。
 
 ### Prisma Client
 

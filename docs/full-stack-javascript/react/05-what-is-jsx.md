@@ -48,6 +48,8 @@ const element = {
 
 所以當你在 console 印出一個 JSX element（例如一個帶文字的 `<div>`），你看到的不會是一段 HTML 字串，而是一個 JavaScript 物件。這正好證明了：JSX 最終會被編譯成「純 JavaScript 物件」。理解這一點很重要，因為它解釋了後面很多 JSX 的規則——JSX 的屬性其實會變成物件的 key（鍵），這就是為什麼有些寫法在 HTML 合法、在 JSX 卻不合法。
 
+也因為 JSX 本質上就是 JavaScript，你可以在標記中用**大括號 `{ }`** 嵌入任何 JavaScript 運算式（expression），來引用動態值（dynamic value）：例如 `<h1>{user.name}</h1>` 會渲染出變數 `user.name` 的值；屬性也一樣，寫成 `src={imageUrl}` 就能帶入變數而非寫死的字串。大括號就像一扇「從標記通往 JavaScript 世界的窗」，這是 JSX 與純 HTML 最實用的差異之一。
+
 ### 為什麼要用 JSX
 
 在傳統的網頁開發裡，我們習慣把「畫面標記（HTML）」和「邏輯（JavaScript）」放在不同的檔案，藉此「分離關注點（separation of concerns）」。但實際上，在應用程式中，**渲染邏輯與畫面內容天生就是綁在一起的**：某個按鈕要不要顯示、清單要 render（渲染）幾個項目、某段文字要顯示什麼，這些都同時牽涉到邏輯與標記。

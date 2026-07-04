@@ -46,7 +46,7 @@ function Greeting() {
 
 ### 這段 HTML 為什麼會出現在 JavaScript 裡？
 
-那不是 HTML，而是 **JSX**。JSX 是 React 提供的語法糖，讓你可以直接在 JavaScript 裡寫出類似 HTML 的標記，描述 component 要 render 的畫面。第一次看到會覺得很突兀，但很快你就會發現它有多方便——把「畫面結構」和「這塊畫面的邏輯」放在同一個地方，讀起來反而更直覺。JSX 的細節會在後面的課程深入介紹，這裡你只要知道：函式 `return` 出來的 JSX，就是這個 component 要呈現的內容。
+那不是 HTML，而是 **JSX**。JSX 是 React 提供的語法糖，讓你可以直接在 JavaScript 裡寫出類似 HTML 的標記，描述 component 要 render 的畫面。第一次看到會覺得很突兀，但很快你就會發現它有多方便——把「畫面結構」和「這塊畫面的邏輯」放在同一個地方，讀起來反而更直覺。JSX 的細節會在後面的課程深入介紹，這裡你只要知道：函式 `return` 出來的 JSX，就是這個 component 要呈現的內容；你在 JSX 裡寫下的每個標籤（例如 `<h1>...</h1>`）都會對應成一個 React element，所以 React element 在程式碼裡看起來就像一段 HTML 標記。
 
 ### 一條不能忘的規則：component 名稱必須大寫
 
