@@ -28,8 +28,10 @@ function getPersonsInfo(name) {
     return people.find((person) => person.name === name);
   });
 }
+```
 
-// 寫法二：用 async/await
+```js
+// 寫法二：用 async/await（做的事跟寫法一完全相同）
 async function getPersonsInfo(name) {
   const people = await server.getPeople();
   const person = people.find((person) => person.name === name);

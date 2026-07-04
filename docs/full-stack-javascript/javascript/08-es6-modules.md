@@ -209,9 +209,18 @@ two.js <-------------- one.js <-------------- three.js
 **alias（別名）** — 用 `as` 幫匯出或匯入改名，避免命名衝突或取更清楚的名字：
 
 ```javascript
-// 匯出時改名
+// one.js — 匯出時改名：外界看到的名字是 hello
+const greeting = "哈囉";
 export { greeting as hello };
-// 匯入時改名
+```
+
+```js
+// two.js — 匯入 one.js 改名後的 hello
+import { hello } from "./one.js";
+```
+
+```js
+// 或者反過來：one.js 直接 export { greeting }，由匯入方改名
 import { greeting as hello } from "./one.js";
 ```
 

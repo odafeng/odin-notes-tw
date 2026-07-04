@@ -38,11 +38,12 @@ const element = React.createElement("h1", { className: "greeting" }, "Hello");
 而 `React.createElement(...)` 執行後，得到的只是一個描述 UI 長相的物件，概念上像這樣：
 
 ```js
-{
+// React.createElement 回傳的物件（簡化示意）
+const element = {
   type: "h1",
   props: { className: "greeting", children: "Hello" },
   // ...React 內部還會加上其他欄位
-}
+};
 ```
 
 所以當你在 console 印出一個 JSX element（例如一個帶文字的 `<div>`），你看到的不會是一段 HTML 字串，而是一個 JavaScript 物件。這正好證明了：JSX 最終會被編譯成「純 JavaScript 物件」。理解這一點很重要，因為它解釋了後面很多 JSX 的規則——JSX 的屬性其實會變成物件的 key（鍵），這就是為什麼有些寫法在 HTML 合法、在 JSX 卻不合法。

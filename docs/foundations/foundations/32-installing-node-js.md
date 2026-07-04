@@ -131,7 +131,7 @@ node hello.js
 node
 ```
 
-```javascript
+```text
 // 進入 REPL 後，逐行輸入，按 Enter 立刻看到結果
 > 2 + 3
 5

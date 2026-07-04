@@ -86,7 +86,9 @@ const selected = true;
 
 // 不建議：以動詞開頭，容易被誤認為函式
 const getCount = 10;
+```
 
+```js
 // 建議：函式以動詞開頭
 function getCount() {
   return numberOfThings;
@@ -125,7 +127,9 @@ setTimeout(stopTimer, ONE_HOUR);
 ```javascript
 // 這一行有點太長
 let total = something + somethingElse + anotherThing + howManyTacos + oneMore;
+```
 
+```js
 // 可以這樣排
 let total =
   something +
@@ -133,7 +137,9 @@ let total =
   anotherThing +
   howManyTacos +
   oneMore;
+```
 
+```js
 // 或這樣排
 let total = something + somethingElse + anotherThing +
             howManyTacos + oneMore;
