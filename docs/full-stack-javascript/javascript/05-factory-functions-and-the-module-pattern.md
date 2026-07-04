@@ -276,7 +276,7 @@ console.log(scoreBoard.get()); // 0
     想讓外界只能受控地存取私有變數，唯一的辦法是透過閉包（例如 `getReputation` / `giveReputation`），而不是把變數塞進回傳物件。
 
 !!! warning "用 var 在迴圈裡建立閉包會共用同一個變數"
-    `var` 是 function scope，整個迴圈只有一個 `i`，所有 callback 都指向它，最後全印出結束值：
+    `var` 是 function scope，整個迴圈只有一個 `i`，所有回呼都指向它，最後全印出結束值：
 
     ```javascript
     for (var i = 0; i < 3; i++) {

@@ -16,6 +16,8 @@ generated: 2026-07-03
 
 ## 核心概念
 
+![Flexbox 的主軸與交錯軸：flex-direction 為 row 時，主軸水平（justify-content 沿此排列）、交錯軸垂直（align-items 沿此對齊）](../../assets/diagrams/flexbox-axes.svg){ .od-diagram }
+
 Flexbox 最讓人困惑的一點，是它「既能水平運作、也能垂直運作」，而且有些規則會隨著你選的方向而微妙地改變。理解這件事的關鍵，就是搞懂 flex container（flex 容器）裡的兩條軸：main axis（主軸）與 cross axis（交錯軸）。這一課的目標，就是把這兩條軸講清楚，並學會用 `flex-direction` 把內容從「排成一列」改成「疊成一欄」。
 
 ### 兩條軸：main axis 與 cross axis

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 300" width="440" height="300" role="img" aria-label="CSS 盒模型：由內而外為 content、padding、border、margin">
+  <rect x="1" y="1" width="438" height="298" rx="10" fill="#faf8f3" stroke="#ece6d8"/>
+  <!-- margin -->
+  <rect x="24" y="24" width="392" height="252" rx="4" fill="#d98a0b" fill-opacity="0.12" stroke="#d98a0b" stroke-dasharray="5 4"/>
+  <text x="34" y="42" font-family="system-ui,sans-serif" font-size="13" fill="#a8690a" font-weight="700">margin（外距）</text>
+  <!-- border -->
+  <rect x="70" y="58" width="300" height="184" rx="3" fill="#1b2a4a" fill-opacity="0.06" stroke="#1b2a4a" stroke-width="3"/>
+  <text x="80" y="76" font-family="system-ui,sans-serif" font-size="13" fill="#1b2a4a" font-weight="700">border（邊框）</text>
+  <!-- padding -->
+  <rect x="104" y="90" width="232" height="120" rx="3" fill="#3a8a5a" fill-opacity="0.14" stroke="#3a8a5a" stroke-dasharray="5 4"/>
+  <text x="114" y="108" font-family="system-ui,sans-serif" font-size="13" fill="#2c6a45" font-weight="700">padding（內距）</text>
+  <!-- content -->
+  <rect x="150" y="122" width="140" height="60" rx="2" fill="#4a6fa5" fill-opacity="0.9"/>
+  <text x="220" y="157" font-family="system-ui,sans-serif" font-size="14" fill="#ffffff" font-weight="700" text-anchor="middle">content</text>
+</svg>

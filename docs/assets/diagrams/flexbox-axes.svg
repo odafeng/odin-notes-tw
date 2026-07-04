@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 260" width="440" height="260" role="img" aria-label="Flexbox 的主軸與交錯軸：flex-direction: row 時主軸水平、交錯軸垂直">
+  <rect x="1" y="1" width="438" height="258" rx="10" fill="#faf8f3" stroke="#ece6d8"/>
+  <text x="20" y="28" font-family="system-ui,sans-serif" font-size="13" fill="#1b2a4a" font-weight="700">flex-direction: row（預設）</text>
+  <!-- flex container -->
+  <rect x="40" y="48" width="300" height="120" rx="6" fill="#1b2a4a" fill-opacity="0.05" stroke="#1b2a4a" stroke-dasharray="4 4"/>
+  <!-- 3 flex items -->
+  <rect x="60" y="78" width="70" height="60" rx="4" fill="#4a6fa5"/>
+  <rect x="145" y="78" width="70" height="60" rx="4" fill="#4a6fa5"/>
+  <rect x="230" y="78" width="70" height="60" rx="4" fill="#4a6fa5"/>
+  <text x="95" y="113" font-family="system-ui,sans-serif" font-size="13" fill="#fff" text-anchor="middle">1</text>
+  <text x="180" y="113" font-family="system-ui,sans-serif" font-size="13" fill="#fff" text-anchor="middle">2</text>
+  <text x="265" y="113" font-family="system-ui,sans-serif" font-size="13" fill="#fff" text-anchor="middle">3</text>
+  <!-- main axis (horizontal) -->
+  <defs>
+    <marker id="ah" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#d98a0b"/></marker>
+    <marker id="av" markerWidth="9" markerHeight="9" refX="3" refY="7" orient="auto"><path d="M0,0 L3,7 L6,0 Z" fill="#3a8a5a"/></marker>
+  </defs>
+  <line x1="40" y1="192" x2="336" y2="192" stroke="#d98a0b" stroke-width="2.5" marker-end="url(#ah)"/>
+  <text x="188" y="212" font-family="system-ui,sans-serif" font-size="13" fill="#a8690a" font-weight="700" text-anchor="middle">main axis（主軸）· justify-content 沿這條排</text>
+  <!-- cross axis (vertical) -->
+  <line x1="370" y1="48" x2="370" y2="164" stroke="#3a8a5a" stroke-width="2.5" marker-end="url(#av)"/>
+  <text x="384" y="110" font-family="system-ui,sans-serif" font-size="12" fill="#2c6a45" font-weight="700">cross</text>
+  <text x="384" y="126" font-family="system-ui,sans-serif" font-size="12" fill="#2c6a45" font-weight="700">axis</text>
+  <text x="384" y="142" font-family="system-ui,sans-serif" font-size="11" fill="#2c6a45">交錯軸</text>
+</svg>

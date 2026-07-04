@@ -44,7 +44,7 @@ hide:
 ## 課程目錄
 
 <!-- PROGRESS:START -->
-你已讀 <span class="od-read-count" data-total="198">0</span>／198 課 · 更新於 2026-07-04
+你已讀 <span class="od-read-count" data-total="198">0</span>／198 課 · 更新於 2026-07-05
 
 在任一課頁面點「標記為已讀」、或在課程清單點核取方塊就會記住（存在你的瀏覽器，換裝置各自計算）。
 

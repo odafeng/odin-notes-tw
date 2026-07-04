@@ -33,7 +33,7 @@ generated: 2026-07-03
 
 **Contrast ratio（對比度）檢查**：這一點在前面的色彩對比課提過。當你在 Styles（樣式）面板調整文字顏色時，DevTools 會在顏色旁自動顯示對比度數值，並用打勾或警告圖示告訴你是否通過 WCAG（Web Content Accessibility Guidelines，網頁內容可及性準則）的 AA / AAA 門檻。打開 color picker（色彩選擇器）還能看到一兩條對比參考線，把顏色拖到線的合格側，就能一眼挑到符合標準的顏色。
 
-**Emulate vision deficiencies（模擬視覺缺陷）**：在 Rendering（算繪）分頁裡，可以把整個頁面模擬成不同色盲類型（例如 protanopia 紅色盲、deuteranopia 綠色盲、tritanopia 藍色盲、achromatopsia 全色盲）看起來的樣子，還能模擬 blurred vision（視力模糊）。這讓你親眼確認：如果你的介面「只用顏色」來傳達資訊（例如紅色代表錯誤、綠色代表成功），對色盲使用者是不是就失效了。除此之外，Rendering 分頁也能模擬 dark mode、`prefers-reduced-motion`（偏好減少動態）、forced-colors（強制色彩）等使用者偏好。
+**Emulate vision deficiencies（模擬視覺缺陷）**：在 Rendering（渲染）分頁裡，可以把整個頁面模擬成不同色盲類型（例如 protanopia 紅色盲、deuteranopia 綠色盲、tritanopia 藍色盲、achromatopsia 全色盲）看起來的樣子，還能模擬 blurred vision（視力模糊）。這讓你親眼確認：如果你的介面「只用顏色」來傳達資訊（例如紅色代表錯誤、綠色代表成功），對色盲使用者是不是就失效了。除此之外，Rendering 分頁也能模擬 dark mode、`prefers-reduced-motion`（偏好減少動態）、forced-colors（強制色彩）等使用者偏好。
 
 **Issues tab（問題分頁）**：DevTools 底部的 Issues 分頁會集中列出瀏覽器偵測到的各類問題，其中包含一部分可及性問題（例如表單控制項缺少關聯的 label）。它會附上問題說明與受影響的元素連結，點一下就能跳到對應的 DOM 節點。這一課只要求你「知道怎麼打開這個分頁」即可，不需要記住每一種問題。
 

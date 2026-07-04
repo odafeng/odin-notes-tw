@@ -278,6 +278,14 @@
   border-color: var(--md-accent-fg-color);
 }
 
+/* 講義內嵌示意圖 */
+.md-typeset img.od-diagram {
+  display: block;
+  margin: 1.2rem auto;
+  max-width: 100%;
+  height: auto;
+}
+
 /* 左側導覽：已讀的課前面一個勾 */
 .md-nav__link.od-nav-read::before {
   content: "✓";

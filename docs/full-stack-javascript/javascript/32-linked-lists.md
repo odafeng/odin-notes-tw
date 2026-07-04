@@ -187,7 +187,7 @@ console.log(list.head()); // bird
 4. `head()`：回傳第一個 node 的值；空串列回傳 `undefined`。
 5. `tail()`：回傳最後一個 node 的值；空串列回傳 `undefined`。
 6. `at(index)`：回傳指定 index 的 node 的值；該 index 沒有 node 就回傳 `undefined`。
-7. `pop()`：移除**尾端**的 node 並回傳其值；空串列回傳 `undefined`。（原文用語為移除 head node，但依格式範例與慣例應移除尾端節點，實作與測試時請以原文與範例交叉確認。）
+7. `pop()`：移除 head node（第一個 node）並回傳其值；空串列回傳 `undefined`。（注意：`pop` 這個名稱容易讓人聯想到移除尾端節點，但原文明確要求移除 head node，請以原文為準。）
 8. `contains(value)`：串列中含有該值回傳 `true`，否則 `false`。
 9. `findIndex(value)`：回傳含該值的 node 的 index；找不到回傳 `-1`；有多個相符時回傳第一個的 index。
 10. `toString()`：把串列轉成字串以便印出預覽。空串列回傳空字串，格式為 `( value ) -> ( value ) -> ( value ) -> null`。

@@ -16,6 +16,8 @@ generated: 2026-07-03
 
 ## 核心概念
 
+![CSS 盒模型示意圖：由內而外依序是 content、padding（內距）、border（邊框）、margin（外距）](../../assets/diagrams/box-model.svg){ .od-diagram }
+
 ### 一切都是盒子
 
 學 CSS，最關鍵的能力不是換字型或改顏色，而是 **positioning（定位）與 layout（版面配置）**：把每個元素精準地放到你要的位置。要做到這件事，第一個必須內化的觀念就是盒模型。

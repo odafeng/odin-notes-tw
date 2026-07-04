@@ -16,6 +16,8 @@ generated: 2026-07-03
 
 ## 核心概念
 
+![CSS Grid 示意圖：由 grid-template-columns/rows 切出欄與列，gap 是軌道之間的間距](../../assets/diagrams/css-grid.svg){ .od-diagram }
+
 上一課你已經知道 CSS Grid Layout（格線佈局）大致是什麼，這一課要動手做出自己的第一個 grid。整條路線其實只有四件事：把某個元素變成 grid container（格線容器）、定義欄與列（tracks）、理解 explicit（顯式）與 implicit（隱式）grid 的差別、以及設定格子之間的 gap（間隙）。學會這四件事，你就能用非常少的程式碼掌控版面。
 
 ### 把元素變成 grid container
