@@ -5,7 +5,6 @@ source_file: vendor/curriculum/nodeJS/orms/project_file_uploader.md
 path: full-stack-javascript
 course: NodeJS
 order: 21
-status: draft
 generated: 2026-07-04
 ---
 

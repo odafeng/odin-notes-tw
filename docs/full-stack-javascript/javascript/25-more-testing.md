@@ -5,7 +5,6 @@ source_file: vendor/curriculum/javascript/testing_javascript/more_testing.md
 path: full-stack-javascript
 course: JavaScript
 order: 25
-status: draft
 generated: 2026-07-03
 ---
 

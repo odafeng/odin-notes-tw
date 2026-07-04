@@ -5,7 +5,6 @@ source_file: vendor/curriculum/javascript/asynchronous_javascript_and_apis/async
 path: full-stack-javascript
 course: JavaScript
 order: 21
-status: draft
 generated: 2026-07-03
 ---
 

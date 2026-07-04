@@ -5,7 +5,6 @@ source_file: vendor/curriculum/foundations/javascript_basics/DOM_manipulation_an
 path: foundations
 course: Foundations
 order: 41
-status: draft
 generated: 2026-07-03
 ---
 

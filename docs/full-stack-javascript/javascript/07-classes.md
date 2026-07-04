@@ -5,7 +5,6 @@ source_file: vendor/curriculum/javascript/organizing_your_javascript_code/classe
 path: full-stack-javascript
 course: JavaScript
 order: 7
-status: draft
 generated: 2026-07-03
 ---
 

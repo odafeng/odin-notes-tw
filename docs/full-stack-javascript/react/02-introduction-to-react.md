@@ -5,7 +5,6 @@ source_file: vendor/curriculum/react/introduction/introduction_to_react.md
 path: full-stack-javascript
 course: React
 order: 2
-status: draft
 generated: 2026-07-03
 ---
 

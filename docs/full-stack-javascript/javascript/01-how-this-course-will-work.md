@@ -5,7 +5,6 @@ source_file: vendor/curriculum/javascript/introduction/how_this_course_will_work
 path: full-stack-javascript
 course: JavaScript
 order: 1
-status: draft
 generated: 2026-07-03
 ---
 

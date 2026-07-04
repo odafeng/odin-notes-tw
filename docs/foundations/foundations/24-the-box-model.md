@@ -5,7 +5,6 @@ source_file: vendor/curriculum/foundations/html_css/css_foundations/the_box_mode
 path: foundations
 course: Foundations
 order: 24
-status: draft
 generated: 2026-07-03
 ---
 

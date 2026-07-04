@@ -5,7 +5,6 @@ source_file: vendor/curriculum/shared/the_back_end/introduction_to_the_backend_l
 path: full-stack-javascript
 course: NodeJS
 order: 1
-status: draft
 generated: 2026-07-04
 ---
 

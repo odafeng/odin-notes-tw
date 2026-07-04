@@ -5,7 +5,6 @@ source_file: vendor/curriculum/foundations/introduction/join_the_odin_community.
 path: foundations
 course: Foundations
 order: 5
-status: draft
 generated: 2026-07-03
 ---
 

@@ -5,7 +5,6 @@ source_file: vendor/curriculum/nodeJS/introduction_to_nodeJS/debugging_node.md
 path: full-stack-javascript
 course: NodeJS
 order: 4
-status: draft
 generated: 2026-07-04
 ---
 

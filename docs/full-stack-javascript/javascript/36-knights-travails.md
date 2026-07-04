@@ -5,7 +5,6 @@ source_file: vendor/curriculum/javascript/computer_science/project_knights_trava
 path: full-stack-javascript
 course: JavaScript
 order: 36
-status: draft
 generated: 2026-07-03
 ---
 

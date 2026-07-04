@@ -5,7 +5,6 @@ source_file: vendor/curriculum/react/getting_started_with_react/rendering_techni
 path: full-stack-javascript
 course: React
 order: 7
-status: draft
 generated: 2026-07-03
 ---
 

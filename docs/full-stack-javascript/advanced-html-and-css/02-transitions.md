@@ -5,7 +5,6 @@ source_file: vendor/curriculum/advanced_html_css/animation/transitions.md
 path: full-stack-javascript
 course: Advanced HTML and CSS
 order: 2
-status: draft
 generated: 2026-07-03
 ---
 

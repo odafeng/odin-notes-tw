@@ -5,7 +5,6 @@ source_file: vendor/curriculum/javascript/javascript_in_the_real_world/linting.m
 path: full-stack-javascript
 course: JavaScript
 order: 16
-status: draft
 generated: 2026-07-03
 ---
 

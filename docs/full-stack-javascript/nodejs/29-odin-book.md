@@ -5,7 +5,6 @@ source_file: vendor/curriculum/nodeJS/final_project/project_odin_book.md
 path: full-stack-javascript
 course: NodeJS
 order: 29
-status: draft
 generated: 2026-07-04
 ---
 

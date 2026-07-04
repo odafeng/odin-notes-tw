@@ -5,7 +5,6 @@ source_file: vendor/curriculum/javascript/computer_science/project_recursion.md
 path: full-stack-javascript
 course: JavaScript
 order: 28
-status: draft
 generated: 2026-07-03
 ---
 

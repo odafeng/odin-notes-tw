@@ -5,7 +5,6 @@ source_file: vendor/curriculum/foundations/javascript_basics/loops_and_arrays.md
 path: foundations
 course: Foundations
 order: 40
-status: draft
 generated: 2026-07-03
 ---
 

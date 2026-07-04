@@ -5,7 +5,6 @@ source_file: vendor/curriculum/foundations/html_css/css_foundations/the_cascade.
 path: foundations
 course: Foundations
 order: 22
-status: draft
 generated: 2026-07-03
 ---
 

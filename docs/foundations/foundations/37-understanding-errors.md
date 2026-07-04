@@ -5,7 +5,6 @@ source_file: vendor/curriculum/foundations/javascript_basics/understanding_error
 path: foundations
 course: Foundations
 order: 37
-status: draft
 generated: 2026-07-03
 ---
 

@@ -5,7 +5,6 @@ source_file: vendor/curriculum/advanced_html_css/accessibility/semantic_html.md
 path: full-stack-javascript
 course: Advanced HTML and CSS
 order: 6
-status: draft
 generated: 2026-07-03
 ---
 

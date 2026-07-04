@@ -5,7 +5,6 @@ source_file: vendor/curriculum/nodeJS/express/using_postgresql.md
 path: full-stack-javascript
 course: NodeJS
 order: 16
-status: draft
 generated: 2026-07-04
 ---
 

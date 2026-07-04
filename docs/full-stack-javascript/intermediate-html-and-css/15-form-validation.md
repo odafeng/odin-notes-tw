@@ -5,7 +5,6 @@ source_file: vendor/curriculum/intermediate_html_css/forms/form_validations.md
 path: full-stack-javascript
 course: Intermediate HTML and CSS
 order: 15
-status: draft
 generated: 2026-07-03
 ---
 

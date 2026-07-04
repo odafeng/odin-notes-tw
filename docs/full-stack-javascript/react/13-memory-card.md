@@ -5,7 +5,6 @@ source_file: vendor/curriculum/react/states_and_effects/project_memory_card.md
 path: full-stack-javascript
 course: React
 order: 13
-status: draft
 generated: 2026-07-03
 ---
 

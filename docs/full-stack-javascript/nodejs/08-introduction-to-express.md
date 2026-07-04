@@ -5,7 +5,6 @@ source_file: vendor/curriculum/nodeJS/express/introduction_to_express.md
 path: full-stack-javascript
 course: NodeJS
 order: 8
-status: draft
 generated: 2026-07-04
 ---
 

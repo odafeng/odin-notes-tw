@@ -5,7 +5,6 @@ source_file: vendor/curriculum/foundations/html_css/css_foundations/intro_to_css
 path: foundations
 course: Foundations
 order: 21
-status: draft
 generated: 2026-07-03
 ---
 

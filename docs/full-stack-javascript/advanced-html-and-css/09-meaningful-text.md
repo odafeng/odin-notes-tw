@@ -5,7 +5,6 @@ source_file: vendor/curriculum/advanced_html_css/accessibility/meaningful_text.m
 path: full-stack-javascript
 course: Advanced HTML and CSS
 order: 9
-status: draft
 generated: 2026-07-03
 ---
 

@@ -5,7 +5,6 @@ source_file: vendor/curriculum/foundations/javascript_basics/project_rock_paper_
 path: foundations
 course: Foundations
 order: 38
-status: draft
 generated: 2026-07-03
 ---
 

@@ -5,7 +5,6 @@ source_file: vendor/curriculum/javascript/organizing_your_javascript_code/webpac
 path: full-stack-javascript
 course: JavaScript
 order: 10
-status: draft
 generated: 2026-07-03
 ---
 

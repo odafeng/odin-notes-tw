@@ -5,7 +5,6 @@ source_file: vendor/curriculum/javascript/computer_science/common_data_structure
 path: full-stack-javascript
 course: JavaScript
 order: 31
-status: draft
 generated: 2026-07-03
 ---
 

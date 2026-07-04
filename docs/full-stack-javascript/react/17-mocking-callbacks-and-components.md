@@ -5,7 +5,6 @@ source_file: vendor/curriculum/react/react_testing/mocking_callbacks_and_compone
 path: full-stack-javascript
 course: React
 order: 17
-status: draft
 generated: 2026-07-03
 ---
 

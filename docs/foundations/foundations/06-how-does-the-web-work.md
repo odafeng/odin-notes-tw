@@ -5,7 +5,6 @@ source_file: vendor/curriculum/foundations/installations/how_does_the_web_work.m
 path: foundations
 course: Foundations
 order: 6
-status: draft
 generated: 2026-07-03
 ---
 

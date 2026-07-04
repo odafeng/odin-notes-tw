@@ -5,7 +5,6 @@ source_file: vendor/curriculum/nodeJS/apis/project_blog_api.md
 path: full-stack-javascript
 course: NodeJS
 order: 24
-status: draft
 generated: 2026-07-04
 ---
 

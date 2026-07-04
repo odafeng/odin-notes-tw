@@ -5,7 +5,6 @@ source_file: vendor/curriculum/intermediate_html_css/grid/using_flexbox_and_grid
 path: full-stack-javascript
 course: Intermediate HTML and CSS
 order: 21
-status: draft
 generated: 2026-07-03
 ---
 

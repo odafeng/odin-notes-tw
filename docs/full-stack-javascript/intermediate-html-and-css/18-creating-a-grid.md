@@ -5,7 +5,6 @@ source_file: vendor/curriculum/intermediate_html_css/grid/creating_a_grid.md
 path: full-stack-javascript
 course: Intermediate HTML and CSS
 order: 18
-status: draft
 generated: 2026-07-03
 ---
 

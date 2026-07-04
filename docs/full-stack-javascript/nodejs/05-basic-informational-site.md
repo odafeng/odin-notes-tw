@@ -5,7 +5,6 @@ source_file: vendor/curriculum/nodeJS/introduction_to_nodeJS/project_basic_infor
 path: full-stack-javascript
 course: NodeJS
 order: 5
-status: draft
 generated: 2026-07-04
 ---
 

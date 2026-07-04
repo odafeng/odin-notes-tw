@@ -5,7 +5,6 @@ source_file: vendor/curriculum/foundations/tying_it_all_together/conclusion.md
 path: foundations
 course: Foundations
 order: 46
-status: draft
 generated: 2026-07-03
 ---
 

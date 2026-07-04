@@ -5,7 +5,6 @@ source_file: vendor/curriculum/foundations/installations/setting_up_git.md
 path: foundations
 course: Foundations
 order: 10
-status: draft
 generated: 2026-07-03
 ---
 

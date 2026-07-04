@@ -5,7 +5,6 @@ source_file: vendor/curriculum/react/the_react_ecosystem/fetching_data_in_react.
 path: full-stack-javascript
 course: React
 order: 20
-status: draft
 generated: 2026-07-03
 ---
 

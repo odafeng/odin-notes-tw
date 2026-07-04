@@ -5,7 +5,6 @@ source_file: vendor/curriculum/react/introduction/setting_up_a_react_environment
 path: full-stack-javascript
 course: React
 order: 3
-status: draft
 generated: 2026-07-03
 ---
 

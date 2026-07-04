@@ -5,7 +5,6 @@ source_file: vendor/curriculum/advanced_html_css/responsive_design/responsive_im
 path: full-stack-javascript
 course: Advanced HTML and CSS
 order: 14
-status: draft
 generated: 2026-07-03
 ---
 

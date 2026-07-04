@@ -5,7 +5,6 @@ source_file: vendor/curriculum/git/intermediate_git/working_with_remotes.md
 path: full-stack-javascript
 course: JavaScript
 order: 38
-status: draft
 generated: 2026-07-03
 ---
 

@@ -5,7 +5,6 @@ source_file: vendor/curriculum/databases/databases/project_sql_zoo.md
 path: full-stack-javascript
 course: Databases
 order: 3
-status: draft
 generated: 2026-07-04
 ---
 

@@ -5,7 +5,6 @@ source_file: vendor/curriculum/nodeJS/apis/api_security.md
 path: full-stack-javascript
 course: NodeJS
 order: 23
-status: draft
 generated: 2026-07-04
 ---
 

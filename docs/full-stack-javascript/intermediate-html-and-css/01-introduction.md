@@ -5,7 +5,6 @@ source_file: vendor/curriculum/intermediate_html_css/intermediate_html_concepts/
 path: full-stack-javascript
 course: Intermediate HTML and CSS
 order: 1
-status: draft
 generated: 2026-07-03
 ---
 

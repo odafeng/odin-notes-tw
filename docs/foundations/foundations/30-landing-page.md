@@ -5,7 +5,6 @@ source_file: vendor/curriculum/foundations/html_css/flexbox/project_landing_page
 path: foundations
 course: Foundations
 order: 30
-status: draft
 generated: 2026-07-03
 ---
 

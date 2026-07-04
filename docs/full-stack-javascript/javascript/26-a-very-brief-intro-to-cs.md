@@ -5,7 +5,6 @@ source_file: vendor/curriculum/javascript/computer_science/a_very_brief_intro_to
 path: full-stack-javascript
 course: JavaScript
 order: 26
-status: draft
 generated: 2026-07-03
 ---
 

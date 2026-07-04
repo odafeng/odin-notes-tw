@@ -5,7 +5,6 @@ source_file: vendor/curriculum/javascript/computer_science/recursive_methods.md
 path: full-stack-javascript
 course: JavaScript
 order: 27
-status: draft
 generated: 2026-07-03
 ---
 

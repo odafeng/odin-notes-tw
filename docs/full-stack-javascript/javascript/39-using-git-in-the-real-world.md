@@ -5,7 +5,6 @@ source_file: vendor/curriculum/git/intermediate_git/using_git_in_the_real_world.
 path: full-stack-javascript
 course: JavaScript
 order: 39
-status: draft
 generated: 2026-07-03
 ---
 

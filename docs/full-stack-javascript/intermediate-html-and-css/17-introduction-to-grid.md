@@ -5,7 +5,6 @@ source_file: vendor/curriculum/intermediate_html_css/grid/introduction_to_grid.m
 path: full-stack-javascript
 course: Intermediate HTML and CSS
 order: 17
-status: draft
 generated: 2026-07-03
 ---
 

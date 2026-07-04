@@ -5,7 +5,6 @@ source_file: vendor/curriculum/react/getting_started_with_react/react_components
 path: full-stack-javascript
 course: React
 order: 4
-status: draft
 generated: 2026-07-03
 ---
 

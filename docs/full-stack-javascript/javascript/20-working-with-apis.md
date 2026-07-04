@@ -5,7 +5,6 @@ source_file: vendor/curriculum/javascript/asynchronous_javascript_and_apis/worki
 path: full-stack-javascript
 course: JavaScript
 order: 20
-status: draft
 generated: 2026-07-03
 ---
 

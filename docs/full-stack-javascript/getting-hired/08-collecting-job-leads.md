@@ -5,7 +5,6 @@ source_file: vendor/curriculum/getting_hired/applying_and_interviewing/collect_l
 path: full-stack-javascript
 course: Getting Hired
 order: 8
-status: draft
 generated: 2026-07-04
 ---
 

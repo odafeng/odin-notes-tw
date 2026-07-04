@@ -5,7 +5,6 @@ source_file: vendor/curriculum/foundations/html_css/css_foundations/inspecting_h
 path: foundations
 course: Foundations
 order: 23
-status: draft
 generated: 2026-07-03
 ---
 

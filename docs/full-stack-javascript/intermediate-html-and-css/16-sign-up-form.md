@@ -5,7 +5,6 @@ source_file: vendor/curriculum/intermediate_html_css/forms/project_sign_up_form.
 path: full-stack-javascript
 course: Intermediate HTML and CSS
 order: 16
-status: draft
 generated: 2026-07-03
 ---
 

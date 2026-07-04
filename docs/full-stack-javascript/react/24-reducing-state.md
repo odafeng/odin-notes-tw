@@ -5,7 +5,6 @@ source_file: vendor/curriculum/react/more_react_concepts/reducing_state.md
 path: full-stack-javascript
 course: React
 order: 24
-status: draft
 generated: 2026-07-03
 ---
 

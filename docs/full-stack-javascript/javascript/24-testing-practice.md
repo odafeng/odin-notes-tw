@@ -5,7 +5,6 @@ source_file: vendor/curriculum/javascript/testing_javascript/project_testing_pra
 path: full-stack-javascript
 course: JavaScript
 order: 24
-status: draft
 generated: 2026-07-03
 ---
 

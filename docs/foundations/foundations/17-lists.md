@@ -5,7 +5,6 @@ source_file: vendor/curriculum/foundations/html_css/html_foundations/lists.md
 path: foundations
 course: Foundations
 order: 17
-status: draft
 generated: 2026-07-02
 ---
 

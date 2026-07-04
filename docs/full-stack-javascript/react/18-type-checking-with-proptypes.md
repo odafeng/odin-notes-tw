@@ -5,7 +5,6 @@ source_file: vendor/curriculum/react/the_react_ecosystem/type_checking_with_prop
 path: full-stack-javascript
 course: React
 order: 18
-status: draft
 generated: 2026-07-03
 ---
 

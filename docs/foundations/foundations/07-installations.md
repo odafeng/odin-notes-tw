@@ -5,7 +5,6 @@ source_file: vendor/curriculum/foundations/installations/installations.md
 path: foundations
 course: Foundations
 order: 7
-status: draft
 generated: 2026-07-03
 ---
 

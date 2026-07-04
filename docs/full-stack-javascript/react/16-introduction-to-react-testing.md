@@ -5,7 +5,6 @@ source_file: vendor/curriculum/react/react_testing/introduction_to_react_testing
 path: full-stack-javascript
 course: React
 order: 16
-status: draft
 generated: 2026-07-04
 ---
 

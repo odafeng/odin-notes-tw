@@ -5,7 +5,6 @@ source_file: vendor/curriculum/javascript/computer_science/hash_map_data_structu
 path: full-stack-javascript
 course: JavaScript
 order: 33
-status: draft
 generated: 2026-07-03
 ---
 

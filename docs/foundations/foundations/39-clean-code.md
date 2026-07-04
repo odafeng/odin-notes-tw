@@ -5,7 +5,6 @@ source_file: vendor/curriculum/foundations/javascript_basics/clean_code.md
 path: foundations
 course: Foundations
 order: 39
-status: draft
 generated: 2026-07-03
 ---
 

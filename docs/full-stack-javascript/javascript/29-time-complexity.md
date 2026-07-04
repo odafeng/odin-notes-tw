@@ -5,7 +5,6 @@ source_file: vendor/curriculum/javascript/computer_science/time_complexity.md
 path: full-stack-javascript
 course: JavaScript
 order: 29
-status: draft
 generated: 2026-07-03
 ---
 

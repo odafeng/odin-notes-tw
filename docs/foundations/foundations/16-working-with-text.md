@@ -5,7 +5,6 @@ source_file: vendor/curriculum/foundations/html_css/html_foundations/working_wit
 path: foundations
 course: Foundations
 order: 16
-status: draft
 generated: 2026-07-02
 ---
 

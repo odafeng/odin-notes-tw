@@ -35,7 +35,6 @@ class Lecture:
     path: str
     course: str
     order: int
-    status: str
     rel_url: str
 
 
@@ -64,7 +63,6 @@ def collect() -> list[Lecture]:
                 path=str(fm.get("path", "")),
                 course=str(fm["course"]),
                 order=int(fm.get("order", 0)),
-                status=str(fm.get("status", "draft")),
                 rel_url=md.relative_to(DOCS).as_posix(),
             )
         )

@@ -5,7 +5,6 @@ source_file: vendor/curriculum/javascript/computer_science/project_hash_map.md
 path: full-stack-javascript
 course: JavaScript
 order: 34
-status: draft
 generated: 2026-07-03
 ---
 

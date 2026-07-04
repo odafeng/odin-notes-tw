@@ -5,7 +5,6 @@ source_file: vendor/curriculum/getting_hired/preparing_for_job_search/strategy.m
 path: full-stack-javascript
 course: Getting Hired
 order: 3
-status: draft
 generated: 2026-07-04
 ---
 

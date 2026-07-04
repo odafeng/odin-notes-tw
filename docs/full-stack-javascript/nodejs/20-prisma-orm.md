@@ -5,7 +5,6 @@ source_file: vendor/curriculum/nodeJS/orms/prisma_orm.md
 path: full-stack-javascript
 course: NodeJS
 order: 20
-status: draft
 generated: 2026-07-04
 ---
 

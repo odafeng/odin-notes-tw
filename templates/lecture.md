@@ -5,7 +5,6 @@ source_file: vendor/curriculum/（對應檔案路徑，找不到留空）
 path: foundations            # foundations | full-stack-javascript
 course: （Course 名，照官網英文）
 order: 0                     # 該 course 內的順序，與檔名 NN 一致
-status: draft                # draft | done（Fredric 讀完確認後改 done）
 generated: YYYY-MM-DD
 ---
 

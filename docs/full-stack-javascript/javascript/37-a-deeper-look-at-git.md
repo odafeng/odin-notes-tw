@@ -5,7 +5,6 @@ source_file: vendor/curriculum/git/intermediate_git/a_deeper_look_at_git.md
 path: full-stack-javascript
 course: JavaScript
 order: 37
-status: draft
 generated: 2026-07-03
 ---
 

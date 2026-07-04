@@ -5,7 +5,6 @@ source_file: vendor/curriculum/foundations/introduction/asking_for_help.md
 path: foundations
 course: Foundations
 order: 4
-status: draft
 generated: 2026-07-03
 ---
 

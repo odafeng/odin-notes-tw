@@ -5,7 +5,6 @@ source_file: vendor/curriculum/react/the_react_ecosystem/styling_react_applicati
 path: full-stack-javascript
 course: React
 order: 21
-status: draft
 generated: 2026-07-03
 ---
 

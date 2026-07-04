@@ -5,7 +5,6 @@ source_file: vendor/curriculum/foundations/installations/text_editors.md
 path: foundations
 course: Foundations
 order: 8
-status: draft
 generated: 2026-07-03
 ---
 

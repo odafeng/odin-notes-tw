@@ -5,7 +5,6 @@ source_file: vendor/curriculum/javascript/finishing_up_with_javascript/project_b
 path: full-stack-javascript
 course: JavaScript
 order: 40
-status: draft
 generated: 2026-07-03
 ---
 

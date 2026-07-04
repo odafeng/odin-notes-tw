@@ -5,7 +5,6 @@ source_file: vendor/curriculum/javascript/javascript_in_the_real_world/form_vali
 path: full-stack-javascript
 course: JavaScript
 order: 17
-status: draft
 generated: 2026-07-03
 ---
 

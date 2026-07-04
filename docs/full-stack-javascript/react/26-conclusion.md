@@ -5,7 +5,6 @@ source_file: vendor/curriculum/react/conclusion/conclusion_full_stack_javascript
 path: full-stack-javascript
 course: React
 order: 26
-status: draft
 generated: 2026-07-03
 ---
 

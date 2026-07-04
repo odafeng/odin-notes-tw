@@ -5,7 +5,6 @@ source_file: vendor/curriculum/react/states_and_effects/how_to_deal_with_side_ef
 path: full-stack-javascript
 course: React
 order: 12
-status: draft
 generated: 2026-07-04
 ---
 

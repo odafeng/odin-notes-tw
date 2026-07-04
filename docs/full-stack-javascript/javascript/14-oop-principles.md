@@ -5,7 +5,6 @@ source_file: vendor/curriculum/javascript/organizing_your_javascript_code/oop_pr
 path: full-stack-javascript
 course: JavaScript
 order: 14
-status: draft
 generated: 2026-07-03
 ---
 

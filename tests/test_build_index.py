@@ -16,7 +16,6 @@ def _lec(title: str, course: str, order: int, rel_url: str) -> bi.Lecture:
         path="foundations",
         course=course,
         order=order,
-        status="draft",
         rel_url=rel_url,
     )
 

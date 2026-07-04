@@ -5,7 +5,6 @@ source_file: vendor/curriculum/git/foundations_git/commit_messages.md
 path: foundations
 course: Foundations
 order: 19
-status: draft
 generated: 2026-07-02
 ---
 

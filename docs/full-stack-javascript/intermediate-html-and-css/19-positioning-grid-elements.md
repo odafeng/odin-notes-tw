@@ -5,7 +5,6 @@ source_file: vendor/curriculum/intermediate_html_css/grid/positioning_grid_eleme
 path: full-stack-javascript
 course: Intermediate HTML and CSS
 order: 19
-status: draft
 generated: 2026-07-03
 ---
 

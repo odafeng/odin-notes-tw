@@ -5,7 +5,6 @@ source_file: vendor/curriculum/react/class_components/class_based_components.md
 path: full-stack-javascript
 course: React
 order: 14
-status: draft
 generated: 2026-07-04
 ---
 

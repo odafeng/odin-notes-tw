@@ -5,7 +5,6 @@ source_file: vendor/curriculum/javascript/computer_science/project_linked_lists.
 path: full-stack-javascript
 course: JavaScript
 order: 32
-status: draft
 generated: 2026-07-03
 ---
 

@@ -5,7 +5,6 @@ source_file: vendor/curriculum/advanced_html_css/accessibility/keyboard_navigati
 path: full-stack-javascript
 course: Advanced HTML and CSS
 order: 8
-status: draft
 generated: 2026-07-03
 ---
 

@@ -5,7 +5,6 @@ source_file: vendor/curriculum/nodeJS/express/routing.md
 path: full-stack-javascript
 course: NodeJS
 order: 9
-status: draft
 generated: 2026-07-04
 ---
 

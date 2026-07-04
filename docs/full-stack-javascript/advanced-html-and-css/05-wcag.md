@@ -5,7 +5,6 @@ source_file: vendor/curriculum/advanced_html_css/accessibility/the_web_content_a
 path: full-stack-javascript
 course: Advanced HTML and CSS
 order: 5
-status: draft
 generated: 2026-07-03
 ---
 

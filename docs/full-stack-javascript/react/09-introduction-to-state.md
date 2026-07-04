@@ -5,7 +5,6 @@ source_file: vendor/curriculum/react/states_and_effects/introduction_to_state.md
 path: full-stack-javascript
 course: React
 order: 9
-status: draft
 generated: 2026-07-03
 ---
 

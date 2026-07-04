@@ -5,7 +5,6 @@ source_file: vendor/curriculum/react/the_react_ecosystem/project_shopping_cart.m
 path: full-stack-javascript
 course: React
 order: 22
-status: draft
 generated: 2026-07-03
 ---
 

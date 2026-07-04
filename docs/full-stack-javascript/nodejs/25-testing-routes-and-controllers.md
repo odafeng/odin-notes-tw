@@ -5,7 +5,6 @@ source_file: vendor/curriculum/nodeJS/testing_express/testing_routes_and_control
 path: full-stack-javascript
 course: NodeJS
 order: 25
-status: draft
 generated: 2026-07-04
 ---
 

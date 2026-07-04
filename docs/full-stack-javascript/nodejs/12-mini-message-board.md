@@ -5,7 +5,6 @@ source_file: vendor/curriculum/nodeJS/express/project_mini_message_board.md
 path: full-stack-javascript
 course: NodeJS
 order: 12
-status: draft
 generated: 2026-07-04
 ---
 

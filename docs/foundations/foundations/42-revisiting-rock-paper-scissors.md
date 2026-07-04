@@ -5,7 +5,6 @@ source_file: vendor/curriculum/foundations/javascript_basics/revisiting_rock_pap
 path: foundations
 course: Foundations
 order: 42
-status: draft
 generated: 2026-07-03
 ---
 

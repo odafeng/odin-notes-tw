@@ -5,7 +5,6 @@ source_file: vendor/curriculum/react/getting_started_with_react/passing_data_bet
 path: full-stack-javascript
 course: React
 order: 6
-status: draft
 generated: 2026-07-03
 ---
 

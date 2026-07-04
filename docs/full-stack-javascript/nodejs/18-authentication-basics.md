@@ -5,7 +5,6 @@ source_file: vendor/curriculum/nodeJS/authentication/authentication_basics.md
 path: full-stack-javascript
 course: NodeJS
 order: 18
-status: draft
 generated: 2026-07-04
 ---
 

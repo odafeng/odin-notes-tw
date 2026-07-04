@@ -5,7 +5,6 @@ source_file: vendor/curriculum/nodeJS/express/project_inventory_application.md
 path: full-stack-javascript
 course: NodeJS
 order: 17
-status: draft
 generated: 2026-07-04
 ---
 

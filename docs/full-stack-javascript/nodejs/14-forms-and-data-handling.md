@@ -5,7 +5,6 @@ source_file: vendor/curriculum/nodeJS/express/forms_and_data_handling.md
 path: full-stack-javascript
 course: NodeJS
 order: 14
-status: draft
 generated: 2026-07-04
 ---
 

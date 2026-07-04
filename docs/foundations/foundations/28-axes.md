@@ -5,7 +5,6 @@ source_file: vendor/curriculum/foundations/html_css/flexbox/flexbox_axes.md
 path: foundations
 course: Foundations
 order: 28
-status: draft
 generated: 2026-07-03
 ---
 

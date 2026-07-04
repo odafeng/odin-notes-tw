@@ -5,7 +5,6 @@ source_file: vendor/curriculum/react/react_and_the_backend/project_messaging_app
 path: full-stack-javascript
 course: NodeJS
 order: 28
-status: draft
 generated: 2026-07-04
 ---
 

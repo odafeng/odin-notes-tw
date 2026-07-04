@@ -5,7 +5,6 @@ source_file: vendor/curriculum/databases/databases/databases.md
 path: full-stack-javascript
 course: Databases
 order: 1
-status: draft
 generated: 2026-07-04
 ---
 

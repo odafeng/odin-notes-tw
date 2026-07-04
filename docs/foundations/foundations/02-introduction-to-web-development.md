@@ -5,7 +5,6 @@ source_file: vendor/curriculum/foundations/introduction/introduction_to_web_deve
 path: foundations
 course: Foundations
 order: 2
-status: draft
 generated: 2026-07-03
 ---
 

@@ -5,7 +5,6 @@ source_file: vendor/curriculum/foundations/html_css/css_foundations/block_and_in
 path: foundations
 course: Foundations
 order: 25
-status: draft
 generated: 2026-07-03
 ---
 

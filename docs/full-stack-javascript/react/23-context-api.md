@@ -5,7 +5,6 @@ source_file: vendor/curriculum/react/more_react_concepts/managing_state_with_con
 path: full-stack-javascript
 course: React
 order: 23
-status: draft
 generated: 2026-07-03
 ---
 

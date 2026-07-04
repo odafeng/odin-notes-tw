@@ -5,7 +5,6 @@ source_file: vendor/curriculum/foundations/javascript_basics/problem_solving.md
 path: foundations
 course: Foundations
 order: 36
-status: draft
 generated: 2026-07-03
 ---
 

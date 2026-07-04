@@ -5,7 +5,6 @@ source_file: vendor/curriculum/react/more_react_concepts/refs_and_memoization.md
 path: full-stack-javascript
 course: React
 order: 25
-status: draft
 generated: 2026-07-03
 ---
 

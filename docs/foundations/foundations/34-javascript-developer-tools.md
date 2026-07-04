@@ -5,7 +5,6 @@ source_file: vendor/curriculum/foundations/javascript_basics/javascript_develope
 path: foundations
 course: Foundations
 order: 34
-status: draft
 generated: 2026-07-03
 ---
 

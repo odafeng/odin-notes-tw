@@ -5,7 +5,6 @@ source_file: vendor/curriculum/javascript/computer_science/project_binary_search
 path: full-stack-javascript
 course: JavaScript
 order: 35
-status: draft
 generated: 2026-07-03
 ---
 

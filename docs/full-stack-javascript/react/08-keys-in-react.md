@@ -5,7 +5,6 @@ source_file: vendor/curriculum/react/getting_started_with_react/keys_in_react.md
 path: full-stack-javascript
 course: React
 order: 8
-status: draft
 generated: 2026-07-03
 ---
 

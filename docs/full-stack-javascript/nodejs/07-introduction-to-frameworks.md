@@ -5,7 +5,6 @@ source_file: vendor/curriculum/shared/the_back_end/introduction_to_frameworks.md
 path: full-stack-javascript
 course: NodeJS
 order: 7
-status: draft
 generated: 2026-07-04
 ---
 

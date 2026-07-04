@@ -5,7 +5,6 @@ source_file: vendor/curriculum/react/states_and_effects/project_cv_application.m
 path: full-stack-javascript
 course: React
 order: 11
-status: draft
 generated: 2026-07-03
 ---
 

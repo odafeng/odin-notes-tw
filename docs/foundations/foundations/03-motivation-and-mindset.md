@@ -5,7 +5,6 @@ source_file: vendor/curriculum/foundations/introduction/motivation_and_mindset.m
 path: foundations
 course: Foundations
 order: 3
-status: draft
 generated: 2026-07-03
 ---
 
