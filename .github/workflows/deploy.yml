@@ -27,13 +27,20 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.retry.outputs.page_url }}
     steps:
+      # GitHub Pages 後端偶發 transient 失敗（Deployment failed, try again later）。
+      # 第一次嘗試失敗不讓 job 掛掉，自動做第二次嘗試——pipeline 自癒，不需人工 rerun。
       - id: deployment
         uses: actions/deploy-pages@v4
+        continue-on-error: true
         with:
-          # GitHub Pages 後端偶發 transient 逾時；拉高等待與重試次數讓它自癒，
-          # 不必人工 rerun。（timeout 單位 ms）
+          timeout: 900000
+          error_count: 25
+      - id: retry
+        if: steps.deployment.outcome == 'failure'
+        uses: actions/deploy-pages@v4
+        with:
           timeout: 900000
           error_count: 25
 
