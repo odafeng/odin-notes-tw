@@ -213,3 +213,75 @@
 .md-typeset .task-list-control [type=checkbox]:not([disabled]) { cursor: pointer; }
 
 .od-read-count { font-weight: 700; color: var(--md-accent-fg-color); }
+
+/* 每課工具列：已讀按鈕 + 預估閱讀時間 */
+.md-typeset .od-lecture-tools {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  flex-wrap: wrap;
+  margin: 0 0 1.6rem;
+}
+.md-typeset .od-lecture-tools .od-read-toggle { margin: 0; }
+.md-typeset .od-read-time {
+  font-size: .7rem;
+  color: var(--md-default-fg-color--light);
+}
+
+/* 課程清單：本課程進度 */
+.md-typeset .od-course-progress-line {
+  margin: .2rem 0 1rem;
+  font-size: .8rem;
+  font-weight: 700;
+  color: var(--md-accent-fg-color);
+}
+
+/* 首頁：可摺疊的課程 */
+.md-typeset details.od-course {
+  border: 1px solid var(--od-surface-border);
+  border-radius: .6rem;
+  margin: .5rem 0;
+  padding: 0 1rem;
+  background: var(--od-surface);
+}
+.md-typeset details.od-course > summary {
+  padding: .7rem .2rem;
+  font-weight: 700;
+  cursor: pointer;
+  list-style-position: inside;
+}
+/* 蓋掉 Material 給 details 套的 note 型圖示（左上鉛筆圈），只留右側展開箭頭 */
+.md-typeset details.od-course > summary::before { display: none; }
+.md-typeset details.od-course[open] > summary {
+  border-bottom: 1px solid var(--od-surface-border);
+  margin-bottom: .4rem;
+}
+.md-typeset .od-course-progress {
+  font-weight: 400;
+  font-size: .78rem;
+  color: var(--md-accent-fg-color);
+}
+
+/* 清除進度按鈕 */
+.md-typeset .od-reset {
+  margin-left: .3rem;
+  padding: .1rem .55rem;
+  font-size: .68rem;
+  cursor: pointer;
+  color: var(--md-default-fg-color--light);
+  background: transparent;
+  border: 1px solid var(--od-surface-border);
+  border-radius: 1rem;
+}
+.md-typeset .od-reset:hover {
+  color: var(--md-accent-fg-color);
+  border-color: var(--md-accent-fg-color);
+}
+
+/* 左側導覽：已讀的課前面一個勾 */
+.md-nav__link.od-nav-read::before {
+  content: "✓";
+  margin-right: .3rem;
+  color: var(--md-accent-fg-color);
+  font-weight: 700;
+}

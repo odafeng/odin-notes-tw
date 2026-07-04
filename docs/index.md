@@ -48,7 +48,8 @@ hide:
 
 在任一課頁面點「標記為已讀」、或在課程清單點核取方塊就會記住（存在你的瀏覽器，換裝置各自計算）。
 
-### Foundations
+<details class="od-course" markdown>
+<summary>Foundations<span class="od-course-progress"></span></summary>
 
 - [這門課怎麼進行](foundations/foundations/01-how-this-course-will-work.md)
 - [網頁開發簡介](foundations/foundations/02-introduction-to-web-development.md)
@@ -96,7 +97,11 @@ hide:
 - [物件基礎（Objects）](foundations/foundations/44-object-basics.md)
 - [專案：計算機](foundations/foundations/45-calculator.md)
 - [選擇你的下一步](foundations/foundations/46-choose-your-path-forward.md)
-### Intermediate HTML and CSS
+
+</details>
+
+<details class="od-course" markdown>
+<summary>Intermediate HTML and CSS<span class="od-course-progress"></span></summary>
 
 - [導論](full-stack-javascript/intermediate-html-and-css/01-introduction.md)
 - [SVG 向量圖](full-stack-javascript/intermediate-html-and-css/02-svg.md)
@@ -120,7 +125,11 @@ hide:
 - [進階 Grid 屬性](full-stack-javascript/intermediate-html-and-css/20-advanced-grid-properties.md)
 - [Flexbox 與 Grid 並用](full-stack-javascript/intermediate-html-and-css/21-using-flexbox-and-grid.md)
 - [專案：管理後台](full-stack-javascript/intermediate-html-and-css/22-admin-dashboard.md)
-### JavaScript
+
+</details>
+
+<details class="od-course" markdown>
+<summary>JavaScript<span class="od-course-progress"></span></summary>
 
 - [這門課怎麼進行](full-stack-javascript/javascript/01-how-this-course-will-work.md)
 - [用物件組織程式碼](full-stack-javascript/javascript/02-organizing-code-with-objects.md)
@@ -163,7 +172,11 @@ hide:
 - [在真實世界用 Git](full-stack-javascript/javascript/39-using-git-in-the-real-world.md)
 - [專案：Battleship 海戰棋](full-stack-javascript/javascript/40-battleship.md)
 - [結語](full-stack-javascript/javascript/41-conclusion.md)
-### Advanced HTML and CSS
+
+</details>
+
+<details class="od-course" markdown>
+<summary>Advanced HTML and CSS<span class="od-course-progress"></span></summary>
 
 - [CSS Transform 變形](full-stack-javascript/advanced-html-and-css/01-transforms.md)
 - [CSS Transition 轉場](full-stack-javascript/advanced-html-and-css/02-transitions.md)
@@ -181,7 +194,11 @@ hide:
 - [響應式圖片](full-stack-javascript/advanced-html-and-css/14-responsive-images.md)
 - [Media Queries](full-stack-javascript/advanced-html-and-css/15-media-queries.md)
 - [專案：Homepage](full-stack-javascript/advanced-html-and-css/16-homepage.md)
-### React
+
+</details>
+
+<details class="od-course" markdown>
+<summary>React<span class="od-course-progress"></span></summary>
 
 - [這門課怎麼進行](full-stack-javascript/react/01-how-this-course-will-work.md)
 - [React 簡介](full-stack-javascript/react/02-introduction-to-react.md)
@@ -209,12 +226,20 @@ hide:
 - [用 Reducer 管理狀態](full-stack-javascript/react/24-reducing-state.md)
 - [Refs 與 Memoization](full-stack-javascript/react/25-refs-and-memoization.md)
 - [結語](full-stack-javascript/react/26-conclusion.md)
-### Databases
+
+</details>
+
+<details class="od-course" markdown>
+<summary>Databases<span class="od-course-progress"></span></summary>
 
 - [資料庫（Databases）](full-stack-javascript/databases/01-databases.md)
 - [資料庫與 SQL](full-stack-javascript/databases/02-databases-and-sql.md)
 - [專案：SQL Zoo](full-stack-javascript/databases/03-sql-zoo.md)
-### NodeJS
+
+</details>
+
+<details class="od-course" markdown>
+<summary>NodeJS<span class="od-course-progress"></span></summary>
 
 - [後端簡介](full-stack-javascript/nodejs/01-introduction-to-the-back-end.md)
 - [Node.js 是什麼](full-stack-javascript/nodejs/02-what-is-nodejs.md)
@@ -246,7 +271,11 @@ hide:
 - [專案：訊息 App](full-stack-javascript/nodejs/28-messaging-app.md)
 - [專案：Odin-Book](full-stack-javascript/nodejs/29-odin-book.md)
 - [結語](full-stack-javascript/nodejs/30-conclusion.md)
-### Getting Hired
+
+</details>
+
+<details class="od-course" markdown>
+<summary>Getting Hired<span class="od-course-progress"></span></summary>
 
 - [這門課怎麼進行](full-stack-javascript/getting-hired/01-how-this-course-will-work.md)
 - [建立專業人脈](full-stack-javascript/getting-hired/02-professional-networking.md)
@@ -262,4 +291,6 @@ hide:
 - [面試準備與應對](full-stack-javascript/getting-hired/12-preparing-to-interview-and-interviewing.md)
 - [處理錄取通知](full-stack-javascript/getting-hired/13-handling-a-job-offer.md)
 - [結語](full-stack-javascript/getting-hired/14-conclusion.md)
+
+</details>
 <!-- PROGRESS:END -->

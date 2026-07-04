@@ -1,7 +1,8 @@
 /* 讀者閱讀進度：純前端、存在瀏覽器 localStorage，免改任何檔。
-   - 每課頁面：H1 下方一顆「標記為已讀」按鈕
-   - 課程清單頁：核取方塊可點，點了就記住
-   - 首頁課程目錄：已讀的課標示出來，並即時算「你已讀 X／N 課」
+   - 每課頁面：H1 下方「標記為已讀」按鈕 + 預估閱讀時間
+   - 課程清單頁：核取方塊可點 + 本課程進度
+   - 首頁課程目錄：即時「你已讀 X／N 課」、各課程分項進度、已讀標示、清除進度
+   - 左側導覽：已讀的課標一個勾
    相容 Material 的 instant navigation（用 document$ 訂閱每次換頁）。 */
 (function () {
   "use strict";
@@ -23,7 +24,6 @@
   function isRead(id) { return readSet.has(id); }
   function setRead(id, on) { on ? readSet.add(id) : readSet.delete(id); save(); }
 
-  // 課頁網址型如 /.../<course>/NN-slug/ ；用絕對路徑當唯一 id
   var LESSON_RE = /\/\d{2}-[^\/]+\/?$/;
   function idFromHref(href) {
     try {
@@ -33,82 +33,155 @@
   }
   function isLessonPath(path) { return LESSON_RE.test(path.replace(/\/$/, "")); }
   function currentId() { return idFromHref(location.href); }
+  function isLessonId(id) { return id && isLessonPath(id.replace(/\/$/, "")); }
 
-  // 1) 每課頁面：注入「標記為已讀」按鈕
+  // 收集某容器內的課連結 id（去重）
+  function lessonIdsIn(root) {
+    var seen = {};
+    (root || document).querySelectorAll("a[href]").forEach(function (a) {
+      var id = idFromHref(a.href);
+      if (isLessonId(id)) seen[id] = true;
+    });
+    return Object.keys(seen);
+  }
+  function readCount(ids) {
+    return ids.filter(function (id) { return isRead(id); }).length;
+  }
+
+  // 1) 每課頁面：「標記為已讀」按鈕 + 預估閱讀時間
   function enhanceLecture() {
     var path = location.pathname.replace(/\/$/, "");
     if (!isLessonPath(path)) return;
     var article = document.querySelector(".md-content__inner");
-    if (!article || article.querySelector(".od-read-toggle")) return;
+    if (!article) return;
     var h1 = article.querySelector("h1");
     if (!h1) return;
-    var id = currentId();
-    var btn = document.createElement("button");
-    btn.type = "button";
-    btn.className = "od-read-toggle";
-    function render() {
-      var on = isRead(id);
-      btn.classList.toggle("is-read", on);
-      btn.setAttribute("aria-pressed", on ? "true" : "false");
-      btn.textContent = on ? "✓ 已讀（點一下取消）" : "標記為已讀";
-    }
-    btn.addEventListener("click", function () {
-      setRead(id, !isRead(id));
+    if (!article.querySelector(".od-read-toggle")) {
+      var id = currentId();
+      var wrap = document.createElement("div");
+      wrap.className = "od-lecture-tools";
+      var btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "od-read-toggle";
+      function render() {
+        var on = isRead(id);
+        btn.classList.toggle("is-read", on);
+        btn.setAttribute("aria-pressed", on ? "true" : "false");
+        btn.textContent = on ? "✓ 已讀（點一下取消）" : "標記為已讀";
+      }
+      btn.addEventListener("click", function () {
+        setRead(id, !isRead(id));
+        render();
+      });
       render();
-    });
-    render();
-    h1.insertAdjacentElement("afterend", btn);
+      wrap.appendChild(btn);
+      var mins = readingMinutes(article);
+      if (mins) {
+        var t = document.createElement("span");
+        t.className = "od-read-time";
+        t.textContent = "約 " + mins + " 分鐘";
+        wrap.appendChild(t);
+      }
+      h1.insertAdjacentElement("afterend", wrap);
+    }
+  }
+  function readingMinutes(article) {
+    var text = article.textContent || "";
+    var cjk = (text.match(/[㐀-鿿]/g) || []).length;
+    var words = (text.replace(/[㐀-鿿]/g, " ").match(/[A-Za-z0-9]+/g) || []).length;
+    var mins = Math.round(cjk / 400 + words / 200);
+    return Math.max(1, mins);
   }
 
-  // 2) 課程清單頁：讓核取方塊可點、並反映已讀狀態
+  // 2) 課程清單頁：核取方塊可點 + 本課程進度
   function enhanceChecklist() {
     var items = document.querySelectorAll(".md-content__inner .task-list-item");
+    if (!items.length) return;
     items.forEach(function (li) {
       var input = li.querySelector('input[type="checkbox"]');
-      var link = li.querySelector('a[href]');
+      var link = li.querySelector("a[href]");
       if (!input || !link) return;
       var id = idFromHref(link.href);
-      if (!id || !isLessonPath(id.replace(/\/$/, ""))) return;
+      if (!isLessonId(id)) return;
       input.disabled = false;
       input.checked = isRead(id);
       li.classList.toggle("od-done", input.checked);
-      if (input.dataset.odBound) return;
-      input.dataset.odBound = "1";
-      input.addEventListener("change", function () {
-        setRead(id, input.checked);
-        li.classList.toggle("od-done", input.checked);
-        updateCounter();
-      });
-    });
-  }
-
-  // 3) 首頁：標示已讀連結 + 即時計數
-  function enhanceIndexList() {
-    document.querySelectorAll(".md-content__inner a[href]").forEach(function (a) {
-      var id = idFromHref(a.href);
-      if (id && isLessonPath(id.replace(/\/$/, ""))) {
-        a.classList.toggle("od-link-read", isRead(id));
+      if (!input.dataset.odBound) {
+        input.dataset.odBound = "1";
+        input.addEventListener("change", function () {
+          setRead(id, input.checked);
+          li.classList.toggle("od-done", input.checked);
+          updateChecklistProgress();
+        });
       }
     });
-    updateCounter();
+    updateChecklistProgress();
   }
-  function updateCounter() {
+  function updateChecklistProgress() {
+    var article = document.querySelector(".md-content__inner");
+    if (!article || !article.querySelector(".task-list-item")) return;
+    var ids = lessonIdsIn(article);
+    var el = article.querySelector(".od-course-progress-line");
+    if (!el) {
+      var h1 = article.querySelector("h1");
+      if (!h1) return;
+      el = document.createElement("p");
+      el.className = "od-course-progress-line";
+      h1.insertAdjacentElement("afterend", el);
+    }
+    el.textContent = "本課程 你已讀 " + readCount(ids) + "／" + ids.length + " 課";
+  }
+
+  // 3) 首頁：即時計數 + 各課程分項進度 + 已讀標示 + 清除鈕
+  function enhanceIndexList() {
     var el = document.querySelector(".od-read-count");
-    if (!el) return;
-    var ids = {};
+    if (!el) return; // 只在首頁
     document.querySelectorAll(".md-content__inner a[href]").forEach(function (a) {
       var id = idFromHref(a.href);
-      if (id && isLessonPath(id.replace(/\/$/, ""))) ids[id] = true;
+      if (isLessonId(id)) a.classList.toggle("od-link-read", isRead(id));
     });
-    var keys = Object.keys(ids);
-    var read = keys.filter(function (id) { return isRead(id); }).length;
-    el.textContent = String(read);
+    el.textContent = String(readCount(lessonIdsIn(document.querySelector(".md-content__inner"))));
+    document.querySelectorAll(".md-content__inner .od-course").forEach(function (d) {
+      var span = d.querySelector(".od-course-progress");
+      if (!span) return;
+      var ids = lessonIdsIn(d);
+      span.textContent = "　已讀 " + readCount(ids) + "／" + ids.length;
+    });
+    injectReset(el);
+  }
+  function updateCounter() { enhanceIndexList(); }
+  function injectReset(counterEl) {
+    var host = counterEl.closest("p") || counterEl.parentNode;
+    if (!host || host.querySelector(".od-reset")) return;
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "od-reset";
+    btn.textContent = "清除閱讀進度";
+    btn.addEventListener("click", function () {
+      if (!window.confirm("確定清除所有閱讀進度嗎？此動作無法復原。")) return;
+      readSet.clear();
+      save();
+      run();
+    });
+    host.appendChild(document.createTextNode(" "));
+    host.appendChild(btn);
+  }
+
+  // 4) 左側導覽：已讀的課標一個勾
+  function enhanceNav() {
+    document.querySelectorAll(".md-nav__link[href]").forEach(function (a) {
+      var raw = a.getAttribute("href") || "";
+      if (raw.indexOf("#") !== -1) return; // 跳過本頁目錄的錨點連結（它們都指向當前這課）
+      var id = idFromHref(a.href);
+      if (isLessonId(id)) a.classList.toggle("od-nav-read", isRead(id));
+    });
   }
 
   function run() {
     enhanceLecture();
     enhanceChecklist();
     enhanceIndexList();
+    enhanceNav();
   }
 
   if (window.document$ && typeof window.document$.subscribe === "function") {

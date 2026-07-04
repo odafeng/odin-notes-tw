@@ -76,5 +76,6 @@ def test_render_groups_by_course_in_curriculum_order() -> None:
             _lec("f", "Foundations", 1, "f.md"),
         ]
     )
-    # Foundations 應排在 JavaScript 之前（依學習路線，非字母序）
-    assert out.index("### Foundations") < out.index("### JavaScript")
+    # 每門課包成可摺疊 details，且 Foundations 排在 JavaScript 之前（依學習路線）
+    assert "<details" in out and "od-course-progress" in out
+    assert out.index("<summary>Foundations") < out.index("<summary>JavaScript")

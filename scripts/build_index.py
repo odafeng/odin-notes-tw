@@ -85,12 +85,20 @@ def render(lectures: list[Lecture]) -> str:
         "（存在你的瀏覽器，換裝置各自計算）。",
         "",
     ]
-    current = ""
+    current: str | None = None
     for lec in lectures:
         if lec.course != current:
+            if current is not None:
+                lines += ["", "</details>", ""]
             current = lec.course
-            lines += [f"### {current}", ""]
+            lines += [
+                '<details class="od-course" markdown>',
+                f'<summary>{current}<span class="od-course-progress"></span></summary>',
+                "",
+            ]
         lines.append(f"- [{lec.title}]({lec.rel_url})")
+    if current is not None:
+        lines += ["", "</details>"]
     return "\n".join(lines)
 
 
